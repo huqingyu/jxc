@@ -191,9 +191,3 @@ function yyDayClick(n)
 }
 yySetDay(yyTheYear,yyTheMonth);
 
-
-
-
-
-
-

@@ -1,0 +1,1 @@
+<div align="center"><font color="#FF0000">·由于本系统涉及在线支付等功能不使用自助密码找<br>回功能,请直接电话或进入<input type="button" value="留下意见" onclick="window.location='../Gbook.asp'">与管理员联系。</font></div>

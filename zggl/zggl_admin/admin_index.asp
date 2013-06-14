@@ -1,8 +1,7 @@
 <!--#include file="admin_common/admin_check.asp"-->
-<!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
 <title>后台管理 - by seirsoft.com</title>
 <link href="css/frame.css" rel="stylesheet" />
 </head>

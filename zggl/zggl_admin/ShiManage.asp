@@ -20,12 +20,12 @@ function IsDigit()
 </head>
 <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
 <center><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
     <form method="post" action="shiset.asp?action=update">
       <tr height=25> 
-        <td height="30" colspan="8" align="center" background="Images/topBar_bg.gif"><font color=red>市设置</font></td>
+        <td height="30" colspan="8" align="center" background="images/admin_bg_1.gif"><font color=red>市设置</font></td>
       </tr>
-      <tr height=25 bgcolor="#FFF"> 
+      <tr height=25> 
         <td colspan="8" align="center">
           <%
 Set rs_s = Server.CreateObject("ADODB.Recordset")
@@ -59,14 +59,14 @@ response.Write "请选择以下省份进行处理"
 end if
 if rs.recordcount=0 then 
 %>
-      <tr bgcolor="#FFF"> 
+      <tr> 
         <td colspan="8" height=25 align="center" width="100%"> 还没有添加市 </td>
       </tr>
 <%
 else
     do while not rs.eof
 %>
-      <tr height=25 bgcolor="#FFF"> 
+      <tr height=25> 
         <td align=center><%=rs("ID")%></td>
         <td align=center> 
           <select name="shengid" size="1" class="wenbenkuang">
@@ -101,7 +101,7 @@ set rs_s=nothing
     rs.MoveNext
     Loop
 %>
-      <tr bgcolor="#FFF"> 
+      <tr> 
         <td colspan="8" height=25 align="center" width="100%"> 
           <input type="submit" name="Submit2" value="保存修改" class="go-wenbenkuang">
           &nbsp; 
@@ -116,7 +116,7 @@ set rs=nothing
 %>
     </form>
     <form method="post" action="shiset.asp?action=add">
-      <tr height=25 bgcolor="#FFF"> 
+      <tr height=25> 
         <td align=center>添加市 </td>
         <td align=center> 
           <select name="shengid" size="1" class="wenbenkuang">

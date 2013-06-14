@@ -14,13 +14,13 @@ end if
 <!--#include file="admin_common/conn.asp" -->
 <!--#include file="system/system_code.asp" -->
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" background="Images/topBar_bg.gif"> 
+    <td height="30" background="images/admin_bg_1.gif"> 
     <div align="center"><font color="#ff0000">查看信息反馈</font></div></td>
   </tr>
   <tr>
-    <td height="84" valign="top" bgcolor="#FFF"> 
+    <td height="84" valign="top"> 
       <table width="95%" border="0" align="center" cellpadding="2" cellspacing="2">
         <tr> 
           <td> 
@@ -101,7 +101,7 @@ for i=1 to rs.PageSize
               除</a></div>
           </td>
         </tr>
-        <tr bgcolor="#FFF"> 
+        <tr> 
           <td height="41" colspan="2"> 
             <div align="center"> 
               <table width="100%" border="0" cellspacing="1" cellpadding="0">
@@ -130,7 +130,7 @@ set rs=nothing
     </td>
   </tr>
   <tr>
-    <td height="30" bgcolor="#FFF"><div align="center">
+    <td height="30"><div align="center">
         <% call LastNextPage(maxpage,page,result_num) %>
     </div></td>
   </tr>

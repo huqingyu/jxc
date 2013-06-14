@@ -39,13 +39,13 @@ end select
 </head>
 
 <body>
-<br /><table width="90%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<br /><table width="90%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" background="Images/topBar_bg.gif"> 
+    <td height="30" background="images/admin_bg_1.gif"> 
     <div align="center"><font color="#000000">更改首页公告</font></div>    </td>
   </tr>
   <tr> 
-    <td height="200" bgcolor="#FFF"> 
+    <td> 
       <form name="form1" method="post" action="gonggao.asp?action=savegongao" id="Form1">
         <div align="center"><font color="#FF0000">声明：此信息为首页公告，请及时更新，支持HTML代码。</font></div>
         <table width="80%" border="0" align="center" cellpadding="3" cellspacing="0" id="Table2">

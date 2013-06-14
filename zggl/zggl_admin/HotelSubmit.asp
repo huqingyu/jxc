@@ -75,10 +75,10 @@ end if
 </head>
 <body>
 <div align="center">      
-  <table width="60%"  border=1 cellpadding=0 cellspacing=0 bordercolor="#999999" bordercolordark=#FFF bgcolor="#F9F9F9">
+  <table width="60%"  border=1 cellpadding=0 cellspacing=0  bgcolor="#F9F9F9">
     <tbody>
       <tr valign=top bgcolor=#e1f0ff>
-        <td width="431" height="30" background="Images/topBar_bg.gif">&nbsp;</td>
+        <td width="431" height="30" background="images/admin_bg_1.gif">&nbsp;</td>
       </tr>
       <tr>
         <td height="60" valign="middle"><font class="medium">
@@ -86,7 +86,7 @@ end if
         </font></td>
       </tr>
       <tr bgcolor=#e1f0ff>
-        <td height="35" background="Images/topBar_bg.gif">
+        <td height="35" background="images/admin_bg_1.gif">
           <p align="center">
             <input name="button" type="button" onClick=" window.location='hotelreg.asp'" value="登记下一个">
             <input name="button2" type="button" onClick=" window.location='manage.asp'" value="返回">

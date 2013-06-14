@@ -52,9 +52,9 @@ Set xTestObj = Nothing
 Err = 0
 End Function
 %>
-<table width="90%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="90%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr>
-    <td height="30" colspan="2" align="center" background="Images/topBar_bg.gif"><b>服务器信息统计</b></td>
+    <td height="30" colspan="2" align="center" background="images/admin_bg_1.gif"><b>服务器信息统计</b></td>
   </tr>
   <tr>
     <td width="50%">&nbsp;服务器类型：<font face="Verdana"><%=Request.ServerVariables("OS")%> （IP：</font><%=Request.ServerVariables("LOCAL_ADDR")%>）</td>
@@ -197,9 +197,9 @@ End Function
     </td>
   </tr>
 </table><br />
-<table width="90%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="90%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr>
-    <td height="30" align="center" background="Images/topBar_bg.gif"><b>搜 索 用 户</b></td>
+    <td height="30" align="center" background="images/admin_bg_1.gif"><b>搜 索 用 户</b></td>
   </tr>
   <tr>
     <td height="50">

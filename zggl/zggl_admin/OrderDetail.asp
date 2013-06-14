@@ -23,10 +23,10 @@ rs.open sqltext,conn,1,1
 <input type=hidden name=id value=<%=rs("id")%>>
 <input type=hidden name=userid value=<%=rs("userid")%>>
       <div align="center">
-        <table width="60%"  border=1 cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+        <table width="60%"  border=1 cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
           <TBODY>
             <tr>
-              <TD height=30 colspan="2" align="right" background="Images/topBar_bg.gif">
+              <TD height=30 colspan="2" align="right" background="images/admin_bg_1.gif">
                 <p align="left">&nbsp;预定资料</TD>
             </tr>
             <tr>
@@ -58,7 +58,7 @@ rs.open sqltext,conn,1,1
               <TD width=426 height=25><%=rs("paytype")%> 　</TD>
             </tr>
             <tr>
-              <TD height=30 colspan="2" align="right" background="Images/topBar_bg.gif">
+              <TD height=30 colspan="2" align="right" background="images/admin_bg_1.gif">
                 <p align="left">&nbsp;房间选择</TD>
             </tr>
             <tr>
@@ -74,7 +74,7 @@ rs.open sqltext,conn,1,1
               <TD width=426 height=25> RMB&nbsp;<%=rs("totalnum")%></TD>
             </tr>
             <tr>
-              <TD height=30 colspan="2" align="right" background="Images/topBar_bg.gif">
+              <TD height=30 colspan="2" align="right" background="images/admin_bg_1.gif">
                 <p align="left">&nbsp;预定条款</TD>
             </tr>
             <tr>
@@ -102,7 +102,7 @@ rs.open sqltext,conn,1,1
               <TD width=426 height=25><%=rs("latetime")%> 　</TD>
             </tr>
             <tr>
-              <TD height=30 colspan="2" align="right" background="Images/topBar_bg.gif">
+              <TD height=30 colspan="2" align="right" background="images/admin_bg_1.gif">
                 <p align="left">&nbsp;联系信息</TD>
             </tr>
             <tr>
@@ -133,7 +133,7 @@ rs.open sqltext,conn,1,1
               <TD width=152 height=25 align="right" bgColor=#EBEBEB ><SPAN >特殊说明：</SPAN></TD>
               <TD width=426 height=25><%=rs("explain")%> 　</TD>
             </tr>
-            <TR background="Images/topBar_bg.gif">
+            <TR background="images/admin_bg_1.gif">
               <TD height="35" colSpan=2>
                 <p align="center">
                   <INPUT TYPE=submit VALUE=" 处理订单 " CLASS="medium" ONCLICK="javascript:return checksignup()" NAME="signup_submit">

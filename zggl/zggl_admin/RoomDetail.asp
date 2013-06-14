@@ -24,10 +24,10 @@ rs_hotel.open sqltext,conn,1,1
 <link href="css/style.css" rel="stylesheet"></head>
 <body>　
 <br /><br /><br />
-<table width="50%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="50%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <TBODY>
 <tr align="center">
-<TD height=30 colspan="2" background="Images/topBar_bg.gif"><font color="#FF0000"><b>房型信息详情</b></font></TD>
+<TD height=30 colspan="2" background="images/admin_bg_1.gif"><font color="#FF0000"><b>房型信息详情</b></font></TD>
 </tr>
 <tr>
                 <TD width=176 height=25 align="right" bgcolor="#ebebeb">所属酒店：</TD>

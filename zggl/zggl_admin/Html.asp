@@ -13,32 +13,24 @@ end if
 </head>
 <body>
 <%
-set strs=server.createobject("adodb.recordset")
-stsql="select id,time from news order by time desc"
-strs.open stsql,conn,1,1
-if not strs.eof then
-result_num=strs.RecordCount '记录总数
-end if      
-strs.close      
-set strs=nothing      
-
-set rs=server.createobject("adodb.recordset")
+dim sql
+set rs=server.CreateObject("adodb.recordset")
 sql="select id from xianlu where Audit=True order by id desc"
-rs.open sql,conn,1,1
+rs.open sql, conn, 1, 1
 if not rs.eof then
 Xl_num=rs.RecordCount '记录总数
 end if      
 rs.close      
 set rs=nothing
 
-set rs=server.createobject("adodb.recordset")
+set rs2=server.CreateObject("adodb.recordset")
 sql="select id from HotelB where Audit=True order by id desc"
-rs.open sql,conn,1,1
-if not rs.eof then
-Hotel_num=rs.RecordCount '记录总数
+rs2.open sql, conn, 1, 1
+if not rs2.eof then
+Hotel_num=rs2.RecordCount '记录总数
 end if      
-rs.close      
-set rs=nothing
+rs2.close      
+set rs2=nothing
 %>
 
 <br /><br /><br />

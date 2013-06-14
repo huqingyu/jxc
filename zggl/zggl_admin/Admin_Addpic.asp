@@ -39,17 +39,17 @@ openScript('upload.asp?UP=admin',300,100);
 }
 </script>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <form action="?action=addok" method="post" name="form1" onSubmit="return check();">
 <tr>
-<td height="30" colspan="2" align="center" background="Images/topBar_bg.gif"><font color="#FF0000"><b>添加图片</b></font></td>
+<td height="30" colspan="2" align="center" background="images/admin_bg_1.gif"><font color="#FF0000"><b>添加图片</b></font></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td width="187" height="25" align="center" bgcolor="#f5f5f5">图片名称：</td>
 <td width="731">　
 <input name="Name2" type="text" id="Name2" size="50"></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="25" align="center" bgcolor="#f5f5f5">图片类别：</td>
 <td>　
 <select name="Leixing2" id="Leixing2">
@@ -66,7 +66,7 @@ rs.close
 </select>
 请先择。如没有类型，请先建立类别后再添加图片</td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="25" align="center" bgcolor="#f5f5f5">是否推荐：</td>
 <td>
 　
@@ -75,24 +75,24 @@ rs.close
 否
 <input name="Tuijiang2" type="radio" value="0" checked></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="25" align="center" bgcolor="#f5f5f5">&nbsp;&nbsp;&nbsp;缩略图：</td>
 <td>　
 <input name="Pic_slt2" type="text" id="Pic_slt2" size="50">
 <input type="button" name="Button" value="浏 览" onClick="JavaScript:openem()"></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="25" align="center" bgcolor="#f5f5f5">图片路径：</td>
 <td>　
 <input name="Pic_url2" type="text" id="Pic_url2" size="50">
 <input type="button" name="Button2" value="浏 览" onClick="JavaScript:openem()"></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="110" align="center" bgcolor="#f5f5f5">图片介绍：</td>
 <td height="110">　
 <textarea name="Info2" cols="60" rows="6" id="Info2">无</textarea></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="35" colspan="2" align="center"><input type="submit" name="Submit" value="确 定 添 加"></td>
 </tr></form></table>
 <%

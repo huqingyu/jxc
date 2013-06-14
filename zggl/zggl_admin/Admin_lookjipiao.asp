@@ -21,7 +21,7 @@ end select
 sub looknew
 %>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr align="center" bgcolor="#f5f5f5">
     <td width="205" height="24">预订人姓名</td>
     <td width="216">预订时间</td>
@@ -37,11 +37,11 @@ end if
 while not rs.eof
 %>
   <tr align="center">
-    <td height="24" bgcolor="#FFF"><a href="admin_ydjipiaodel.asp?action=look&id=<%=rs("id")%>" title="查看此预订详细信息">详情</a> <%=rs("name")%></td>
-    <td bgcolor="#FFF"><%=rs("m_yudingtime")%></td>
-    <td bgcolor="#FFF"><%=rs("tel")%></td>
-    <td bgcolor="#FFF"><%=rs("piao")%></td>
-    <td bgcolor="#FFF"><a href="../Ticketinfo.asp?id=<%=rs("hdid")%>" title="<%=rs("hdname")%>" target=_blank>查看</a></td>
+    <td height="24"><a href="admin_ydjipiaodel.asp?action=look&id=<%=rs("id")%>" title="查看此预订详细信息">详情</a> <%=rs("name")%></td>
+    <td><%=rs("m_yudingtime")%></td>
+    <td><%=rs("tel")%></td>
+    <td><%=rs("piao")%></td>
+    <td><a href="../Ticketinfo.asp?id=<%=rs("hdid")%>" title="<%=rs("hdname")%>" target=_blank>查看</a></td>
   </tr>
 <%
 rs.movenext
@@ -54,7 +54,7 @@ rs.close
     <td height="4"></td>
   </tr>
 </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr>
     <td height="24" align="center" bgcolor="#f5f5f5"><input type="button" name="Submit" value="刷 新" onclick="window.location.reload();"></td>
   </tr>
@@ -64,7 +64,7 @@ end sub
 sub lookall
 %>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr align="center" bgcolor="#f5f5f5">
     <td width="205" height="24">预订人姓名</td>
     <td width="216">预订时间</td>
@@ -80,16 +80,16 @@ end if
 while not rs.eof
 %>
   <tr align="center">
-    <td height="24" bgcolor="#FFF"><%
+    <td height="24"><%
 if not rs("m_show") then
 response.write("<img src=images/mfk34.gif>")
 end if
 %><a href="admin_ydjipiaodel.asp?action=look&id=<%=rs("id")%>" title="查看此预订详细信息">
 详情</a> <%=rs("name")%></td>
-    <td bgcolor="#FFF"><%=rs("m_yudingtime")%></td>
-    <td bgcolor="#FFF"><%=rs("tel")%></td>
-    <td bgcolor="#FFF"><%=rs("piao")%></td>
-    <td bgcolor="#FFF"><a href="../Ticketinfo.asp?id=<%=rs("hdid")%>" title="<%=rs("hdname")%>" target=_blank>查看</a></td>
+    <td><%=rs("m_yudingtime")%></td>
+    <td><%=rs("tel")%></td>
+    <td><%=rs("piao")%></td>
+    <td><a href="../Ticketinfo.asp?id=<%=rs("hdid")%>" title="<%=rs("hdname")%>" target=_blank>查看</a></td>
   </tr>
 
 <%
@@ -104,7 +104,7 @@ rs.close
     <td height="4"></td>
   </tr>
 </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr>
     <td height="24" align="center" bgcolor="#f5f5f5"><input type="button" name="Submit2" value="刷 新" onclick="window.location.reload();"></td>
   </tr>

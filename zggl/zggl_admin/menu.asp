@@ -7,7 +7,7 @@
 <link href="css/menu.css" rel="stylesheet" />
 </head>
 <body>
-<div style="width:158px; margin:10px auto;">
+<div style="width:158px; margin:0 auto;">
 	<div class="menu_title" onclick="showsubmenu(1)">
 		<span>文章管理</span>
 	</div>
@@ -30,7 +30,7 @@
 
 			
 	<div class="menu_title" onclick="showsubmenu(3)">
-		<span>网站信息管理</span>
+		<span>网站信息</span>
 	</div>
 	<div id="submenu3" class="sec_menu">
 		<ul>

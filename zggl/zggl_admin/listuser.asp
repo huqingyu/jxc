@@ -23,17 +23,17 @@ end if
 		set rs=server.createobject("adodb.recordset")
 		rs.open "select * from [userb] where id="&userid ,conn,1,1%>
 <br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" background="Images/topBar_bg.gif"> 
+    <td height="30" background="images/admin_bg_1.gif"> 
     <div align="center"><font color="#FF0000">用户详细资料</font></div>    </td>
   </tr>
   <tr> 
-    <td height="163" valign="top" bgcolor="#FFF"> 
+    <td height="163" valign="top"> 
       <form name="form1" method="post" action="saveuser.asp?action=save&id=<%=userid%>">
         <br />
         <table width="98%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC">
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">用户名称：</div></td>
             <td width="15%" ><font color=#FF0000><%=trim(rs("username"))%>　　　　 
               </font></td>
@@ -47,31 +47,31 @@ end if
               <input type="text" name="vipdate" size="10" value="<%=rs("vipdate")%>" >
               (普通会员没有时间限制)</td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">登陆密码：</div></td>
             <td colspan="2"> 
               <input name="userpassword" type="text" id="userpassword" size="12" >
               不改密码请为空!</td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">真实姓名：</div></td>
             <td colspan="2"> 
               <input name="name" type="text" id="name" size="12" value="<%=trim(rs("name"))%>">
             </td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">电子邮件：</div></td>
             <td colspan="2"> 
               <input name="email" type="text" id="email" value="<%=trim(rs("email"))%>">
               </td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">身份证号码：</div></td>
             <td colspan="2"> 
               <input name=idcard type=text id="idcard" onKeyPress="event.returnValue=IsDigit();" value="<%=trim(rs("idcard"))%>" size="20" maxlength="18">
             </td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">性别：</div></td>
             <td colspan="2"> 
               <input type="radio" name="sex" value="男" <%if rs("sex")="男" then%>checked<%end if%>>
@@ -79,37 +79,37 @@ end if
               <input type="radio" name="sex" value="女" <%if rs("sex")="女" then%>checked<%end if%>>
               女</td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">详细地址：</div></td>
             <td colspan="2"> 
               <input name="address" type="text" id="address" size="35" value="<%=trim(rs("address"))%>">
             </td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">邮编：</div></td>
             <td colspan="2"> 
               <input name="zip" type="text" id="zip" size="12" value="<%=rs("zip")%>" maxlength=6 onKeyPress="event.returnValue=IsDigit();">
             </td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">联系电话：</div></td>
             <td colspan="2"> 
               <input name="telphone" type="text" id="telphone" size="12" value="<%=trim(rs("telphone"))%>">
             </td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">工作：</div></td>
             <td colspan="2"> 
               <input name=work type=text id="work" value="<%=trim(rs("work"))%>" size="35">
             </td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">预存款：</div></td>
             <td colspan="2"> 
               <input name=yucun type=text value="<%=trim(rs("yucun"))%>" size="10" maxlength="8" onkeyup="if(isNaN(value))execCommand('undo')">
             </td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">积分：</div></td>
             <td colspan="2"> 
               <input name=jifen type=text value="<%=trim(rs("jifen"))%>" size="10" maxlength="8" onkeyup="if(isNaN(value))execCommand('undo')">
@@ -117,17 +117,17 @@ end if
           </tr>
 		  <!--___________企业用户资料______-->
 		  <%if rs("reglx")=3 then%>
-		  <tr bgcolor="#FFF"> 
+		  <tr> 
             <td width="20%" height="25" ><div align="right">公司名称：</div></td>
             <td colspan="2"> 
               <input name=Qy_Name type=text id="Qy_Name" value="<%=trim(rs("Qy_Name"))%>" size="35" >              </td>
           </tr>
-		            <tr bgcolor="#FFF"> 
+		            <tr> 
             <td width="20%" height="25" ><div align="right">公司电话：</div></td>
             <td colspan="2"> 
               <input name=Qy_Tel type=text id="Qy_Tel" value="<%=trim(rs("Qy_Tel"))%>" size="25"></td>
           </tr>
-		            <tr bgcolor="#FFF"> 
+		            <tr> 
             <td width="20%" height="25" ><div align="right">公司E-Mail：</div></td>
             <td colspan="2"> 
               <input name=Qy_Email type=text id="Qy_Email" value="<%=trim(rs("Qy_Email"))%>" size="25"></td>
@@ -135,19 +135,19 @@ end if
 		  <% end if%>
 		  <!--_____________________________-->
 		  
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">注册时间：</div></td>
             <td colspan="2"><%=rs("regdate")%></td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">最后登陆：</div></td>
             <td colspan="2"><%=rs("lastlogin")%></td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">登陆次数：</div></td>
             <td colspan="2"><%=rs("logins")%>次</td>
           </tr>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td width="20%" height="25" ><div align="right">已下订单数：</div></td>
             <td colspan="2"> 
               <%dim rs2
@@ -163,7 +163,7 @@ end if
 			set rs=nothing
 			conn.close
 			set conn=nothing%>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td height="28" colspan="3"> 
               <div align="center"> 
                 <input type="submit" name="Submit" value="确认提交">

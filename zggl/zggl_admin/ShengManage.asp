@@ -20,10 +20,10 @@ function IsDigit()
 </head>
 <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
 <center><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
     <form method="post" action="shengset.asp?action=update">
       <tr height=25> 
-        <td height="30" colspan="8" align="center" background="Images/topBar_bg.gif"><font color=red>省设置</font></td>
+        <td height="30" colspan="8" align="center" background="images/admin_bg_1.gif"><font color=red>省设置</font></td>
       </tr>
       <tr align=center height=25> 
         <td bgcolor="f1f1f1">序号</td>
@@ -38,14 +38,14 @@ Set rs = Server.CreateObject("ADODB.Recordset")
 rs.open "SELECT  * From szSheng  order by shengorder",conn,1,1
 if rs.recordcount=0 then 
 %>
-      <tr bgcolor="#FFF"> 
+      <tr> 
         <td colspan="8" height=25 align="center" width="100%"> 还没有添加省 </td>
       </tr>
 <%
 else
     do while not rs.eof
 %>
-      <tr height=25 bgcolor="#FFF"> 
+      <tr height=25> 
         <td align=center><%=rs("ID")%></td>
         <td align=center> 
           <input type="hidden" name="shengid" value="<%=rs("id")%>">
@@ -64,7 +64,7 @@ else
     rs.MoveNext
     Loop
 %>
-      <tr bgcolor="#FFF"> 
+      <tr> 
         <td colspan="8" height=25 align="center" width="100%"> 
           <input type="submit" name="Submit2" class="go-wenbenkuang" value="保存修改">
           &nbsp; 
@@ -80,7 +80,7 @@ set conn=nothing
 %>
     </form>
     <form method="post" action="shengset.asp?action=add">
-      <tr height=25 bgcolor="#FFF"> 
+      <tr height=25> 
         <td align=center>添加省 </td>
         <td align=center> 
           <input type="text" name="shengname" size="10" class="wenbenkuang">

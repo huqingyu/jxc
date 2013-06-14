@@ -5,9 +5,9 @@
 <link href="css/style.css" rel="stylesheet">
 <title>信息提示</title>
 <br /><br /><br /><br /><br />
-<TABLE border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<TABLE border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <TBODY><TR>
-<TD width="292" height="30" background="Images/topBar_bg.gif"><div align="center"><font color="#FF0000">信息提示</font></div></TD>
+<TD width="292" height="30" background="images/admin_bg_1.gif"><div align="center"><font color="#FF0000">信息提示</font></div></TD>
 </TR><TR>
 <TD height="39"><div align="center"><%=Request.QueryString("msg")%></div></TD>
 </TR><TR><TD width="292" height="35">

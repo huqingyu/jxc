@@ -36,28 +36,16 @@ response.write "<script>alert('更改成功！');window.location.href='Admin_mb.asp';
 response.End
 end if
 %>
-<table border="0" align="center" cellpadding="0" cellspacing="0">
 <form name="form" method="post" action="Html_XlIndex.asp?action=save" onReset="return ResetForm();">
+<table border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-    <td height="47" colspan="2"><div align="center"><b><font color="red">度假产品首页模板(html)</font></b></div></td>
-  </tr>
-  <tr>
-    <td height="72" colspan="2"><div align="center"><font color="088000"><br />
-注: 网站名称(WebName); 管理邮件(WebEmail); 地址(Dizhi); 邮编(YouBian); 电话(DianHua)<br />
-<br />
-版权(Copyright); 网站标志(WebLogo); 网站banner(WebBanner); 网站地址(WebUrl); 网站公告(Gonggao)<br />
-<br />
-最新酒店信息(Left_Hotel_Top); 最新线路信息(Left_Xl_Top); 网络调查(Left_View_Top)<br />
-<br />
-热点线路(Xl_Hot); 推荐线路(Xl_Top)<br />
-<br />
-    </font></div></td>
+    <td height="47" colspan="2"><div align="center"><b><font color="red">旅游线路首页模板(html)</font></b></div></td>
   </tr>
   <tr>
     <td height="500" colspan="2"><div align="center">
 <% set rs=server.createobject("adodb.recordset")
 rs.open ("select mb_xl_Index_show from mb"),conn,1,1
-%><textarea name="mb_xl_Index_show" cols="90" rows="48"><%=rs("mb_xl_Index_show")%></textarea>
+%><textarea name="mb_xl_Index_show" cols="90" rows="38"><%=rs("mb_xl_Index_show")%></textarea>
 <% rs.close %></div></td>
   </tr>
   <tr>
@@ -68,7 +56,16 @@ rs.open ("select mb_xl_Index_show from mb"),conn,1,1
       <input type="reset" name="Submit2" value="取消修改">
     </div></td>
   </tr>
-</form>
+
 </table>
+</form>
+<div style="text-align:left;margin-left:200px">
+<font color="088000">
+注: 网站名称(WebName); 管理邮件(WebEmail); 地址(Dizhi); 邮编(YouBian); 电话(DianHua)<br />
+版权(Copyright); 网站标志(WebLogo); 网站banner(WebBanner); 网站地址(WebUrl); 网站公告(Gonggao)<br />
+最新酒店信息(Left_Hotel_Top); 最新线路信息(Left_Xl_Top); 网络调查(Left_View_Top)<br />
+热点线路(Xl_Hot); 推荐线路(Xl_Top)<br />
+</font>
+</div>
 </body>
 </html>

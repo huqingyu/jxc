@@ -38,14 +38,14 @@ session("deptime")=request.form("deptime")
   <strong><font color="#FF0000" size="+1" ><%=rs("c_name")%>所有房型</font></strong>
   <table width="90%" border=1 cellPadding=0 cellSpacing=0 bordercolor="#CCCCCC" borderColorDark=#FFF bgcolor="#F9F9F9">
     <tr>
-      <td width="23%" height="25" background="images/topBar_bg.gif">房型</td>
-      <td width="7%" background="images/topBar_bg.gif">
+      <td width="23%" height="25" background="images/admin_bg_1.gif">房型</td>
+      <td width="7%" background="images/admin_bg_1.gif">
       <p align="center">早餐</td>
-      <td width="11%" background="images/topBar_bg.gif">门市价</td>
-      <td width="22%" background="images/topBar_bg.gif">前台现付价</td>
-      <td width="12%" background="images/topBar_bg.gif">网上支付价</td>
-      <td width="13%" background="images/topBar_bg.gif">支付方式</td>
-      <td width="12%" background="images/topBar_bg.gif">
+      <td width="11%" background="images/admin_bg_1.gif">门市价</td>
+      <td width="22%" background="images/admin_bg_1.gif">前台现付价</td>
+      <td width="12%" background="images/admin_bg_1.gif">网上支付价</td>
+      <td width="13%" background="images/admin_bg_1.gif">支付方式</td>
+      <td width="12%" background="images/admin_bg_1.gif">
       <p align="center">首日房态</td>
     </tr>
     <%if not rsroom.eof then

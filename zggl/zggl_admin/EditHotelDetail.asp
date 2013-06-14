@@ -276,10 +276,10 @@ if(document.FORM1.hotelcity.value.length<1)
 <input type=hidden name=action value="update">
 <input type=hidden name=id value=<%=request("id")%>>
       <div align="center"><br /><br /><br />
-        <table width="65%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+        <table width="65%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
           <tbody>
-            <tr background="Images/topBar_bg.gif">
-              <td height="30" colspan=2 background="Images/topBar_bg.gif" align="center"><font color="red">æ∆µÍ–≈œ¢±‡º≠</font></td>
+            <tr background="images/admin_bg_1.gif">
+              <td height="30" colspan=2 background="images/admin_bg_1.gif" align="center"><font color="red">æ∆µÍ–≈œ¢±‡º≠</font></td>
             </tr>
             <tr>
               <td width=112 height=25 align="right" bgcolor=#EBEBEB >æ∆µÍ√˚≥∆£∫</td>
@@ -453,7 +453,7 @@ set rs_s=nothing
               </font></td>
             </tr>
             <tr>
-              <td height="35" colspan=2 background="Images/topBar_bg.gif">
+              <td height="35" colspan=2 background="images/admin_bg_1.gif">
                 <p align="center">
                   <input type=SUBMIT value=" –ﬁ ∏ƒ " class="medium" onClick="javascript:return checksignup()" name="signup_submit">
                   <input type=RESET value="÷ÿ ÃÓ" class="medium" name="signup_reset">

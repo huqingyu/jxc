@@ -71,13 +71,13 @@ response.End
 end if
 %>
 <br /><br /><br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" background="Images/topBar_bg.gif"> 
+    <td height="30" background="images/admin_bg_1.gif"> 
     <div align="center"><font color="#ff0000">更改管理密码</font></div>    </td>
   </tr>
   <tr> 
-    <td height="163" bgcolor="#FFF"> 
+    <td height="163"> 
       <table width="220" border="0" align="center" cellpadding="0" cellspacing="0">
         <form name="renpassword" method="post" action="Admin_password.asp?action=save">
           <tr> 

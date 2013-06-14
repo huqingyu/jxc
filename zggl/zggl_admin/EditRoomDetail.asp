@@ -65,10 +65,10 @@ if(document.FORM1.stageprice.value.length<1)
 <br />
 <br />
 <br />
-<table width="50%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="50%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
               <TBODY>
               <TR>
-                <TD colSpan=2 height="30" background="Images/topBar_bg.gif"><div align="center"><font color="Red"><b>房型信息编辑</b></font></div></TD></TR>
+                <TD colSpan=2 height="30" background="images/admin_bg_1.gif"><div align="center"><font color="Red"><b>房型信息编辑</b></font></div></TD></TR>
               <tr>
                 <TD width=165 bgColor=#ebebeb height=25 align="right">房间类型：</TD>
                 <TD width=324 height=25>  <%=rs("type")%></TD>                           

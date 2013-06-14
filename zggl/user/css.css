@@ -1,0 +1,54 @@
+/* CSS Document */
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background: #EDF6FB url(images/bg.gif) repeat-x;
+}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #0066CC;
+	text-decoration: none;
+}
+a:visited {
+    color: #0066CC;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.input {
+	border: 1px solid #C0C4CD;
+	height:28px;
+	line-height: 25px;
+	color:#666666
+}
+.teinput {
+	border: 1px solid #C0C4CD;
+	height:80px;
+	line-height: 20px;
+	color:#666666
+}
+.sucText{ font-size:28px; font-family:"Microsoft yahei"; color:#429B20; padding:30px 0;}
+.sucNotes{ font-size:16px; font-family:"microsoft yahei"; line-height:2;color:#666666}
+
+a { color:#2E5883; text-decoration: none; }
+a.page, .page {
+	display:block;
+	border:1px solid #868686;
+	background:#fff;
+	float:left;
+	margin-right:4px;
+	height:18px;
+	line-height:18px;
+	padding:0 5px;
+}
+.page:hover { border:1px solid #577DA8; background:#FFFFE9; text-decoration:none}
+.page input {margin:-2px -6px 0 -4px;border:0px; background:none; height:12px;line-height:12px; width:14px;}
+#on { border:1px solid #1D619C; background:#1972BD; color:#fff; }

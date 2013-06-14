@@ -1,0 +1,147 @@
+/*===============================
+Power by: Lincoln
+2013-7-24
+www.seirsoft.com
+===============================*/
+body /*The scroll bar colours are only visible in IE5.5+ */
+{
+	color:#666666;
+	font: 12px/150% Tahoma, "Lucida Grande", Verdana, Lucida, Arial, Helvetica, "ËÎÌו", sans-serif;
+	
+}
+TD
+{
+	color:#666666;
+	font: 12px/150% Tahoma, "Lucida Grande", Verdana, Lucida, Arial, Helvetica, "ËÎÌו", sans-serif;
+
+}
+a {
+	color: #039;
+	text-decoration: none;
+}
+a:hover {
+	color: #039;
+	text-decoration: underline;
+}
+a.menu {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+a.menu:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+/*=============================*/
+.Menu2 {
+	background-image: url(../images/2.gif);
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #EBEBEB;
+	border-right-color: #EBEBEB;
+	border-bottom-color: #EBEBEB;
+	border-left-color: #EBEBEB;
+}
+.table1 {
+	background-color: #FFFFFF;
+	border: 1px solid #B5E1FF;
+}
+.text1 {
+    font-size: 14px;
+	color: #013DA4;
+}
+.text3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.text4 {
+    font-size: 12px;
+	color: #FF7B00;
+}
+a.info {
+	font-size: 14px;
+	color: #666;
+}
+a.info:hover {
+	color: #666;
+	text-decoration: underline;
+}
+
+a.listinfo {
+color:#186AEE;
+font-size:14px;
+text-decoration:none;
+}
+a.listinfo:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+
+.tdtitle   {font-size: 13.5pt; color: black;}
+
+.title_right
+{
+	background-image: url(/Themes/images/title_r1.gif);
+	background-repeat: no-repeat;
+	border-right: #cccccc 1px solid;
+	padding: 0px 6px;
+	height: 23px;
+}
+.tdbg_right
+{
+	border-left: #cccccc 1px solid;
+	border-right: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	padding: 6px;
+}
+.tdbg_main {	background-color: #fafafa;
+	border-bottom: #bbbbbb 1px solid;
+	padding: 6px;
+}
+.title_main {	color: #ffffff;
+	font-weight: bold;
+	text-align: right;
+	background-image: url(/Themes/images/title_m1.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	border-bottom: #bbbbbb 1px solid;
+	padding: 2px 6px;
+}
+.title_main2 {	color: #ffffff;
+	font-weight: bold;
+	text-align: right;
+	background-image: url(/Themes/images/title_m2.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	border-bottom: #bbbbbb 1px solid;
+	padding: 2px 6px;
+}
+.title_left {	background-color: #FDDB94;
+	background-image: url(/Themes/images/title_bg1.gif);
+	background-repeat: repeat-x;
+	border: #7DABE1 1px solid;
+	padding: 0px 6px;
+	color: #333333;
+	font-weight: bold;
+}
+.border {	background-color: #CEDEFA;
+	border-right: #bbbbbb 1px solid;
+}
+.tdbg_left {	padding: 6px;
+}
+.tdbg_leftall {	border-bottom: #ffffff 1px solid;
+	padding: 6px;
+}
+.tdbg_mainall {	padding: 6px;
+}

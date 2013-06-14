@@ -19,13 +19,13 @@ end if
 </head>
 <body>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" background="Images/topBar_bg.gif"> 
+    <td height="30" background="images/admin_bg_1.gif"> 
     <div align="center"><font color="#000000">后台用户管理</font></div>    </td>
   </tr>
   <tr> 
-    <td bgcolor="#FFF"> 
+    <td> 
       <br /><table width="95%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC">
         <tr> 
           <td width="23%" height="25" bgcolor="f1f1f1"> 
@@ -44,7 +44,7 @@ end if
         rs.Open "select * from master order by flag",conn,1,1
         do while not rs.EOF%>
         <form name="form1" method="post" action="saveadmin.asp?action=edit&id=<%=int(rs("id"))%>">
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td> 
               <div align="center"> 
                 <input name="admin" type="text" size="12" value="<%=trim(rs("name"))%>">
@@ -85,13 +85,13 @@ end if
   </tr>
 </table>
 <br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" background="Images/topBar_bg.gif"> 
+    <td height="30" background="images/admin_bg_1.gif"> 
     <div align="center"><font color="#000000">后台用户添加</font></div>    </td>
   </tr>
   <tr> 
-    <td bgcolor="#FFF"> 
+    <td> 
      <br /> <table width="95%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC">
         <tr> 
           <td width="21%" height="25" bgcolor="f1f1f1"> 
@@ -107,7 +107,7 @@ end if
           </td>
         </tr>
         <form name="form1" method="post" action="saveadmin.asp?action=add">
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td> 
               <div align="center"> 
                 <input name="admin2" type="text" size="12" >

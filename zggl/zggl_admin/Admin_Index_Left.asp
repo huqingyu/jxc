@@ -12,7 +12,7 @@ end if
 <meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <style type=text/css>
 body  {
-	background:url(Images/topBar_bg.gif);
+	background:url(images/admin_bg_1.gif);
 	margin:0px;
 	font:9pt ËÎÌו;
 	FONT-SIZE: 9pt;
@@ -53,7 +53,7 @@ eval("submenu" + sid + ".style.display='none';");
 </head>
 <BODY leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
 <tr><td valign=top>
-<table width=158 border="0" align=center cellpadding=0 cellspacing=0 bgcolor="#FFF">
+<table width=158 border="0" align=center cellpadding=0 cellspacing=0>
   <tr>
     <td height=42 valign=bottom>
 	  <img src="Images/title.gif" width=158 height=38>

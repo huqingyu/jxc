@@ -42,10 +42,10 @@ rs1.close
 %>
 </tr></table>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <tr bgcolor="#f5f5f5">
-<td width="89%" height="30" align="center" background="Images/topBar_bg.gif">前15条线路名称，更多请点击上面分类(点击查看详细信息)</td>
-<td width="11%" align="center" background="Images/topBar_bg.gif">删除</td>
+<td width="89%" height="30" align="center" background="images/admin_bg_1.gif">前15条线路名称，更多请点击上面分类(点击查看详细信息)</td>
+<td width="11%" align="center" background="images/admin_bg_1.gif">删除</td>
 </tr>
 <%
 dim id
@@ -109,11 +109,11 @@ rs.close
 %>
 </tr></table>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <tr align="center" bgcolor="#f5f5f5">
-<td width="79%" height="30" background="Images/topBar_bg.gif">前15条线路名称，更多请点击上面分类(点击查看详细信息)</td>
-<td width="10%" background="Images/topBar_bg.gif">类别标识</td>
-<td width="11%" background="Images/topBar_bg.gif">编辑</td>
+<td width="79%" height="30" background="images/admin_bg_1.gif">前15条线路名称，更多请点击上面分类(点击查看详细信息)</td>
+<td width="10%" background="images/admin_bg_1.gif">类别标识</td>
+<td width="11%" background="images/admin_bg_1.gif">编辑</td>
 </tr>
 <%
 dim id
@@ -126,7 +126,7 @@ end if
 set er=conn.execute(tt)
 while not er.eof
 %>
-<tr bgcolor="#FFF">
+<tr>
 <td height="24">
 <%
 if trim(er("Tuijiang"))=1 then
@@ -168,17 +168,17 @@ function openem()
 openScript('upload.asp?UP=admin',300,100); 
 }
 </script>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <form action="?action=editok1&id=<%=rs("id")%>" method="post" name="form1" onSubmit="return check();">
 <tr>
-<td height="30" colspan="2" align="center" background="Images/topBar_bg.gif"><font color="#FF0000"><b>编辑图片信息</b></font></td>
+<td height="30" colspan="2" align="center" background="images/admin_bg_1.gif"><font color="#FF0000"><b>编辑图片信息</b></font></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td width="187" height="25" align="center" bgcolor="#f5f5f5">图片名称：</td>
 <td width="731">　
 <input name="name2" type="text" id="name2" value="<%=rs("name")%>" size="50"></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="25" align="center" bgcolor="#f5f5f5">图片类别：</td>
 <td>　 
 <select name="Leixing2" id="Leixing2">
@@ -199,7 +199,7 @@ leirs.close
 </select>
 请先择。如没有类型，请先建立类别后再添加图片</td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="25" align="center" bgcolor="#f5f5f5">是否推荐：</td>
 <td>
 　 
@@ -208,24 +208,24 @@ leirs.close
 否
 <input name="tuijiang2" type="radio" value="0" <%if rs("Tuijiang")=0 then %>checked<%end if%>></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="25" align="center" bgcolor="#f5f5f5">&nbsp;&nbsp;&nbsp;缩略图：</td>
 <td>　
 <input name="Pic_slt2" type="text" id="Pic_slt2" size="50" value="<%=rs("Pic_slt")%>">
 <input type="button" name="Button3" class="button01-out" value="浏 览" onClick="JavaScript:openem()"></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="25" align="center" bgcolor="#f5f5f5">图片路径：</td>
 <td>　
 <input name="pic_url2" type="text" id="pic_url2" size="50" value="<%=rs("Pic_url")%>">
 <input type="button" name="Button22"  value="浏 览" onClick="JavaScript:openem()"></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="110" align="center" bgcolor="#f5f5f5">图片介绍：</td>
 <td height="110">　
 <textarea name="info2" cols="60" rows="6" id="info2"><%=rs("info")%></textarea></td>
 </tr>
-<tr bgcolor="#FFF">
+<tr>
 <td height="25" align="center" bgcolor="#F5F5F5">原图情况：</td>
 <td height="25" align="left">
 <%
@@ -238,7 +238,7 @@ response.write("　内部图片地址：<a href="&rs("pic_Url")&" target=_blank>"&rs("pi
 end if
 rs.close
 %>
-</td></tr><tr bgcolor="#FFF">
+</td></tr><tr>
 <td height="35" colspan="2" align="center"><input type="submit" name="Submit2" value="确 定 修 改"></td>
 </tr></form></table>
 <%

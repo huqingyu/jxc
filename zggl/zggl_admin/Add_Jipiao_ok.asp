@@ -158,13 +158,13 @@ function help()
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<br /><table border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<br /><table border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" background="Images/topBar_bg.gif"> 
+    <td height="30" background="images/admin_bg_1.gif"> 
     <div align="center"><font color="red"><b>лМ╪смЬу╬пбне</b></font></div>    </td>
   </tr>
   <tr> 
-    <td height="168" valign="top" bgcolor="#FFF"> 
+    <td height="168" valign="top"> 
       <form name="form1" method="post" action="addnews.asp?action=save" onSubmit="return checkdata()" onReset="return ResetForm();">
         <br />
         <table width="786" border="0" align="center" cellpadding="0" cellspacing="0">

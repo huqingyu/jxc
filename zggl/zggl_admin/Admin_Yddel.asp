@@ -47,8 +47,8 @@ end if
 set rs=conn.execute("select * from giveme where id="&id)
 %>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">  <tr>
-    <td height="30" background="Images/topBar_bg.gif">　　[必 填 项 目]</td>
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">  <tr>
+    <td height="30" background="images/admin_bg_1.gif">　　[必 填 项 目]</td>
   </tr>
 </table>
 
@@ -57,7 +57,7 @@ set rs=conn.execute("select * from giveme where id="&id)
     <td height="4"></td>
   </tr>
 </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">  <tr>
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">  <tr>
     <td height="22" bgcolor="#f5f5f5">　　线路名称：<%=rs("m_xianlu_name")%></td>
   </tr>
 </table>
@@ -66,31 +66,31 @@ set rs=conn.execute("select * from giveme where id="&id)
     <td height="4"></td>
   </tr>
 </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">  <tr bgcolor="#FFF">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">  <tr>
     <td width="131" height="22" align="center" bgcolor="#f5f5f5">姓　　名：</td>
     <td width="325"><%=rs("m_name")%></td>
     <td width="129" align="center" bgcolor="#f5f5f5"> 所在地址： </td>
     <td width="329"><%=rs("m_address")%></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="22" align="center" bgcolor="#f5f5f5"> 联系电话： </td>
     <td><%=rs("m_phone")%></td>
     <td align="center" bgcolor="#f5f5f5"> 来游人数： </td>
     <td><%=rs("m_renshuo")%></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="22" align="center" bgcolor="#f5f5f5"> 需要导游： </td>
     <td><%=rs("m_daoyou")%></td>
     <td align="center" bgcolor="#f5f5f5"> 希望拼团： </td>
     <td><%=rs("m_pingchuan")%></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="22" align="center" bgcolor="#f5f5f5"> 预订时间： </td>
     <td><%=rs("m_yudingtime")%></td>
     <td align="center" bgcolor="#f5f5f5"> 来游日期： </td>
     <td><%=rs("m_laiyoutime")%></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="22" align="center" bgcolor="#f5f5f5"> 反程日期： </td>
     <td><%=rs("m_huanchengtime")%></td>
     <td align="center" bgcolor="#f5f5f5"> 补充事项： </td>
@@ -102,8 +102,8 @@ set rs=conn.execute("select * from giveme where id="&id)
     <td height="4"></td>
   </tr>
 </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">  <tr>
-    <td height="30" background="Images/topBar_bg.gif">　　[其 它 信 息]</td>
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">  <tr>
+    <td height="30" background="images/admin_bg_1.gif">　　[其 它 信 息]</td>
   </tr>
 </table>
 <table width="618" border="0" cellspacing="0" cellpadding="0">
@@ -111,41 +111,41 @@ set rs=conn.execute("select * from giveme where id="&id)
     <td height="4"></td>
   </tr>
 </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">  <tr bgcolor="#FFF">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">  <tr>
     <td width="130" height="22" align="center" bgcolor="#f5f5f5">  OICQ： </td>
     <td width="326" height="22"><%=rs("m_oicq")%></td>
     <td width="129" height="22" align="center" bgcolor="#f5f5f5"> 年　　龄： </td>
     <td width="329" height="22"><%=rs("m_age")%></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="22" align="center" bgcolor="#f5f5f5"> 电子邮件： </td>
     <td height="22"><%=rs("m_email")%></td>
     <td height="22" align="center" bgcolor="#f5f5f5"> 主页地址： </td>
     <td height="22"><%=rs("m_homepage")%></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="22" align="center" bgcolor="#f5f5f5"> 手机号码： </td>
     <td height="22"><%=rs("m_shouji")%></td>
     <td height="22" align="center" bgcolor="#f5f5f5"> 传　　真： </td>
     <td height="22"><%=rs("m_fax")%></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="22" align="center" bgcolor="#f5f5f5"> 工作单位： </td>
     <td height="22"><%=rs("m_gongzuodanwei")%></td>
     <td height="22" align="center" bgcolor="#f5f5f5"> 身 份证： </td>
     <td height="22"><%=rs("m_zhengjian")%></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="22" align="center" bgcolor="#f5f5f5"> 邮政编码： </td>
     <td height="22"><%=rs("m_youbian")%></td>
     <td height="22" align="center" bgcolor="#f5f5f5">&nbsp;</td>
     <td height="22">&nbsp;</td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="60" align="center" bgcolor="#f5f5f5"> 您的想法： </td>
     <td height="60" colspan="3"><%=rs("m_mfk")%></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="60" align="center" bgcolor="#f5f5f5"> 备　　注： </td>
     <td height="60" colspan="3"><%=rs("m_mfk_1")%></td>
   </tr>
@@ -155,7 +155,7 @@ set rs=conn.execute("select * from giveme where id="&id)
     <td height="4"></td>
   </tr>
 </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">  <tr>
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">  <tr>
     <td height="35" align="center" bgcolor="#f5f5f5"><input name="Submit" type="button" onclick="window.history.go(-1);" value="后 退">
     &nbsp;<input name="button" type="button" onclick= "window.location='Admin_Yddel.asp?action=Upnyd&id=<%=rs("id")%> '" value="处理该订单" <% if rs("m_show")=true then Response.write("disabled=""true""") end if%> >
 </td>
@@ -172,7 +172,7 @@ end if
 set rs=conn.execute("select id,m_show,m_id,m_name,m_phone,m_yudingtime from giveme order by m_yudingtime desc")
 %>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">  <tr align="center" bgcolor="#f5f5f5">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">  <tr align="center" bgcolor="#f5f5f5">
     <td width="23%" height="24" bgcolor="#f5f5f5">预订人姓名</td>
     <td width="31%" height="24" bgcolor="#f5f5f5">预订人联系电话</td>
     <td width="15%" height="24" bgcolor="#f5f5f5">预订时间</td>
@@ -186,7 +186,7 @@ response.write("<tr align=""center""><td height=""24"" colspan=""6"" bgcolor=""#
 end if
 while not rs.eof
 %>
-  <tr align="center" bgcolor="#FFF">
+  <tr align="center">
     <td height="22">
 <%if not rs("m_show") then
 response.write("<img src=images/mfk34.gif>")
@@ -209,7 +209,7 @@ rs.close
     <td height="4"></td>
   </tr>
 </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">  <tr>
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">  <tr>
     <td height="35" align="center"><input type="button" name="Submit2" value="刷 新" onclick="window.location.reload();"></td>
   </tr>
 </table>

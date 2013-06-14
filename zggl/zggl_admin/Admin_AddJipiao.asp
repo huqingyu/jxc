@@ -64,9 +64,9 @@ function CheckForm()
 //-->
 </script>
 <form name="form1" method="post" action="Add_Jipiao_ok.asp">
-    <table width="65%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+    <table width="65%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
       <tr>
-        <td height="35" colspan="3" background="Images/topBar_bg.gif"><div align="center"><font color="#FF0000"><b>添加航班信息</b></font></div></td>
+        <td height="35" colspan="3" background="images/admin_bg_1.gif"><div align="center"><font color="#FF0000"><b>添加航班信息</b></font></div></td>
       </tr>
             <tr>
         <td width="207" height="25" bgcolor="#ebebeb"><div align="right">航班类型：</div></td>

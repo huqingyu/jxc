@@ -1,5 +1,5 @@
 <!--#include file="Index_Inc.asp" -->
-<!--#include file="Connection.asp" -->
+<!--#include file="../admin_common/conn.asp" -->
 <!--#include file="WebConfig.asp"-->
 <html>
 <head>

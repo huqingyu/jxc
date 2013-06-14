@@ -25,13 +25,13 @@ end if %>
 </head>
 <body>
 <br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" background="Images/topBar_bg.gif"> 
+    <td height="30" background="images/admin_bg_1.gif"> 
     <div align="center"><font color="#FF0000"><b>新闻修改删除</b></font></div>    </td>
   </tr>
   <tr> 
-    <td height="140" valign="top" bgcolor="#FFF"><br />
+    <td height="140" valign="top"><br />
       <%'开始分页
 				Const MaxPerPage=20 
    				dim totalPut   
@@ -91,7 +91,7 @@ end if %>
 	   			i=0
 
 			%>
-      <table width="98%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+      <table width="98%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
         <form name="form1" method="post" action="editnews.asp?action=del">
           <tr bgcolor="#f1f1f1"> 
             <td width="40%" height="22"> 
@@ -109,7 +109,7 @@ end if %>
             <td width="10%"><div align="center">生成html</div></td>
           </tr>
           <%do while not rs.eof%>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td style="PADDING-LEFT: 6px"><a href=newsedit.asp?id=<%=rs("id")%>><%=trim(rs("Title"))%></a></td>
             <td> 
               <div align="center"><%=trim(rs("Admin"))%></div>
@@ -130,7 +130,7 @@ end if %>
 		  loop
 		  rs.close
 		  set rs=nothing%>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td height="30" colspan="5"> 
               <div align="center"> 
                 <input type="submit" name="Submit" value="删除所选新闻"  class="go-wenbenkuang">

@@ -1,70 +1,39 @@
 Body
 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-        FONT-FAMILY: "Verdana, Arial, 宋体";
-	FONT-SIZE: 9pt;
-	text-decoration: none;
-	line-height: 150%;
-	background-color: #ffffff;
-	color: #666666;
-	FONT-SIZE: 9pt;
+	margin: 0;
+	font-size: 12px;
+	background-color: #FFF;
+	color: #666;
 	SCROLLBAR-FACE-COLOR: #eaeaea;
-	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFF;
 	SCROLLBAR-SHADOW-COLOR: #b9b9b9;
 	SCROLLBAR-3DLIGHT-COLOR: #b9b9b9;
-	SCROLLBAR-ARROW-COLOR: #666666;
+	SCROLLBAR-ARROW-COLOR: #666;
 	SCROLLBAR-TRACK-COLOR: #eaeaea;
-	SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
-}
-Td
-{
-	FONT-FAMILY: "Verdana, Arial, 宋体";
-	FONT-SIZE: 9pt;
-	color: #555555;
-}
-Input
-{
-	FONT-FAMILY: "Verdana, Arial, 宋体";
-	FONT-SIZE: 9pt;
-	color: #555555;
-
+	SCROLLBAR-DARKSHADOW-COLOR: #FFF;
 }
 checkbox
 {
-	FONT-FAMILY: "Verdana, Arial, 宋体";
-	FONT-SIZE: 9pt;
-	color: #555555;
 	border: 0px;
 }
 Textarea
 {
-	FONT-FAMILY: "Verdana, Arial, 宋体";
-	FONT-SIZE: 9pt;
-	color: #555555;
 	background-color: #fefefe;
 	border: 1px solid #555555;
 }
 Button
 {
-	FONT-FAMILY: "Verdana, Arial, 宋体";
-	FONT-SIZE: 9pt;
-	color: #555555;
 	background-color: #cccccc;
 	border: 1px solid #555555;
 }
 Select
 {
-	FONT-FAMILY: "Verdana, Arial, 宋体";
-	FONT-SIZE: 9pt;
-	color: #555555;
 	background-color: #fefefe;
 	border: 1px solid #555555;
 }
 A
 {
 	TEXT-DECORATION: none;
-	color: #555555;
 }
 A:hover
 {

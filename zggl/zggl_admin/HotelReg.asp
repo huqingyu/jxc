@@ -217,10 +217,10 @@ openScript('upload.asp?UP=admin',300,100);
 <body>
 <FORM ACTION="hotelSubmit.asp" METHOD="POST" NAME="FORM1" onsubmit="return form1_onsubmit()">
 <br /><br /><br />
-            <table width="65%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+            <table width="65%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
               <tbody>
-                <tr background="Images/topBar_bg.gif">
-                  <td height="30" colspan=2 background="Images/topBar_bg.gif" align="center"><font color="red"><b>酒店信息登记</b></font></td>
+                <tr background="images/admin_bg_1.gif">
+                  <td height="30" colspan=2 background="images/admin_bg_1.gif" align="center"><font color="red"><b>酒店信息登记</b></font></td>
                 </tr>
                 <tr>
                   <td width=112 height=25 align="right" bgcolor=#EBEBEB >酒店名称：</td>
@@ -376,7 +376,7 @@ set rs_s=nothing
                   </font></td>
                 </tr>
                 <tr>
-                  <td height="35" colspan=2 background="Images/topBar_bg.gif">
+                  <td height="35" colspan=2 background="images/admin_bg_1.gif">
                     <p align="center">
                       <input type=SUBMIT value=" 添 加 " class="medium" onClick="javascript:return checksignup()" name="signup_submit">
 &nbsp;&nbsp;

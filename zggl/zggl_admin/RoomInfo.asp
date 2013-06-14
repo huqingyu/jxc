@@ -26,17 +26,17 @@ Else
 call list
 End if
 Sub list()%>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
-<TBODY><TR><TD height="30" background="Images/topBar_bg.gif" colspan="2">&nbsp;&nbsp;已登记的房型信息</TD>
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
+<TBODY><TR><TD height="30" background="images/admin_bg_1.gif" colspan="2">&nbsp;&nbsp;已登记的房型信息</TD>
 </TR><TD height="25" colspan="2">&nbsp;</TD>
 </TR><TR><TD colspan="2">
-<table width="98%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
-<tr><td width="18%" height="25" align="center" background="Images/topBar_bg.gif">所属酒店</td>
-<td width="11%" align="center" background="Images/topBar_bg.gif">房型</td>
-<td width="9%" align="center" background="Images/topBar_bg.gif">首日房态</td>
-<td width="11%" align="center" background="Images/topBar_bg.gif">门市价格</td>
-<td width="11%" align="center" background="Images/topBar_bg.gif">前台现付价</td>
-<td width="8%" align="center" background="Images/topBar_bg.gif">操作</td></tr>
+<table width="98%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
+<tr><td width="18%" height="25" align="center" background="images/admin_bg_1.gif">所属酒店</td>
+<td width="11%" align="center" background="images/admin_bg_1.gif">房型</td>
+<td width="9%" align="center" background="images/admin_bg_1.gif">首日房态</td>
+<td width="11%" align="center" background="images/admin_bg_1.gif">门市价格</td>
+<td width="11%" align="center" background="images/admin_bg_1.gif">前台现付价</td>
+<td width="8%" align="center" background="images/admin_bg_1.gif">操作</td></tr>
 <%
 if not rs.eof then
 rs.PageSize =20 '每页记录条数

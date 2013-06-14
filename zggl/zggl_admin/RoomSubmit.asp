@@ -36,9 +36,9 @@ end if
 <meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <link href="css/style.css" rel="stylesheet">
 </head><body><div align="center">
-<TABLE border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<TABLE border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <TBODY><TR>
-<TD width="431" height="30" background="../Images/topBar_bg.gif"><div align="center"><font color="red">酒店登记成功</font></div></TD></TR>
+<TD width="431" height="30" background="../images/admin_bg_1.gif"><div align="center"><font color="red">酒店登记成功</font></div></TD></TR>
 <TR><TD width="431" height="74" valign="middle"><div align="center">  房型：<%=request.form("roomtype")%> 注册成功!  
 </div></TD></TR>
 <TR><TD width="431" height="35"><p align="center">

@@ -36,28 +36,16 @@ response.write "<script>alert('更改成功！');window.location.href='Admin_mb.asp';
 response.End
 end if
 %>
-<table border="0" align="center" cellpadding="0" cellspacing="0">
 <form name="form" method="post" action="Html_hotelInfo.asp?action=save" onReset="return ResetForm();">
+<table border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
     <td height="47" colspan="2"><div align="center"><b><font color="red">酒店内容页模板(html)</font></b></div></td>
-  </tr>
-  <tr>
-    <td height="47" colspan="2"><div align="center"><font color="088000"><br />
-注: 网站名称(WebName); 管理邮件(WebEmail); 地址(Dizhi); 邮编(YouBian); 电话(DianHua)<br />
-<br />
-版权(Copyright); 网站标志(WebLogo); 网站banner(WebBanner); 网站地址(WebUrl); 网站公告(Gonggao)<br />
-<br />
-最新酒店信息(Left_Hotel_Top); 最新线路信息(Left_Xl_Top); 网络调查(Left_View_Top)<br />
-<br />
-热点酒店(Hotel_Hot); 酒店详细信息(Hotel_Info)<br />
-<br />
-    </font></div></td>
   </tr>
   <tr>
     <td height="500" colspan="2"><div align="center">
 <% set rs=server.createobject("adodb.recordset")
 rs.open ("select mb_hotel_show from mb"),conn,1,1
-%><textarea name="mb_hotel_show" cols="90" rows="48"><%=rs("mb_hotel_show")%></textarea>
+%><textarea name="mb_hotel_show" cols="90" rows="38"><%=rs("mb_hotel_show")%></textarea>
 <% rs.close %></div></td>
   </tr>
   <tr>
@@ -68,7 +56,15 @@ rs.open ("select mb_hotel_show from mb"),conn,1,1
       <input type="reset" name="Submit2" value="取消修改">
     </div></td>
   </tr>
-</form>
+
 </table>
+</form>
+<div style="text-align:left;margin-left:200px">
+<font color="088000"><br />
+注: 网站名称(WebName); 管理邮件(WebEmail); 地址(Dizhi); 邮编(YouBian); 电话(DianHua)<br />
+版权(Copyright); 网站标志(WebLogo); 网站banner(WebBanner); 网站地址(WebUrl); 网站公告(Gonggao)<br />
+最新酒店信息(Left_Hotel_Top); 最新线路信息(Left_Xl_Top); 网络调查(Left_View_Top)<br />
+热点酒店(Hotel_Hot); 酒店详细信息(Hotel_Info)<br />
+</font></div>
 </body>
 </html>

@@ -11,6 +11,7 @@ BODY {
 	SCROLLBAR-ARROW-COLOR: #FFF;
 	SCROLLBAR-TRACK-COLOR: #aabfec;
 	SCROLLBAR-DARKSHADOW-COLOR: #799ae1;
+	width:90%
 }
 a {
 	font-size:13px;

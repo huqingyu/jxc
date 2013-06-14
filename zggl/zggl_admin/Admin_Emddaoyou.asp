@@ -14,13 +14,13 @@ end if
 <body>
 <br />
 <!--#include file="admin_common/conn.asp" -->
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" background="Images/topBar_bg.gif"> 
+    <td height="30" background="images/admin_bg_1.gif"> 
     <div align="center"><font color="#FF0000"><b>导游修改删除</b></font></div>    </td>
   </tr>
   <tr> 
-    <td height="140" valign="top" bgcolor="#FFF"><br />
+    <td height="140" valign="top"><br />
       <%'开始分页
 				Const MaxPerPage=20 
    				dim totalPut   
@@ -80,7 +80,7 @@ end if
 	   			i=0
 
 			%>
-      <table width="98%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+      <table width="98%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
           <tr bgcolor="#f1f1f1"> 
            <td width="15%" height="25" bgcolor="#f1f1f1"> 
             <div align="center">ID号</div>            </td>
@@ -93,8 +93,8 @@ end if
             <td width="20%"><div align="center">删 除</div></td>
           </tr>
           <%do while not rs.eof%>
-          <tr bgcolor="#FFF"> 
-            <td height="20" bgcolor="#FFF"> 
+          <tr> 
+            <td height="20"> 
             <div align="center"><%=trim(rs("id"))%></div>            </td>
             <td> 
               <div align="center"><%=rs("D_name")%></div>

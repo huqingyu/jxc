@@ -33,16 +33,16 @@ end if
 rs.close
 conn.close
 Sub list()%>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
-<TBODY><TR ><TD height="30" background="Images/topBar_bg.gif">&nbsp;</TD></TR>
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
+<TBODY><TR ><TD height="30" background="images/admin_bg_1.gif">&nbsp;</TD></TR>
 <TR><TD height="25">&nbsp;&nbsp;已登记的酒店信息</TD></TR><TR><TD height="15">
-<table width="99%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
-<tr><td width="9%" height="25" align="center" background="Images/topBar_bg.gif">酒店编号</td>
-<td width="19%" align="center" background="Images/topBar_bg.gif">酒店名称</td>
-<td width="9%" align="center" background="Images/topBar_bg.gif">星级</td>
-<td width="16%" align="center" background="Images/topBar_bg.gif">发布状态</td>
-<td width="10%" align="center" background="Images/topBar_bg.gif">所在市县</td>
-<td width="37%" align="center" background="Images/topBar_bg.gif">操作</td></tr>
+<table width="99%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
+<tr><td width="9%" height="25" align="center" background="images/admin_bg_1.gif">酒店编号</td>
+<td width="19%" align="center" background="images/admin_bg_1.gif">酒店名称</td>
+<td width="9%" align="center" background="images/admin_bg_1.gif">星级</td>
+<td width="16%" align="center" background="images/admin_bg_1.gif">发布状态</td>
+<td width="10%" align="center" background="images/admin_bg_1.gif">所在市县</td>
+<td width="37%" align="center" background="images/admin_bg_1.gif">操作</td></tr>
 <%
 set strs=server.createobject("adodb.recordset")
 stsql="select * from hotelb order by id desc"
@@ -110,13 +110,13 @@ End sub
 %>        
 <%      
 Sub showempty()%>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
-<tr><td width="5%" height="25" align="center" background="Images/topBar_bg.gif">酒店编号</td>
-<td width="14%" align="center" background="Images/topBar_bg.gif">酒店名称</td>
-<td width="10%" align="center" background="Images/topBar_bg.gif">星级</td>
-<td width="6%" align="center" background="Images/topBar_bg.gif">所在省份</td>
-<td width="8%" align="center" background="Images/topBar_bg.gif">所在市县</td>
-<td width="12%" align="center" background="Images/topBar_bg.gif">操作</td></tr><tr>
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
+<tr><td width="5%" height="25" align="center" background="images/admin_bg_1.gif">酒店编号</td>
+<td width="14%" align="center" background="images/admin_bg_1.gif">酒店名称</td>
+<td width="10%" align="center" background="images/admin_bg_1.gif">星级</td>
+<td width="6%" align="center" background="images/admin_bg_1.gif">所在省份</td>
+<td width="8%" align="center" background="images/admin_bg_1.gif">所在市县</td>
+<td width="12%" align="center" background="images/admin_bg_1.gif">操作</td></tr><tr>
 <td width="55%" align="center" height="23" colspan="6"> 无相关信息！</td></tr></table><br />
 <%
 End sub

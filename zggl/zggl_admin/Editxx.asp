@@ -142,40 +142,40 @@ function help()
 action=request.QueryString("action")
 select case action
 case ""%>
-                        <table width="100%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+                        <table width="100%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
                           <tr> 
-                            <td height="30" background="Images/topBar_bg.gif"> 
+                            <td height="30" background="images/admin_bg_1.gif"> 
                             <div align="center"><font color="#000000">网站其它信息设置</font></div>                            </td>
                           </tr>
                           <tr> 
-                            <td height="64" bgcolor="#FFF"><br />
+                            <td height="64"><br />
                               <table width="80%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC">
-                                <tr bgcolor="#FFF" align="center"> 
+                                <tr align="center"> 
                                   <td width="27%" height="22"> <a href="editxx.asp?action=huikuanfangshi">付款方式</a></td>
                                   <td width="34%" height="22"><a href="editxx.asp?action=changjianwenti">常见问题</a> </td>
                                   <td width="39%" height="22">&nbsp; </td>
                                 </tr>
-                                <tr bgcolor="#FFF" align="center"> 
+                                <tr align="center"> 
                                   <td height="22"> <a href="editxx.asp?action=jiaoyitiaokuan">交易条款</a></td>
                                   <td height="22"><a href="editxx.asp?action=gongzuoshijian">我们的工作时间</a> </td>
                                   <td height="22">&nbsp; </td>
                                 </tr>
-                                <tr bgcolor="#FFF" align="center"> 
+                                <tr align="center"> 
                                   <td height="22"><a href="editxx.asp?action=vip">VIP特惠</a></td>
                                   <td height="22"><a href="editxx.asp?action=shiyongfalv">适用法律和版权声明</a></td>
                                   <td height="22">&nbsp;</td>
                                 </tr>
-                                <tr bgcolor="#FFF" align="center"> 
+                                <tr align="center"> 
                                   <td height="22"><a href="editxx.asp?action=about">关于本站</a></td>
                                   <td height="22"><a href="editxx.asp?action=regtiaoyue">更改注册条约</a> </td>
                                   <td height="22">&nbsp; </td>
                                 </tr>
-                                <tr bgcolor="#FFF" align="center"> 
+                                <tr align="center"> 
                                   <td height="22"><a href="editxx.asp?action=gouwuliucheng">消费流程</a> </td>
                                   <td height="22"><a href="editxx.asp?action=jifen">积分奖励</a> </td>
                                   <td height="22">&nbsp; </td>
                                 </tr>
-                                <tr bgcolor="#FFF" align="center"> 
+                                <tr align="center"> 
                                   <td height="22"><a href="editxx.asp?action=lxwm">联系我们</a> </td>
                                   <td height="22">&nbsp;</td>
                                   <td height="22">&nbsp; </td>
@@ -186,9 +186,9 @@ case ""%>
                           </tr>
                         </table>
 <%case else%>
-                        <table width="100%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+                        <table width="100%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
                           <tr> 
-                            <td align="center" height="30" background="Images/topBar_bg.gif"> <font color="#000000"> 
+                            <td align="center" height="30" background="images/admin_bg_1.gif"> <font color="#000000"> 
                               <%
 if action="huikuanfangshi" then response.write "付 款 方 式"
 if action="gouwuliucheng" then response.write "消 费 流 程"
@@ -205,7 +205,7 @@ if action="shiyongfalv" then response.write "适用法律和版权声明"
                             </font> </td>
                           </tr>
                           <tr> 
-                            <td height="83" bgcolor="#FFF"><br />
+                            <td height="83"><br />
                               <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
                                 <form name="form1" method="post" action="savexx.asp?action=<%=action%>" OnSubmit="return checkdata()" onReset="return ResetForm();">
                                   <tr> 

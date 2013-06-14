@@ -34,33 +34,33 @@ return false;
 }
 </script>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <form action="?action=addok" method="post" name="form1" onSubmit="return check();">
   <tr bgcolor="#f5f5f5">
-    <td width="22%" height="30" background="Images/topBar_bg.gif">&nbsp;</td>
-    <td width="44%" align="center" background="Images/topBar_bg.gif" bgcolor="#f5f5f5">内　　容</td>
-    <td width="34%" align="center" background="Images/topBar_bg.gif" bgcolor="#f5f5f5">说　　明</td>
+    <td width="22%" height="30" background="images/admin_bg_1.gif">&nbsp;</td>
+    <td width="44%" align="center" background="images/admin_bg_1.gif" bgcolor="#f5f5f5">内　　容</td>
+    <td width="34%" align="center" background="images/admin_bg_1.gif" bgcolor="#f5f5f5">说　　明</td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="28" align="center" bgcolor="#f5f5f5">类别名称：</td>
     <td>　
     <input name="t1" type="text" id="t1" size="25" maxlength="40">    </td>
     <td>　40汉字以内。*必填</td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="28" align="center" bgcolor="#f5f5f5">相对说明：</td>
     <td>　
     <input name="t2" type="text" id="t2" size="30" maxlength="50">    </td>
     <td> 　50汉字以内。*可选</td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="28" align="center" bgcolor="#f5f5f5">排序情况：</td>
     <td>　
     <input name="t3" type="text" id="t3" size="10">
     *可选</td>
     <td>　默认排序情况，数字越大排得越前</td>
   </tr>
-  <tr align="center" bgcolor="#FFF">
+  <tr align="center">
     <td height="30" colspan="3"><input type="submit" name="Submit" value="确 定 添 加"></td>
   </tr>
 </form>
@@ -83,18 +83,18 @@ sub del
 set rs=conn.execute("select * from Picboard order by xid desc")
 %>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr align="center" bgcolor="#f5f5f5">
-    <td width="9%" height="30" background="Images/topBar_bg.gif">ID</td>
-    <td width="33%" background="Images/topBar_bg.gif">类别名称</td>
-    <td width="37%" background="Images/topBar_bg.gif">相对说明</td>
-    <td width="10%" background="Images/topBar_bg.gif">排序</td>
-    <td width="11%" background="Images/topBar_bg.gif">删除</td>
+    <td width="9%" height="30" background="images/admin_bg_1.gif">ID</td>
+    <td width="33%" background="images/admin_bg_1.gif">类别名称</td>
+    <td width="37%" background="images/admin_bg_1.gif">相对说明</td>
+    <td width="10%" background="images/admin_bg_1.gif">排序</td>
+    <td width="11%" background="images/admin_bg_1.gif">删除</td>
   </tr>
 <%
 while not rs.eof
 %>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="26" align="center"><%=rs("id")%></td>
     <td>　<%=rs("board")%></td>
     <td>　<%=rs("bio")%></td>
@@ -106,7 +106,7 @@ rs.movenext
 wend
 rs.close
 %>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="26" colspan="5" align="center">要删除类，请先确认已经没有此类别的图片。如有此类别的图片删除不成功。</td>
   </tr>
 </table>
@@ -137,18 +137,18 @@ end if
 set rs=conn.execute("select * from Picboard order by xid desc")
 %>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr align="center" bgcolor="#f5f5f5">
-    <td width="9%" height="30" background="Images/topBar_bg.gif">ID</td>
-    <td width="33%" background="Images/topBar_bg.gif">类别名称</td>
-    <td width="37%" background="Images/topBar_bg.gif">相对说明</td>
-    <td width="10%" background="Images/topBar_bg.gif">排序</td>
-    <td width="11%" background="Images/topBar_bg.gif">修改</td>
+    <td width="9%" height="30" background="images/admin_bg_1.gif">ID</td>
+    <td width="33%" background="images/admin_bg_1.gif">类别名称</td>
+    <td width="37%" background="images/admin_bg_1.gif">相对说明</td>
+    <td width="10%" background="images/admin_bg_1.gif">排序</td>
+    <td width="11%" background="images/admin_bg_1.gif">修改</td>
   </tr>
   <%
   while not rs.eof
   %>
-  <tr bgcolor="#FFF">
+  <tr>
 <form action="?action=editok" method="post" name="form<%=rs("id")%>">
     <td height="26" align="center"><input name="id" type="hidden" size="2" value=<%=rs("id")%> readonly><%=rs("id")%></td>
     <td align="center"><input name="board" type="text" size="25" value=<%=rs("board")%>></td>
@@ -161,7 +161,7 @@ set rs=conn.execute("select * from Picboard order by xid desc")
 rs.movenext
 wend
 %>
-<tr align="center" bgcolor="#FFF">
+<tr align="center">
   <td height="26" colspan="5">排序数字的大小与排序的前后成正比。</td>
 </tr>
 </table>

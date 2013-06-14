@@ -49,10 +49,10 @@ if(document.FORM1.stageprice.value.length<1)
 <br />
 <br />
 <% sub new_room() %>
-<table width="50%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="50%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
               <TBODY>
               <TR>
-                <TD colSpan=2 height="32" background="Images/topBar_bg.gif"><div align="center"><font color="#FF0000"><b>房型信息登记</b></font></div></TD></TR>
+                <TD colSpan=2 height="32" background="images/admin_bg_1.gif"><div align="center"><font color="#FF0000"><b>房型信息登记</b></font></div></TD></TR>
               <tr>
                 <TD width=152 height=25 align="right" bgColor=#ebebeb>房间类型：</TD>
                 <TD width=337 height=25><font color="#FF0000">
@@ -111,15 +111,15 @@ if(document.FORM1.stageprice.value.length<1)
                 </TD>                                  
               </tr>
                <TR>
-                <TD colSpan=2 height="35" background="Images/topBar_bg.gif"><p align="center">
+                <TD colSpan=2 height="35" background="images/admin_bg_1.gif"><p align="center">
 <INPUT TYPE=SUBMIT VALUE=" 添 加 " CLASS="medium" ONCLICK="javascript:return checksignup()" NAME="signup_submit">
  &nbsp;&nbsp;<INPUT TYPE=RESET VALUE="重 填" CLASS="medium" NAME="signup_reset">      
 </TD></TR></TBODY></TABLE><% end sub %>
 <% sub hotel_room() %>
-<table width="50%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="50%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <TBODY>
     <TR>
-      <TD colSpan=2 height="32" background="Images/topBar_bg.gif"><div align="center"><font color="#FF0000"><b>房型信息登记</b></font></div></TD>
+      <TD colSpan=2 height="32" background="images/admin_bg_1.gif"><div align="center"><font color="#FF0000"><b>房型信息登记</b></font></div></TD>
     </TR>
     <tr>
       <TD width=152 height=25 align="right" bgColor=#ebebeb>房间类型：</TD>
@@ -174,7 +174,7 @@ if(document.FORM1.stageprice.value.length<1)
       </TD>
     </tr>
     <TR>
-      <TD colSpan=2 height="35" background="Images/topBar_bg.gif"><p align="center">
+      <TD colSpan=2 height="35" background="images/admin_bg_1.gif"><p align="center">
           <INPUT NAME="signup_submit" TYPE=SUBMIT CLASS="medium" id="signup_submit" ONCLICK="javascript:return checksignup()" VALUE=" 添 加 ">
 &nbsp;&nbsp;
           <INPUT NAME="signup_reset" TYPE=RESET CLASS="medium" id="signup_reset" VALUE="重 填">

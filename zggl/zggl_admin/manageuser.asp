@@ -97,9 +97,9 @@ end if
 	   			i=0
 
 			%>
-<br /><table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<br /><table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" colspan="4" background="Images/topBar_bg.gif"> 
+    <td height="30" colspan="4" background="images/admin_bg_1.gif"> 
     <div align="center"><font color="#ff0000">网站用户管理</font></div>    </td>
   </tr>
   <tr align="center" bgcolor="f1f1f1"> 
@@ -108,9 +108,9 @@ end if
     <td height="22"> <a href="manageuser.asp?action=vip">VIP用户</a></td>
 	<td height="22"> <a href="manageuser.asp?action=qy">企业用户</a></td>
   </tr>
-  <tr bgcolor="#FFF"> 
+  <tr> 
       <td height="237" colspan="4"><br />
-        <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+        <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
           <tr bgcolor="#f1f1f1"> 
             <td width="17%" height="25" bgcolor="#f1f1f1"> 
             <div align="center">会员号码</div>            </td>
@@ -129,7 +129,7 @@ end if
             </td>
           </tr>
           <%do while not rs.eof%>
-          <tr bgcolor="#FFF"> 
+          <tr> 
             <td height="21"> 
             <div align="center"><%=rs("id")%></div></td>
             <td><div align="center"><a href=listuser.asp?id=<%=rs("id")%>><%=trim(rs("username"))%></a></div></td>
@@ -190,13 +190,13 @@ end if
 				End Function  
 			%>
 <br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 
-    <td height="30" background="Images/topBar_bg.gif"> 
+    <td height="30" background="images/admin_bg_1.gif"> 
     <div align="center"> <font color="#000000">搜 索 用 户</font> </div>    </td>
   </tr>
   <tr> 
-    <td height="59" bgcolor="#FFF"> 
+    <td height="59"> 
       <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr> 
           <form name="form2" method="post" action="manageuser.asp?action=select">

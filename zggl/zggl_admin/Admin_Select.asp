@@ -29,7 +29,7 @@ return false;
 
 <div align="center">
 <br /><br /><br />  
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
     <tr>
       <td height="22" bgcolor="#f5f5f5">　　[按客户资料查询]</td>
     </tr>
@@ -39,7 +39,7 @@ return false;
       <td height="4"></td>
     </tr>
   </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">    <form action="?action=kf" method="post" name="form1" onSubmit="return check();">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">    <form action="?action=kf" method="post" name="form1" onSubmit="return check();">
       <tr>
         <td height="30" align="center" bgcolor="#f5f5f5">请输入：
           <input name="text1" type="text" id="text1" size="30">
@@ -48,7 +48,7 @@ return false;
       </tr>
       <tr>
         <td height="51"><table width="100%" border="0" cellpadding="0" cellspacing="0">
-          <tr align="center" bgcolor="#FFF">
+          <tr align="center">
             <td width="16%" height="24"><input type="radio" name="radiobutton" value="m_name" checked>
     客户名称</td>
             <td width="16%" height="24"><input type="radio" name="radiobutton" value="m_address">
@@ -62,7 +62,7 @@ return false;
             <td width="20%" height="24"><input type="radio" name="radiobutton" value="m_phone">
     电　　话</td>
           </tr>
-          <tr align="center" bgcolor="#FFF">
+          <tr align="center">
             <td width="16%" height="24"><input type="radio" name="radiobutton" value="m_zhengjian">　            身份证</td>
             <td width="16%" height="24"><input type="radio" name="radiobutton" value="m_youbian">
     邮　　编</td>
@@ -84,7 +84,7 @@ return false;
       <td height="4"></td>
     </tr>
   </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">    <tr>
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">    <tr>
       <td height="22" bgcolor="#f5f5f5">　　[按指定线路查询]</td>
     </tr>
   </table>
@@ -93,7 +93,7 @@ return false;
       <td height="4"></td>
     </tr>
   </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">    <form action="?action=xlselect" method="post" name="form2" onsubmit="return checka();">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">    <form action="?action=xlselect" method="post" name="form2" onsubmit="return checka();">
       <tr>
         <td height="24" align="center" bgcolor="#f5f5f5" >请输入线路ID号：
         <input name="xlid" type="text" id="xlid" size="15">
@@ -126,7 +126,7 @@ set rs=conn.execute(sql)
       <td height="4"></td>
     </tr>
   </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">    <tr>
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">    <tr>
       <td height="22" bgcolor="#f5f5f5">　　[查 询 结 果]</td>
     </tr>
   </table>
@@ -135,7 +135,7 @@ set rs=conn.execute(sql)
       <td height="4"></td>
     </tr>
   </table>
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">    <tr align="center" bgcolor="#f5f5f5">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">    <tr align="center" bgcolor="#f5f5f5">
       <td width="321" height="22">线路名称</td>
       <td width="87">客户姓名</td>
       <td width="120">预订时间</td>
@@ -147,7 +147,7 @@ response.write("<tr align=""center""><td height=""24"" colspan=""5"" bgcolor=""#
 end if
 while not rs.eof
 %>
-    <tr bgcolor="#FFF">
+    <tr>
       <td height="22"><a href="../Xl/Xl_<%=rs("m_id")%>.html" target=_blank title="点击查看线路详情"><%=rs("m_xianlu_name")%></a></td>
       <td align="center"><a href="admin_yddel.asp?action=look&id=<%=rs("id")%>" title="点击查看预订详情"><%=rs("m_name")%></a></td>
       <td align="center"><%=rs("m_yudingtime")%></td>

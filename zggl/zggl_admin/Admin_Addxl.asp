@@ -44,29 +44,29 @@ return false;
 }
 </script>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <form action="?action=addok" method="post" enctype="multipart/form-data" name="form1" onSubmit="return check();">
   <tr>
-    <td height="30" colspan="2" align="center" background="Images/topBar_bg.gif"><b><font color="red">添加线路</font></b></td>
+    <td height="30" colspan="2" align="center" background="images/admin_bg_1.gif"><b><font color="red">添加线路</font></b></td>
     </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td width="187" height="25" align="center" bgcolor="#f5f5f5">线路名称：</td>
-    <td width="731" bgcolor="#FFF">　
+    <td width="731">　
       <input name="ta" type="text" id="ta" size="50"></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="25" align="center" bgcolor="#f5f5f5">线路报价：</td>
     <td>　
     <input name="tb" type="text" id="tb" size="15">
     请用统一简结格式：XXXRMB/人、XXX人民币/人</td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="25" align="center" bgcolor="#f5f5f5">线路类型：</td>
     <td>　
     <input name="tc" type="text" id="tc" size="15">
     如：常规线、精品线 等 </td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="25" align="center" bgcolor="#f5f5f5">线路类别：</td>
     <td>　
       <select name="td" id="td">
@@ -81,7 +81,7 @@ rs.close
       </select>
     请先择。如没有类型，请先建立类别后再添加线路</td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="25" align="center" bgcolor="#f5f5f5">是否置顶：</td>
     <td> 　 
       <select name="x_top" id="x_top">
@@ -90,41 +90,41 @@ rs.close
       </select>
       置顶后，此线路总是显示在最前面</td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="25" align="center" bgcolor="#f5f5f5">线路时间：</td>
     <td>　
     <input name="te" type="text" id="te" size="20">
     请用统一简结格式：三天二晚游、四日五晚游 等 </td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="110" align="center" bgcolor="#f5f5f5">行程安排：</td>
     <td height="110">　
     <textarea name="tf" cols="60" rows="6" id="tf">无</textarea></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="110" align="center" bgcolor="#f5f5f5">线路途经景点：</td>
     <td height="110">　
     <textarea name="tg" cols="60" rows="6" id="tg">无</textarea></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="110" align="center" bgcolor="#f5f5f5">线路、行程说明：</td>
     <td height="110">　
     <textarea name="th" cols="60" rows="6" id="th">无</textarea></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="110" align="center" bgcolor="#f5f5f5">备　　　注：</td>
     <td height="110">　
       <textarea name="tk" cols="60" rows="6" id="tk">无</textarea></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="24" align="center" bgcolor="#f5f5f5">线路景点图片：</td>
     <td>　    
 	<input name="ttt" type="file" id="ttt" size="40">    </td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="24" colspan="2">　　*上传文件类型为：gif,jpg,bmp，大小<2M。除图片外所有项均为必填写项。</td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="35" colspan="2" align="center"><input type="submit" name="Submit" value="确 定 添 加"></td>
     </tr>
 </form>
@@ -187,11 +187,11 @@ rs1.close
 </tr></table>
 
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr bgcolor="#f5f5f5">
-    <td width="728" height="30" align="center" background="Images/topBar_bg.gif">前15条线路名称，更多请点击上面分类(点击查看详细信息)</td>
-    <td width="93" align="center" background="Images/topBar_bg.gif">图片</td>
-    <td width="95" align="center" background="Images/topBar_bg.gif">删除</td>
+    <td width="728" height="30" align="center" background="images/admin_bg_1.gif">前15条线路名称，更多请点击上面分类(点击查看详细信息)</td>
+    <td width="93" align="center" background="images/admin_bg_1.gif">图片</td>
+    <td width="95" align="center" background="images/admin_bg_1.gif">删除</td>
   </tr>
 <%
 dim id
@@ -271,13 +271,13 @@ rs.close
 %>
 </tr></table>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr align="center" bgcolor="#f5f5f5">
-    <td width="477" height="30" background="Images/topBar_bg.gif">前15条线路名称，更多请点击上面分类(点击查看详细信息)</td>
-    <td width="196" height="30" background="Images/topBar_bg.gif">线路状态</td>
-    <td width="89" background="Images/topBar_bg.gif">类别标识</td>
-    <td width="94" background="Images/topBar_bg.gif">生成html</td>
-    <td width="56" background="Images/topBar_bg.gif" bgcolor="#f5f5f5">编辑</td>
+    <td width="477" height="30" background="images/admin_bg_1.gif">前15条线路名称，更多请点击上面分类(点击查看详细信息)</td>
+    <td width="196" height="30" background="images/admin_bg_1.gif">线路状态</td>
+    <td width="89" background="images/admin_bg_1.gif">类别标识</td>
+    <td width="94" background="images/admin_bg_1.gif">生成html</td>
+    <td width="56" background="images/admin_bg_1.gif" bgcolor="#f5f5f5">编辑</td>
   </tr>
 <%
 dim id
@@ -290,7 +290,7 @@ end if
 set er=conn.execute(tt)
 while not er.eof
 %>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="24">
 <%
 if trim(er("x_top"))=1 then
@@ -361,28 +361,28 @@ return false;
 }
 </script>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <form action="?action=editok1" method="post" enctype="multipart/form-data" name="form1" onSubmit="return check();">
   <tr>
-    <td height="30" colspan="2" align="center" background="Images/topBar_bg.gif"><b><font color="red">编辑线路</font></b></td>
+    <td height="30" colspan="2" align="center" background="images/admin_bg_1.gif"><b><font color="red">编辑线路</font></b></td>
     </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td width="204" height="25" align="center" bgcolor="#f5f5f5">线路名称：</td>
-    <td width="714" bgcolor="#FFF">　
+    <td width="714">　
       <input name="ta" type="text" id="ta4" value="<%=rs("x_name")%>" size="50">
       <input name="xid" type="hidden" value="<%=rs("id")%>"></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="25" align="center" bgcolor="#f5f5f5">线路报价：</td>
     <td>　
     <input name="tb" type="text" id="tb" value="<%=rs("x_baojia")%>" size="15">    </td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="25" align="center" bgcolor="#f5f5f5">线路类型：</td>
     <td>　
     <input name="tc" type="text" id="tc" value="<%=rs("x_leixun")%>" size="15"></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="25" align="center" bgcolor="#f5f5f5">线路类别：</td>
     <td>　
       <select name="td" id="td">
@@ -403,7 +403,7 @@ leirs.close
       </select>
 </td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="25" align="center" bgcolor="#f5f5f5">置顶情况：</td>
     <td>　
       <select name="x_top">
@@ -411,37 +411,37 @@ leirs.close
         <option value="1" <%if trim(rs("x_top"))=1 then response.write("selected")%>>置　顶</option>
       </select></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="25" align="center" bgcolor="#f5f5f5">线路时间：</td>
     <td>　
     <input name="te" type="text" id="te" value="<%=rs("x_shijian")%>" size="20">    </td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="110" align="center" bgcolor="#f5f5f5">行程安排：</td>
     <td height="110">　
     <textarea name="tf" cols="60" rows="6" id="tf"><%=rs("x_anpai")%></textarea></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="110" align="center" bgcolor="#f5f5f5">线路途经景点：</td>
     <td height="110">　
     <textarea name="tg" cols="60" rows="6" id="tg"><%=rs("x_jingdian")%></textarea></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="110" align="center" bgcolor="#f5f5f5">线路、行程说明：</td>
     <td height="110">　
     <textarea name="th" cols="60" rows="6" id="th"><%=rs("x_shuoming")%></textarea></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="110" align="center" bgcolor="#f5f5f5">备　　　注：</td>
     <td height="110">　
       <textarea name="tk" cols="60" rows="6" id="tk"><%=rs("x_zhushi")%></textarea></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="24" align="center" bgcolor="#f5f5f5">线路景点图片：</td>
     <td>　    
 	<input name="ttt" type="file" id="ttt" size="40"><input name="rimg" type="hidden" value="<%=rs("x_jingdiantupian")%>">    </td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="36" align="center" bgcolor="#f5f5f5">原图片情况：</td>
     <td height="36"><%
 if instr(rs("x_jingdiantupian"),"XlUploadImages/")=0 then
@@ -452,10 +452,10 @@ response.write("　内部图片地址：<a href="&rs("x_jingdiantupian")&" target=_blank
 end if
 	%></td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="24" colspan="2">　　*上传文件类型为：gif,jpg,bmp，大小<2M。除图片外所有项均为必填写项。</td>
   </tr>
-  <tr bgcolor="#FFF">
+  <tr>
     <td height="35" colspan="2" align="center"><input type="submit" name="Submit" value="确 定 修 改"></td>
     </tr>
 </form>

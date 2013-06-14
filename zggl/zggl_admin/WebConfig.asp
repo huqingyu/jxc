@@ -43,12 +43,12 @@ end if%>
 </head>
 <body>
 <br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
 <form name="form1" method="post" action="webconfig.asp?action=save">
 <%set rs=server.CreateObject("adodb.recordset")
 rs.Open "select * from config",conn,1,1%>
 <tr> 
-<td height="30" colspan="2" align="center" background="Images/topBar_bg.gif"><b><font color="#ff0000">网站信息设置</font></b></td>
+<td height="30" colspan="2" align="center" background="images/admin_bg_1.gif"><b><font color="#ff0000">网站信息设置</font></b></td>
 </tr>
 <tr> 
 <td width="30%" height="25" align="right">网站网址：</td>
@@ -121,7 +121,7 @@ ondrop		= "return regInput(this,	/^[0-9]*$/,		event.dataTransfer.getData('Text')
 <input name="B_key" type="text" id="B_key" size="35" value="<%=trim(rs("B_key"))%>"><font color=#ff0000>*</font></td>
 </tr>
 <tr>
-<td height="30" colspan="2" align="center" background="Images/topBar_bg.gif"><b><font color="#ff0000">发送邮件的配置</font></b></td>
+<td height="30" colspan="2" align="center" background="images/admin_bg_1.gif"><b><font color="#ff0000">发送邮件的配置</font></b></td>
 </tr>
 <tr> 
 <td height="25" align="right">邮件服务器地址：</td>

@@ -24,17 +24,17 @@ Else
    call list
 End if
 Sub list()%>
-            <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+            <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
               <tr class=main2>
-                <td width="5%" height="25" align="center" background="Images/topBar_bg.gif">编号</td>
-                <td width="9%" align="center" background="Images/topBar_bg.gif">帐号</td>
-                <td width="7%" align="center" background="Images/topBar_bg.gif"> 姓名</td>
-                <td width="15%" align="center" background="Images/topBar_bg.gif">联系电话</td>
-                <td width="15%" align="center" background="Images/topBar_bg.gif"> 电子邮件</td>
-                <td width="17%" align="center" background="Images/topBar_bg.gif"> 预定酒店</td>
-                <td width="11%" align="center" background="Images/topBar_bg.gif"> 预定房型</td>
-                <td width="9%" align="center" background="Images/topBar_bg.gif"> 确认方式</td>
-                <td width="12%" align="center" background="Images/topBar_bg.gif">操作</td>
+                <td width="5%" height="25" align="center" background="images/admin_bg_1.gif">编号</td>
+                <td width="9%" align="center" background="images/admin_bg_1.gif">帐号</td>
+                <td width="7%" align="center" background="images/admin_bg_1.gif"> 姓名</td>
+                <td width="15%" align="center" background="images/admin_bg_1.gif">联系电话</td>
+                <td width="15%" align="center" background="images/admin_bg_1.gif"> 电子邮件</td>
+                <td width="17%" align="center" background="images/admin_bg_1.gif"> 预定酒店</td>
+                <td width="11%" align="center" background="images/admin_bg_1.gif"> 预定房型</td>
+                <td width="9%" align="center" background="images/admin_bg_1.gif"> 确认方式</td>
+                <td width="12%" align="center" background="images/admin_bg_1.gif">操作</td>
               </tr>
               <%
 if not rs.eof then
@@ -68,17 +68,17 @@ End sub
 <%
 '显示空帖子的子程序
 Sub showempty()%>
-            <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bordercolor="#999999" borderColorDark=#FFF bgcolor="#F9F9F9">
+            <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
               <tr class=main2>
-                <td width="5%" height="25" align="center" background="Images/topBar_bg.gif">编号</td>
-                <td width="9%" align="center" background="Images/topBar_bg.gif">帐号</td>
-                <td width="7%" align="center" background="Images/topBar_bg.gif"> 姓名</td>
-                <td width="15%" align="center" background="Images/topBar_bg.gif">联系电话</td>
-                <td width="15%" align="center" background="Images/topBar_bg.gif"> 电子邮件</td>
-                <td width="17%" align="center" background="Images/topBar_bg.gif"> 预定酒店</td>
-                <td width="11%" align="center" background="Images/topBar_bg.gif"> 预定房型</td>
-                <td width="9%" align="center" background="Images/topBar_bg.gif"> 确认方式</td>
-                <td width="12%" align="center" background="Images/topBar_bg.gif">操作</td>
+                <td width="5%" height="25" align="center" background="images/admin_bg_1.gif">编号</td>
+                <td width="9%" align="center" background="images/admin_bg_1.gif">帐号</td>
+                <td width="7%" align="center" background="images/admin_bg_1.gif"> 姓名</td>
+                <td width="15%" align="center" background="images/admin_bg_1.gif">联系电话</td>
+                <td width="15%" align="center" background="images/admin_bg_1.gif"> 电子邮件</td>
+                <td width="17%" align="center" background="images/admin_bg_1.gif"> 预定酒店</td>
+                <td width="11%" align="center" background="images/admin_bg_1.gif"> 预定房型</td>
+                <td width="9%" align="center" background="images/admin_bg_1.gif"> 确认方式</td>
+                <td width="12%" align="center" background="images/admin_bg_1.gif">操作</td>
               </tr>
               <tr class=main2>
                 <td align="center" height="23" colspan="9"> 无相关信息！</td>

@@ -25,32 +25,20 @@
 		<a href="/sny.asp">省内游</a>
 	</li>
 	<li>
-		<a href="/line_zxxl.asp">最新线路</a>
+		<a href="/list.asp?tp=67">景区</a>
 	</li>
 	<li>
-		<a href="/line_glxl.asp">国旅线路</a>
+		<a href="/hotel.asp">酒店</a>
 	</li>
 	<li>
-		<a href="/line_tjxl.asp">特价线路</a>
+		<a href="/list.asp?tp=76">租车</a>
 	</li>
 	<li>
-		<a href="/djy.asp">地接游</a>
+		<a href="/list.asp?tp=66">签证</a>
 	</li>
 	<li>
-		<a href="/list.asp?tp=67">海南景区</a>
-	</li>
-	<li>
-		<a href="/hotel.asp">酒 店</a>
-	</li>
-	<li>
-		<a href="/list.asp?tp=70">旅游指南</a>
-	</li>
-	<li>
-		<a href="/list.asp?tp=76">旅游常识</a>
-	</li>
-	<li>
-		<a href="/list.asp?tp=66">签 证</a>
-	</li>
+		<a href="/list.asp?tp=66">高尔夫</a>
+	</li>	
 	<li>
 		<a href="/list.asp?tp=75">会议考察</a>
 	</li>

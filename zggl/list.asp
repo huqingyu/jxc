@@ -1,4 +1,5 @@
-<!--#include file="common/conn.asp"--> <!--#include file="/common/WebConfig.asp"-->
+<!--#include file="common/conn.asp"-->
+<!--#include file="common/WebConfig.asp"-->
 <% 
 tp=request("tp") 
 set rs=conn.execute("select * from nlei where id="&tp)

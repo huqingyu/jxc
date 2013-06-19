@@ -29,7 +29,7 @@ if right(SavePath,1)<>"/" then SavePath=SavePath&"/" '在目录后加(/)
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 </head>
 <body>
 <%

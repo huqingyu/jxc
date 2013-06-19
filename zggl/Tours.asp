@@ -1,8 +1,8 @@
 <!--#include file="Connection.asp" -->
-<!--#include file="admin/system/WebConfig.asp"-->
+<!--#include file="common/webconfig.asp"-->
 <!DOCTYPE HTML>
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="Themes/style/default.css" rel="stylesheet">
 <title><%=webname%></title>
 <body>

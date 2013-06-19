@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/css.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<STYLE type=text/css>
+*{font-size:12px;}
+ ul li { list-style: none; }
+ ul, li { margin: 0; padding: 0;}
+.tabs{float:left;
+font-size:12px;
+      width:60px;
+      height:31px;
+	  text-align:center;
+	  line-height:26px;
+	  display:block;
+	  background-repeat:repeat-x;}
+.tabs_act{
+font-size:12px;
+font-weight:bold;
+	float:left;
+	color:#FFFFFF;
+	width:60px;
+	height:31px;
+	text-align:center;
+	line-height:26px;
+	display:block;
+	background-repeat:no-repeat;
+	background-image: url(/image/tu_052.gif);
+	background-position: center center;
+}
+
+
+a:hover {
+	font-size: 12px;
+	color: #fff;
+	text-decoration: none;
+}
+a {
+	font-size: 12px;
+	color: #0242AC;
+	text-decoration: none;
+}
+
+
+
+
+
+.Sliding_tab{width:400px;
+             height:31px;} 
+.Sliding_tab li{float:left; 
+	background-repeat: repeat-x; }
+.Sliding_tab li.table_li{
+	border-top:0px;
+	width:5px;
+	height:31px;
+	line-height:31px;
+	 
+	background-repeat: repeat-x;
+	
+}
+.tablist { clear:both; width:460px;border-top:0px;height:166px;overflow:visible;}
+
+
+.tabs_act{
+font-size:12px;
+	color:#FFFFFF;
+	background-repeat:repeat-x;
+ 
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.STYLE1 {color: #FF0000}
+
+.qiehuan a {font-size: 12px;COLOR:#0242AC;text-decoration: none;}
+.qiehuan a:hover {font-size: 12px;COLOR:#FF2200;text-decoration:underline;}
+</STYLE>
+
+<SCRIPT language=javascript type=text/javascript>
+    function g(o){return document.getElementById(o);}
+	//width=727 zhenghao 732
+	//id=set_tab06 onMouseOver="Hovertab('6','6','set_','');
+       function Hovertab(num,counts,tabname,tabclass){
+          for (i=1;i<=counts;i++)          { 
+             g(tabname+'tab0'+i).className=tabclass+'tabs';
+              g(tabname+'div0'+i).style.display='none'; 
+         }  
+		
+			  g(tabname+'tab0'+num).className=tabclass+'tabs_act';		 
+              g(tabname+'div0'+num).style.display='block'; 
+     }   </SCRIPT>
+</head>
+<BODY>
+<DIV style="CLEAR: both; FLOAT: left; WIDTH: 479px">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border:#096DC2 1px solid;">
+    <tr>
+      <td valign="top" style="padding-left:8px; padding-right:8px;"><table width="100%" height="37" border="0" cellpadding="0" cellspacing="0" background="/image/cjy_topbg_03.gif">
+        <tr>
+          <td align="left" style="color:#3d3d3f; font-size:14px; font-weight:bold;">国内游</td>
+          <td align="right" valign="bottom">
+		    <DIV class=Sliding_tab>
+<UL>
+  <LI><A class=tabs_act id=set_tab01 onMouseOver="Hovertab('1','6','set_','');" 
+  href="chudao/list.asp?classid=1&classid2=3" target="_blank">华东地区</A></LI>
+  <LI 
+  style="LINE-HEIGHT: 31px; padding-left:1px; padding-right:1px;"><font color="#999999">|</font></LI> 
+  <LI><A class=tabs id=set_tab02 onMouseOver="Hovertab('2','6','set_','');" 
+  href="chudao/list.asp?classid=1&classid2=4"   target="_blank">华北地区</A></LI>
+  <LI 
+  style="LINE-HEIGHT: 31px; padding-left:1px; padding-right:1px;"><font color="#999999">|</font></LI> 
+  <LI><A class=tabs id=set_tab03 onMouseOver="Hovertab('3','6','set_','');" 
+  href="chudao/list.asp?classid=1&classid2=1"  target="_blank">中南地区</A></LI>
+  <LI 
+  style="LINE-HEIGHT: 31px; padding-left:1px; padding-right:1px;"><font color="#999999">|</font></LI> 
+  <LI><A class=tabs id=set_tab04 onMouseOver="Hovertab('4','6','set_','');" 
+  href="chudao/list.asp?classid=1&classid2=5"  target="_blank">西南地区</A></LI>
+  <LI 
+  style="LINE-HEIGHT: 31px; padding-left:1px; padding-right:1px;"><font color="#999999">|</font></LI> 
+  <LI><A class=tabs id=set_tab05 onMouseOver="Hovertab('5','6','set_','');" 
+  href="chudao/list.asp?classid=1&classid2=6"  target="_blank">西北地区</A></LI>
+  <LI 
+  style="LINE-HEIGHT: 31px; padding-left:1px; padding-right:1px;"><font color="#999999">|</font></LI> 
+  <LI><A class=tabs id=set_tab06 onMouseOver="Hovertab('6','6','set_','');" 
+  href="chudao/list.asp?classid=1&classid2=7"  target="_blank">东北地区</A></LI></UL></DIV>
+		  </td>
+        </tr>
+      </table>
+	  
+	  
+	  
+	  <div class=tablist id=set_div01>
+			  <!--华东地区-->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:6px; margin-top:6px;">
+          <tr>
+            <td width="180" align="center" valign="top">
+			
+		<table width="180" border="0" cellspacing="0" cellpadding="0">
+		 
+			<tr>
+				<td height="124" align="center"><a href="chudao/show.asp?id=114" target="_blank"><img src="/image/gny/20121018121652689.jpg" width="180" height="120" border="0" align="absmiddle"/></a></td>
+			</tr>
+			<tr>
+				<td height="30" align="center" class="qiehuan"><a href="chudao/show.asp?id=114" target="_blank">华东五市+双水乡双</a>
+					<font color="#FF0000" style="font-weight:bold; font-size:12px">￥2480</font><font color="#989898" style="font-size:12px">起</font>
+				</td>
+			</tr>
+				
+		</table>
+			
+			</td>
+            <td align="left" valign="top" style="padding-left:8px;">
+			<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+			
+			
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=76" target="_blank">厦门鼓浪屿、武夷山、福</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥3880</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=75" target="_blank">南昌、庐山、九江双飞四</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥3580</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=74" target="_blank">大连山东全线双飞七日游</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥3980</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=73" target="_blank">黄山、宏村、杭州四日精</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥2680</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=72" target="_blank">千岛湖、杭州三日游、双</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥2180</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=71" target="_blank">杭州、黄山、千岛湖五日</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥2880</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 	
+			
+		</table></td>
+          </tr>
+        </table>
+		<!--华东地区结束-->
+		</div>
+	  <DIV class=tablist id=set_div02 
+style="PADDING-RIGHT: 0px; DISPLAY: none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px">
+			  <!--华北地区-->
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:6px; margin-top:6px;">
+          <tr>
+            <td width="180" align="center" valign="top">
+			
+		<table width="180" border="0" cellspacing="0" cellpadding="0">
+		 
+			<tr>
+				<td height="124" align="center"><a href="chudao/show.asp?id=104" target="_blank"><img src="/image/gny/no.gif" width="180" height="120" border="0" align="absmiddle"/></a></td>
+			</tr>
+			<tr>
+				<td height="30" align="center" class="qiehuan"><a href="chudao/show.asp?id=104" target="_blank">北京经典双飞六日游</a>
+					<font color="#FF0000" style="font-weight:bold; font-size:12px">￥2980</font><font color="#989898" style="font-size:12px">起</font>
+				</td>
+			</tr>
+				
+		</table>
+			
+			</td>
+            <td align="left" valign="top" style="padding-left:8px;">
+			<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+			
+			
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=84" target="_blank">[奥运新北京]北京五天</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥4880</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=82" target="_blank">[奥运新北京]北京五天</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥3620</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=81" target="_blank">西安、华山、开封五日游</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥3580</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=80" target="_blank">北京故宫、哈尔滨亚布力</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥5880</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=79" target="_blank">古都西安双飞4日游</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥3380</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=78" target="_blank">西安、中原、黄帝陵、延</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥3680</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 	
+			
+		</table></td>
+          </tr>
+        </table>
+		<!--华北地区结束-->
+		</div>
+		
+		<DIV class=tablist id=set_div03 
+style="PADDING-RIGHT: 0px; DISPLAY: none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px">
+			  <!--中南地区-->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:6px; margin-top:6px;">
+          <tr>
+            <td width="180" align="center" valign="top">
+			
+		<table width="180" border="0" cellspacing="0" cellpadding="0">
+		 
+			<tr>
+				<td height="124" align="center"><a href="chudao/show.asp?id=68" target="_blank"><img src="/image/gny/2010122618204224234.jpg" width="180" height="120" border="0" align="absmiddle"/></a></td>
+			</tr>
+			<tr>
+				<td height="30" align="center" class="qiehuan"><a href="chudao/show.asp?id=68" target="_blank">三峡、钟祥、黄仙洞</a>
+					<font color="#FF0000" style="font-weight:bold; font-size:12px">￥1880</font><font color="#989898" style="font-size:12px">起</font>
+				</td>
+			</tr>
+				
+		</table>
+			
+			</td>
+            <td align="left" valign="top" style="padding-left:8px;">
+			<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+			
+			
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=67" target="_blank">三峡、钟祥双飞5日游</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥1980</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=66" target="_blank">张家界凤凰古城六天双飞</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥2880</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=65" target="_blank">长沙、韶山、张家界双飞</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥2380</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=63" target="_blank">双世界文化遗产武当山、</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥2580</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=62" target="_blank">桂林四天双飞品质游</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥2380</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=61" target="_blank">广、深、珠双飞四日游</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥1580</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 	
+			
+		</table></td>
+          </tr>
+        </table>
+		<!--中南地区结束-->
+		</div>
+				
+				
+				
+				<DIV class=tablist id=set_div04 
+style="PADDING-RIGHT: 0px; DISPLAY: none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px">
+			  <!--西南地区-->
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:6px; margin-top:6px;">
+          <tr>
+            <td width="180" align="center" valign="top">
+			
+		<table width="180" border="0" cellspacing="0" cellpadding="0">
+		 
+			<tr>
+				<td height="124" align="center"><a href="chudao/show.asp?id=115" target="_blank"><img src="/image/gny/no.gif" width="180" height="120" border="0" align="absmiddle"/></a></td>
+			</tr>
+			<tr>
+				<td height="30" align="center" class="qiehuan"><a href="chudao/show.asp?id=115" target="_blank">成都九寨沟黄龙双飞</a>
+					<font color="#FF0000" style="font-weight:bold; font-size:12px">￥3880</font><font color="#989898" style="font-size:12px">起</font>
+				</td>
+			</tr>
+				
+		</table>
+			
+			</td>
+            <td align="left" valign="top" style="padding-left:8px;">
+			<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+			
+			
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=109" target="_blank">成都、九寨沟、黄龙4飞</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥6100</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=108" target="_blank">成都、九寨沟、黄龙、乐</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥4280</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=106" target="_blank">昆明、大理、丽江汽车中</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥2680</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=103" target="_blank">桂林双卧5日超值游</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥1288</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=90" target="_blank">海螺沟、峨眉山、乐山大</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥2980</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=89" target="_blank">七彩云南双飞超值6日游</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥2680</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 	
+			
+		</table></td>
+          </tr>
+        </table>
+		<!--西南地区结束-->
+				</div>
+				<DIV class=tablist id=set_div05 
+style="PADDING-RIGHT: 0px; DISPLAY: none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px">
+			  <!--西北地区-->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:6px; margin-top:6px;">
+          <tr>
+            <td width="180" align="center" valign="top">
+			
+		<table width="180" border="0" cellspacing="0" cellpadding="0">
+		 
+			<tr>
+				<td height="124" align="center"><a href="chudao/show.asp?id=105" target="_blank"><img src="/image/gny/no.gif" width="180" height="120" border="0" align="absmiddle"/></a></td>
+			</tr>
+			<tr>
+				<td height="30" align="center" class="qiehuan"><a href="chudao/show.asp?id=105" target="_blank">拉萨纳木措4飞5日</a>
+					<font color="#FF0000" style="font-weight:bold; font-size:12px">￥5080</font><font color="#989898" style="font-size:12px">起</font>
+				</td>
+			</tr>
+				
+		</table>
+			
+			</td>
+            <td align="left" valign="top" style="padding-left:8px;">
+			<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+			
+			
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=96" target="_blank">西藏八日游、拉萨、羊卓</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥4680</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=95" target="_blank">西藏七日游、拉萨、日喀</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥5250</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=94" target="_blank">希拉穆仁草原、响沙湾、</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥3880</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=93" target="_blank">乌鲁木齐/天池/吐鲁番</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥4680</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=92" target="_blank">乌鲁木齐/天池/吐鲁番</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥4980</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=91" target="_blank">乌鲁木齐、天池、吐鲁番</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥5780</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 	
+			
+		</table></td>
+          </tr>
+        </table>
+		<!--西北地区结束-->
+				</div>
+				<DIV class=tablist id=set_div06 
+style="PADDING-RIGHT: 0px; DISPLAY: none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px">
+			  <!--东北地区-->
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:6px; margin-top:6px;">
+          <tr>
+            <td width="180" align="center" valign="top">
+			
+		<table width="180" border="0" cellspacing="0" cellpadding="0">
+		 
+			<tr>
+				<td height="124" align="center"><a href="chudao/show.asp?id=101" target="_blank"><img src="/image/gny/2010122618235736648.jpg" width="180" height="120" border="0" align="absmiddle"/></a></td>
+			</tr>
+			<tr>
+				<td height="30" align="center" class="qiehuan"><a href="chudao/show.asp?id=101" target="_blank">大连山东半岛五日游</a>
+					<font color="#FF0000" style="font-weight:bold; font-size:12px">￥5897</font><font color="#989898" style="font-size:12px">起</font>
+				</td>
+			</tr>
+				
+		</table>
+			
+			</td>
+            <td align="left" valign="top" style="padding-left:8px;">
+			<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+			
+			
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=100" target="_blank">哈尔滨、亚布力、长春、</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥3880</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=98" target="_blank">哈尔滨亚布力牡丹江中国</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥3580</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 
+			<tr>
+				<td height="25"><img src="/image/tu1001_03.gif" width="3" height="3" align="absmiddle"> <font color="#686868" style="font-size:12px;">
+						[海口出发]</font><span class="qiehuan"><a href="chudao/show.asp?id=97" target="_blank">沈阳长春长白山延吉滑雪</a></span></td>
+				<td height="25" align="right"><font color="#FF0000" style="font-weight:bold; font-size:12px">￥5680</font><font color="#989898" style="font-size:12px">起</font></td>
+			</tr>
+			 	
+			
+		</table></td>
+          </tr>
+        </table>
+		<!--东北地区结束-->
+				</div>
+				
+			
+				
+				
+	  </td>
+    </tr>
+  </table>
+</DIV>
+</BODY></HTML>

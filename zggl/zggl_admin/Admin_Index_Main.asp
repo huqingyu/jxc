@@ -7,7 +7,7 @@ end if
 <html>
 <head>
 <title>创业中国源码论坛 599CN.COM</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body leftmargin="2" topmargin="0" marginwidth="0" marginheight="0">

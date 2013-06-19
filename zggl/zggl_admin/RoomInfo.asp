@@ -8,12 +8,12 @@ end if
 <html>
 <head>
 <title>房型信息管理</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/style.css" rel="stylesheet"></head>
 <body>
 <br /><br /><br />
 <!--#include file="admin_common/conn.asp" -->
-<!--#include file="system/system_code.asp" -->
+<!--#include file="../common/system_code.asp" -->
 <%
 '假如没有数据时
 set rs=server.createobject("adodb.recordset")

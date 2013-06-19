@@ -7,7 +7,7 @@ end if
 <html>
 <head>
 <title>酒店信息管理</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <script language="javascript">
 function OpenSmallWindows(strURL)
 {
@@ -19,7 +19,7 @@ window.open (strURL,"_blank",
 <body>
 <br />
 <!--#include file="admin_common/conn.asp" -->
-<!--#include file="system/system_code.asp" -->
+<!--#include file="../common/system_code.asp" -->
 <%
 set rs=server.createobject("adodb.recordset")
 sqltext="select * from hotelb order by id desc" 

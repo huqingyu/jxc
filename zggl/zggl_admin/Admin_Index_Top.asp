@@ -4,12 +4,12 @@ response.End
 end if
 %>
 <!--#include file="admin_common/conn.asp" -->
-<!--#include file="system/WebConfig.asp"-->
+<!--#include file="../common/webconfig.asp"-->
 <!DOCTYPE HTML>
 <html>
 <head>
 <title><%=webname & "--后台管理页面"%></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <style type="text/css">
 a:link { color:#000000;text-decoration:none}
 a:hover {color:#666666;}

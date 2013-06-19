@@ -33,7 +33,7 @@ rs_hotel.open sqltext,conn,1,1
 <html>
 <head>
 <title>房型信息编辑</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/style.css" rel="stylesheet">
 </head>
 <SCRIPT language=javascript id=clientEventHandlersJS>

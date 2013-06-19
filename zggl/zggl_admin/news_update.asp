@@ -31,7 +31,7 @@ end if
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
 <title>后台管理 - by seirsoft.com</title>
 <link href="css/news.css" rel="stylesheet" />
 </head>

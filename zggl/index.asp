@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <!--#include file="common/conn.asp" -->
-<!--#include file="admin/system/WebConfig.asp"-->
+<!--#include file="common/webconfig.asp"-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <meta name="author" content="huqingyu@gmail.com,浙林龙哥" />
 <meta name="copyright" content="seirsoft.com" />
 <meta name="description" content="中国国旅-CITS" />
@@ -890,12 +890,16 @@ display:inline;color:#FFF; text-align:center; cursor:pointer; font-weight: bold;
 			<div class="page">
 			</div>
 		</div>
+<div>
+	<iframe src="index_hotel.htm" width="1000" height="230" frameborder="0" scrolling="no" ></iframe>
+
+</div>
 <div style="margin: 10px 0;">
 <div style="float:left;width:480px">
-	<iframe src="index_gny.htm" width="489" height="230" frameborder="0" scrolling="no" allowTransparency="true" ></iframe>
+	<iframe src="index_gny.htm" width="489" height="230" frameborder="0" scrolling="no"></iframe>
 </div>
 <div style="float:left;width:480px">
-	<iframe src="index_cjy.htm" width="489" height="230" frameborder="0" scrolling="no" allowTransparency="true" ></iframe>
+	<iframe src="index_cjy.htm" width="489" height="230" frameborder="0" scrolling="no"></iframe>
 </div>
 </div>
     

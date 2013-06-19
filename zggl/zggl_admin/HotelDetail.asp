@@ -15,7 +15,7 @@ rs.open sqltext,conn,1,1
 <html>
 <head>
 <title>æ∆µÍ–≈œ¢œÍ«È</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body>°°

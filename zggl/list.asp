@@ -7,7 +7,7 @@ title = rs("nlei")
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <meta name="author" content="huqingyu@gmail.com,浙林龙哥" />
 <meta name="copyright" content="seirsoft.com" />
 <meta name="description" content="中国国旅-CITS" />

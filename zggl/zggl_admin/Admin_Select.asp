@@ -5,7 +5,7 @@ response.End
 end if
 %>
 <!--#include file="admin_common/conn.asp" -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/style.css" rel="stylesheet">
 <script language="javascript">
 function opennew(){

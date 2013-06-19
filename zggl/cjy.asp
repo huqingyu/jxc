@@ -1,10 +1,10 @@
-<!--#include file="common/conn.asp"--> <!--#include file="admin/system/WebConfig.asp"-->
+<!--#include file="common/conn.asp"--> <!--#include file="common/webconfig.asp"-->
 <% tp=request("tp") %>
 <!DOCTYPE HTML>
 <html>
 <head>
 <title>ЁЖ╬Ёсн-<%=webname%></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/common.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 <script language=JavaScript src="js/js.js"></script>

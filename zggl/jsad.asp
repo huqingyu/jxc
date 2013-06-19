@@ -19,7 +19,7 @@ document.write('#imgTitle{width:'+imgWidth+';top:-'+(textFromHeight+14)+'px;heig
 document.write('</style>');
 document.write('<div id="focuseFrom">');
 // 您现在的位置:式表 结束
-<!--#include file="common/conn.asp"--> <!--#include file="admin/system/WebConfig.asp"-->
+<!--#include file="common/conn.asp"--> <!--#include file="common/webconfig.asp"-->
 <% set rs=server.createobject("ADODB.Recordset")
 sql="select top 6 * from news where mytype=64 and tu<>'' order by id desc"
 rs.open sql,conn,1,1

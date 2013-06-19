@@ -3,6 +3,8 @@ TEXT-ALIGN: center;
 font-family: Verdana, Arial, Helvetica, sans-serif;
 color: #000;
 font-size:12px;
+
+	background:url('../img/bg.jpg') no-repeat;
 }
 
 td{text-align:left;}

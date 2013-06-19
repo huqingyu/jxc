@@ -1,4 +1,4 @@
-<!--#include file="common/conn.asp"--> <!--#include file="admin/system/WebConfig.asp"-->
+<!--#include file="common/conn.asp"--> <!--#include file="common/webconfig.asp"-->
 <%
 xlmc=trim(request.querystring("xlmc"))
 xllx=trim(request.querystring("xllx"))
@@ -7,7 +7,7 @@ xllx=trim(request.querystring("xllx"))
 <html>
 <head>
 <title><%=webname%>--¾Æµê²éÑ¯½á¹û</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/common.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 <script language=JavaScript src="js/js.js"></script>

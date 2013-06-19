@@ -14,7 +14,7 @@ end if
 <head>
 <meta name=vs_targetSchema content="HTML 4.0">
 <title>±‡º≠∫Ω∞‡–≈œ¢</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body>

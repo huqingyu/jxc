@@ -1,4 +1,4 @@
-<!--#include file="common/conn.asp"--> <!--#include file="admin/system/WebConfig.asp"-->
+<!--#include file="common/conn.asp"--> <!--#include file="common/webconfig.asp"-->
 <% set rs= Server.CreateObject("adodb.recordset")
 sql="select  * from news where id="&request("id")
 rs.open sql,conn,1,3
@@ -17,7 +17,7 @@ tu=rs("tu")
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <title><%= bt %>-<%=webname%></title>
 <link href="css/common.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />

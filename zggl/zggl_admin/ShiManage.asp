@@ -15,7 +15,7 @@ function IsDigit()
   return ((event.keyCode >= 48) && (event.keyCode <= 57));
 }
 </script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">

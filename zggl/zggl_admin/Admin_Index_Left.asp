@@ -9,7 +9,7 @@ end if
 <html>
 <head>
 <title>π‹¿Ìµº∫Ω</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <style type=text/css>
 body  {
 	background:url(images/admin_bg_1.gif);

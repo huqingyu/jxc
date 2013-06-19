@@ -7,12 +7,12 @@ end if
 <html>
 <head>
 <title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <!--#include file="admin_common/conn.asp" -->
-<!--#include file="system/system_code.asp" -->
+<!--#include file="../common/system_code.asp" -->
 <br /><br /><br />
 <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
   <tr> 

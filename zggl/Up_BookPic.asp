@@ -9,7 +9,7 @@ EditName=request("EditName")			' 您现在的位置:辑框的Name
 <html>
 <head>
 <title>图片上传</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/common.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 

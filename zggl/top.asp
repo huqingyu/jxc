@@ -1,8 +1,7 @@
 <div id="J_header">
 	<div>
-		<img src="img/header.png" border="0" />
+		<img src="img/header.gif" border="0" />
 	</div>
-	<div class="header_tips"><span class="STYLE5">вия╞ххоъё╨0371-65852305 65852352 13903817736</span></div>
 </div>
 <div>
 <ul class="J_menu">

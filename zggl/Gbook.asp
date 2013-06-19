@@ -1,10 +1,10 @@
 <!--#include file="Connection.asp"-->
-<!--#include file="admin/system/WebConfig.asp"-->
+<!--#include file="common/webconfig.asp"-->
 <!--#include file="admin/system/Check_SI.asp"-->
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/common.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 <title><%=webname%>--Òâ¼û·´À¡</title>

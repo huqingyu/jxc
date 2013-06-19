@@ -33,7 +33,7 @@ end if
 <html>
 <head>
 <title>¾ÆµêµÇ¼Ç³É¹¦</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/style.css" rel="stylesheet">
 </head><body><div align="center">
 <TABLE border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">

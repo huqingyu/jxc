@@ -1,4 +1,4 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <!--#include file="connection.asp" -->
 <%
 dim textfield,textfield1,textfield2,textfield3,textfield4,textfield5,textfield6,textfield7,textfield8,textfield9,textfield10,textfield11,textfield12,textfield13,textfield14,textfield15,textfield16,textfield17,textfield18,textfield19,textfield20,textfield21,textfield22,textfield23

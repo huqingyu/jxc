@@ -57,7 +57,7 @@ else
 adDiv.visibility ="hide";
 }
 </script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8"></head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk"></head>
 <bodyleftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <div id="sponsorAdDiv" style="visibility:hidden; left: 22px; top: 118px; width: 197px; height: 10px"> 
   <table width="200" height="25" bgcolor="#0099cc" border=0 cellspacing=0>

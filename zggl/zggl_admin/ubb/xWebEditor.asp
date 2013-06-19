@@ -25,7 +25,7 @@ Call DBConnEnd()
 <html>
 <head>
 <title>xWebEditor - seirsoft在线文本编辑器</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <link href="css/<%=sStyleCSS%>/Editor.css" type="text/css" rel="stylesheet">
 </head>
 <body SCROLLING=no onConTextMenu="event.returnValue=false;">

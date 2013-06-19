@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <!--#include file="common/conn.asp"-->
-<!--#include file="admin/system/WebConfig.asp"-->
+<!--#include file="common/webconfig.asp"-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <meta name="author" content="huqingyu@gmail.com,浙林龙哥" />
 <meta name="Copyright" content="seirsoft.com" />
 <meta name="description" content="中国国旅-CITS" />

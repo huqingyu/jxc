@@ -1,9 +1,9 @@
-<!--#include file="common/conn.asp"--> <!--#include file="admin/system/WebConfig.asp"-->
+<!--#include file="common/conn.asp"--> <!--#include file="common/webconfig.asp"-->
 <% tp=request("tp") %>
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
 <title> 您现在的位置:书圣文化节</title>
 <link href="css/common.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />

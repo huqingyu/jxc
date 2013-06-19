@@ -38,7 +38,7 @@ End Select
 <HTML>
 <HEAD>
 <TITLE>xWebEditor - 后台管理</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=utf8">
+<META http-equiv=Content-Type content="text/html; charset=gbk">
 <SCRIPT language=JavaScript>
 function checklogin() {
 	if (document.myform.usr.value=="") {

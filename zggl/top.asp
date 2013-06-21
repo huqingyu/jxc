@@ -1,9 +1,7 @@
 <div id="J_header">
-	<div>
-		<img src="img/header.gif" border="0" />
-	</div>
+<div class="logo"></div>
 </div>
-<div>
+<div style="margin:0 auto; width:100%">
 <ul class="J_menu">
 	<li class="menu2">
 		<a href="index.asp">สื าณ</a>

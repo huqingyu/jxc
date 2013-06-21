@@ -21,8 +21,7 @@ Dim pagename
 <link href="css/style.css" rel="stylesheet" />
 </head>
 <body> 
-<div id="J_page" class="w980 center">
-<!--#include file="top.asp" -->
+<!--#include file="top.asp" --><div id="J_page" class="w980 center">
 
 <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>

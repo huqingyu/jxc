@@ -142,19 +142,19 @@ wend
           <td height="253" align="center" background="images/left_bgg.jpg" style="border-left:1px solid #9AD394;border-right:1px solid #9AD394"><table width="90%" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <td align="center"><img src="Images/gj1.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="http://www.ctrip.com/supermarket/ctripMap/mapIndex.asp" target="_blank">电子地图</a></td>
+              <td height="26" align="center"><a href="http://map.sogou.com" target="_blank">电子地图</a></td>
               <td align="center"><img src="Images/gj2.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="http://www.ctrip.com/Destinations/weather/moreWeather.asp" target="_blank">天气预报</a></td>
+              <td height="26" align="center"><a href="http://www.weather.com.cn/weather/101310101.shtml" target="_blank">天气预报</a></td>
             </tr>
             <tr>
               <td align="center"><img src="Images/gj3.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="http://www.elong.com/flights/" target="_blank">航班查询</a></td>
+              <td height="26" align="center"><a href="http://trip.taobao.com/" target="_blank">航班查询</a></td>
               <td align="center"><img src="Images/gj4.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="http://www.ctrip.com/supermarket/train/trainsearch_1.asp" target="_blank">火车查询</a></td>
+              <td height="26" align="center"><a href="http://www.12306.cn/mormhweb/kyfw/ypcx/" target="_blank">火车查询</a></td>
             </tr>
             <tr>
               <td align="center"><img src="Images/gj5.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="http://tw.stock.yahoo.com/d/c/ex.php" target="_blank">汇率查询</a></td>
+              <td height="26" align="center"><a href="http://www.boc.cn/sourcedb/whpj/" target="_blank">汇率查询</a></td>
               <td align="center"><img src="Images/gj6.jpg" width="21" height="17" /></td>
               <td height="26" align="center"><a href="list.asp?tp=76" target="_blank">旅游常识</a></td>
             </tr>

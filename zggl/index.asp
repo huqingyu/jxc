@@ -13,8 +13,8 @@
 <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-<div id="J_page" class="w980 center">
 <!--#include file="top.asp"-->
+<div id="J_page" class="w980 center">
 <table>
 <tr>
 <td valign="top">

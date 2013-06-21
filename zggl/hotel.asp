@@ -13,8 +13,7 @@
 <title><%=webname%>--¾Æµê</title>
 </head>
 <body>
-<div id="J_page" class="w980 center">
-<!--#include file="top.asp" -->
+<!--#include file="top.asp" --><div id="J_page" class="w980 center">
 <TABLE width=980 border=0 align="center" cellPadding=0 cellSpacing=0>
       
 	<tr>

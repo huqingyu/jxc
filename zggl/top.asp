@@ -1,8 +1,8 @@
 <div id="J_header">
 <div class="logo"></div>
 </div>
-<div style="margin:0 auto; width:100%">
-<ul class="J_menu">
+<div  class="J_menu">
+<ul>
 	<li class="menu2">
 		<a href="index.asp">สื าณ</a>
 	</li>

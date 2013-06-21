@@ -48,6 +48,7 @@ A:hover {
 
 #J_header{
 	margin: 0 auto;
+	min-width:980px;
 }
 .logo{
 	display: inline-block;
@@ -63,20 +64,29 @@ A:hover {
 	color: red;
 }
 
-ul.J_menu
+.J_menu ul
 {
-	list-style:none;
-	padding:0;
-	border:0;
-	background-color:#333;
 	display:inline-block;
-	text-align:center;
-	border-bottom: 2px solid #EE6600;
-
-	width:100%;
-	min-width:950px;
+	background-color:#333;
 	list-style:none;
 	margin:0 auto;
+	border:0;
+	width:980px;
+	min-width:980px;
+}
+
+.J_menu
+{
+	background-color:#333;
+	text-align:center;
+	height:36px;
+	width:100%;
+	min-width:980px;
+	
+	padding:0;
+	border:0;
+	border-bottom: 1px solid #CCC;
+
 }
 
 .J_menu li
@@ -260,6 +270,7 @@ h1,h2,h3,h4,h5,h6{font-size:14px;line-height:24px}
 #bottom {
 color: #666;
 font-size: 12px;
+clear:both;
 }
 #bottom a, #bottom a:link, #bottom a:visited { text-decoration: none; color: #666; }
 #bottom a:hover, #bottom a:active { text-decoration: underline; color: #000; }

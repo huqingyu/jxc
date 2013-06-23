@@ -1,3 +1,8 @@
+<% 
+menu_index="hotel"
+tp=request("tp") 
+
+%>
 <!DOCTYPE HTML>
 <html>
 <head>

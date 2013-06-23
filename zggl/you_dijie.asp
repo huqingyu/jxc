@@ -1,5 +1,9 @@
 <!--#include file="common/conn.asp"--> <!--#include file="common/webconfig.asp"-->
-<% tp=request("tp") %>
+<% 
+menu_index="sny"
+tp=request("tp") 
+
+%>
 <!DOCTYPE HTML>
 <html>
 <head>

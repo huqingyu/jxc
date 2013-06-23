@@ -1,6 +1,8 @@
-<!--#include file="common/conn.asp"--> <!--#include file="common/webconfig.asp"-->
+<!--#include file="common/conn.asp"-->
+<!--#include file="common/webconfig.asp"-->
+<!--#include file="common/config.asp"-->
 <% set rs= Server.CreateObject("adodb.recordset")
-sql="select  * from news where id="&request("id")
+sql="select * from news where id="&request("id")
 rs.open sql,conn,1,3
 rs("lls")=rs("lls")+1
 rs.update
@@ -26,7 +28,7 @@ tu=rs("tu")
 <body>
 
 <!--#include file="top.asp" -->
-
+<div id="J_page" class="w980 center">
 <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td align="center" valign="top" bgcolor="#FFFFFF">
@@ -35,8 +37,7 @@ tu=rs("tu")
     <td align="right" valign="top" bgcolor="#FFFFFF"><TABLE WIDTH=760 BORDER=0 CELLPADDING=0 CELLSPACING=0>
       <tr>
         <TD height="30" style="border:1px solid #8CC363; background-color:#E7F5DD;padding:0 10px"><b>您现在的位置:</b><a href="index.asp">首页</a> &gt;&gt; <a href="list.asp?tp=<%= mytype %>">
-          <% set rs=conn.execute("select * from nlei where id="&mytype)
-response.Write(rs("nlei")) %></a>内容</td>
+          <%= GetNewsTitle(mytype) %></a>内容</td>
         </tr>
       
     </TABLE>
@@ -56,7 +57,7 @@ response.Write(rs("nlei")) %></a>内容</td>
                 <td height="26" align="center" bgcolor="#F3FCE9" style="color:009900">作者:
                     <%if zz="" then response.Write"管理员" else response.Write(zz) end if  %>
                   &nbsp; 来源:
-                  <%if ly="" then response.Write"河南旅游网" else response.Write(ly) end if  %>
+                  <%if ly="" then response.Write"海南中国国旅" else response.Write(ly) end if  %>
                 &nbsp; 加入日期:<%= riqi %>&nbsp; 点击率:<%= lls %></td>
               </tr>
             </table>
@@ -69,7 +70,7 @@ response.Write(rs("nlei")) %></a>内容</td>
             </table>
             <table width="100%" border="0" cellspacing="0" cellpadding="5" style="line-height:24px;">
               <tr>
-                <td height="22" align="right"><span style="color:999999">编辑：<%if zz="" then response.Write"河南在线" else response.Write(zz) end if  %></span></td>
+                <td height="22" align="right"><span style="color:999999">编辑：<%if zz="" then response.Write"海南中国国旅" else response.Write(zz) end if  %></span></td>
               </tr>
 			  <tr>
                 <td bgcolor="#E8E8E8" height="1"></td>
@@ -102,17 +103,11 @@ response.Write(rs("nlei")) %></a>内容</td>
             </table></td>
         </tr>
       </table>
-      <!--格线 -->
-      <!--格线 --></td>
-  </tr>
-</table>
-<table border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="6"></td>
+      </td>
   </tr>
 </table>
 
 <!--#include file="foot.asp" -->
-
+</div>
 </body>
 </html>

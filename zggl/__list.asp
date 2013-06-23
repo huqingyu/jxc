@@ -1,9 +1,11 @@
 <!--#include file="common/conn.asp"-->
 <!--#include file="common/WebConfig.asp"-->
-<% 
-tp=request("tp") 
-set rs=conn.execute("select * from nlei where id="&tp)
-title = rs("nlei")
+<!--#include file="common/config.asp"-->
+<%
+if isNull(tp) then
+tp=request("tp")
+end if
+title = GetNewsTitle(tp)
 %>
 <!DOCTYPE HTML>
 <html>
@@ -16,10 +18,10 @@ title = rs("nlei")
 <title><%=title%>-<%=webname%></title>
 <link href="css/common.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
-<script language=JavaScript src="js/js.js"></script>
 </head>
 <body>
-<!--#include file="top.asp" --><div id="J_page" class="w980 center">
+<!--#include file="top.asp" -->
+<div id="J_page" class="w980 center">
 <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="32" align="center" valign="top" bgcolor="#FFFFFF"><!--#include file="left.asp" -->
@@ -120,5 +122,7 @@ title = rs("nlei")
 
 <!--#include file="foot.asp" -->
 </div>
+
+<script src="js/js.js"></script>
 </body>
 </html>

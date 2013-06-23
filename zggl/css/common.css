@@ -5,7 +5,7 @@ color: #000;
 font-size:12px;
 padding:0;
 margin:0;
-	background:url('../img/bg.jpg') repeat-x;
+	background:url('../image/bg.jpg') repeat-x;
 }
 
 td{text-align:left;}
@@ -55,7 +55,7 @@ A:hover {
 	display: inline-block;
 	width: 980px;
 	height: 140px;
-	background: url('../img/header.gif') no-repeat 0 20px;
+	background: url('../image/header.gif') no-repeat 0 20px;
 	margin: 0 auto;
 }
 .header_tips{
@@ -272,17 +272,16 @@ color: #666;
 font-size: 12px;
 clear:both;
 }
-#bottom a, #bottom a:link, #bottom a:visited { text-decoration: none; color: #666; }
-#bottom a:hover, #bottom a:active { text-decoration: underline; color: #000; }
+.bottom a, #bottom a:link, #bottom a:visited { text-decoration: none; color: #666; }
+.bottom a:hover, #bottom a:active { text-decoration: underline; color: #000; }
 
-#footer { margin:10px auto; overflow:hidden; width:980px;  }
-#process-title { background:url(/image/help.jpg) no-repeat; width:980px; height:60px; } 
-#process { border:1px solid #ccc; padding:9px 0px; height:88px; }
-#process div { float:left; width:80px; padding-left:60px; }
-#process ul { list-style:none; }
-#process li { width:80px;  }
-#aboutus { height: 30px; line-height: 30px; overflow: hidden; text-align:center; background:#efefef; border: 1px solid #d9d9d9; color:#ccc; }
-#links { margin:0 auto; border:1px solid #163880; padding:12px; background:#efefef; overflow:hidden; clear:both; }
+.footer { margin:10px auto; overflow:hidden; width:980px;  }
+.process-title { background:url(/image/help.jpg) no-repeat; width:980px; height:60px; } 
+.process { border:1px solid #ccc; padding:9px 0px; height:88px; }
+.process ul { list-style:none; float:left; width:130px; padding:0; margin:0; margin-left:50px; }
+.process li { width:80px;  }
+.aboutus { height: 30px; line-height: 30px; overflow: hidden; text-align:center; background:#efefef; border: 1px solid #d9d9d9; color:#ccc; }
+.links { margin:0 auto; border:1px solid #163880; padding:12px; background:#efefef; overflow:hidden; clear:both; }
 
 .footernew { text-align:center; padding-bottom:12px; line-height:24px; margin:0px auto; width:670px; color:#009; overflow:hidden; }
 .footernew p { line-height:20px; margin:4px; width:120px; float:left; height:50px; border:#d2d2d2 2px solid; }

@@ -2,19 +2,10 @@
 dim webname,webemail,dizhi,youbian,dianhua,copyright,webbanner,weblogo,weburl,gonggao
 
 set rs=server.CreateObject("adodb.recordset")
-rs.Open "select webname,webemail,fos,B_mid,B_Key,dizhi,youbian,dianhua,copyright,gonggao,weblogo,weburl,webbanner from config",conn,1,1
-webname=trim(rs("webname"))
-Fos=trim(rs("fos"))
+rs.Open "select B_mid,B_Key,gonggao from config",conn,1,1
+webname="中国国旅CITS-海南省中国国际旅行社"
 B_mid=trim(rs("B_mid"))
 B_Key=trim(rs("B_Key"))
-webemail=trim(rs("webemail"))
-dizhi=trim(rs("dizhi"))
-youbian=trim(rs("youbian"))
-dianhua=trim(rs("dianhua"))
-copyright=trim(rs("copyright"))
-weblogo=trim(rs("weblogo"))
-webbanner=trim(rs("webbanner"))
-weburl=trim(rs("weburl"))
 gonggao=trim(rs("gonggao"))
 rs.Close
 set rs=nothing

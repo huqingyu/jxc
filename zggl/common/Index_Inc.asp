@@ -40,22 +40,22 @@ return false;
 <SCRIPT language=javascript>
  function secCard(n)
   {
-  if(n==1)
-  {
-				   secTable.cells[0].className="cardSelected1";
-                   secTable.cells[2].className="cardNormal";
-  }
-  if(n==2)
-  {
-                   secTable.cells[0].className="cardNormal";
-                   secTable.cells[2].className="cardSelected1";
-  }
+	if(n==1)
+	{
+	   secTable.cells[0].className="cardSelected1";
+	   secTable.cells[2].className="cardNormal";
+	}
+	if(n==2)
+	{
+	   secTable.cells[0].className="cardNormal";
+	   secTable.cells[2].className="cardSelected1";
+	}
   }
   function secBoard(n)
   {
     for(i=0;i<mainTable.tBodies.length;i++)
-      mainTable.tBodies[i].style.display="none";
-            mainTable.tBodies[n].style.display="";
+		mainTable.tBodies[i].style.display="none";
+	mainTable.tBodies[n].style.display="";
   }
 </SCRIPT>
 <table width="270" border="0" cellpadding="0" cellspacing="0">

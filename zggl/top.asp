@@ -18,13 +18,13 @@
 		<a href="/list.asp?tp=64">新闻中心</a>
 	</li>
 	<li>
-		<a href="/cjy.asp">出境游</a>
+		<a href="/you_guowai.asp">出境游</a>
 	</li>
 	<li>
-		<a href="/gny.asp">国内游</a>
+		<a href="/you_guonei.asp">国内游</a>
 	</li>
 	<li>
-		<a href="/sny.asp">省内游</a>
+		<a href="/you_sheng.asp">省内游</a>
 	</li>
 	<li>
 		<a href="/list.asp?tp=67">景区</a>

@@ -267,10 +267,11 @@ A.button:hover {
 .linkSeed .informationSeed a h4 .tit_2{font-size: 14px; color:#FFA63C; padding-left:5px;} 
 
 /* foot */
-#bottom {
+.bottom {
 color: #666;
 font-size: 12px;
 clear:both;
+text-align:left;
 }
 .bottom a, #bottom a:link, #bottom a:visited { text-decoration: none; color: #666; }
 .bottom a:hover, #bottom a:active { text-decoration: underline; color: #000; }

@@ -27,7 +27,7 @@
 </ul>
 <ul>
   <li><a href="#">È¡ÏûºÍÍË¶©</a></li>
-  <li><a href="#">³ö¾³ÓÎÇ©Ö¤</a></li>
+  <li><a href="/qianzheng.asp">³ö¾³ÓÎÇ©Ö¤</a></li>
   <li><a href="#">ÂÃÓÎ±£ÏÕ</a> </li>
   <li><a href="/help/contact.asp">ÁªÏµÎÒÃÇ</a></li>
 </ul>
@@ -42,7 +42,7 @@ Copyright &copy; 2013 By <a title="http://hncits.net" href="/">º£ÄÏÊ¡ÖÐ¹ú¹ú¼ÊÂÃÐ
 <b>×ÉÑ¯ÈÈÏß</b>£º0898-65077871  65360861   ´«Õæ£º0898-65063061
 <b>E-mail</b>£º<a href="mailto:hicits@yahoo.com.cn">hicits@yahoo.com.cn</a><br />
 
-<b>¹¤×÷Ê±¼ä</b>£ºÖÜÒ»ÖÁÖÜÎå 9:00-24:00 ÖÜÁù 9:00-20:00 <b>±¸°¸ºÅ</b>£¨<a href="http://www.miibeian.gov.cn/" target="¡±_blank¡°">ÇíICP±¸09040993ºÅ</a>£©<br />
+<b>¹¤×÷Ê±¼ä</b>£ºÖÜÒ»ÖÁÖÜÎå 9:00-24:00 ÖÜÁù 9:00-20:00 <b>±¸°¸ºÅ</b>£¨<a href="http://www.miibeian.gov.cn/" target="¡±_blank¡°">ÇíICP±¸10000724ºÅ</a>£©<br />
 
 </div></div>
 <div class="line"></div>

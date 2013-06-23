@@ -19,11 +19,11 @@ if request.QueryString<>"" then
 		If Instr(LCase(request.QueryString(Query_Name)),Chk_badword(i))<>0 Then
 		Select Case Err_Message
 			Case "1"
-			Response.Write "<Script Language=JavaScript>alert(' 您现在的位置: "&name&" 您现在的位置:字符串！\n\n 您现在的位置:出现：and update delete ; insert mid master 等非法字符！');window.close();</Script>"
+			Response.Write "<Script Language=JavaScript>alert(' 您现在的位置: "&name&" Error:字符串出现 : ; and update delete insert mid master 等非法字符！');window.close();</Script>"
 			Case "2"
 			Response.Write "<Script Language=JavaScript>location.href='"&Err_Web&"'</Script>"
 			Case "3"
-			Response.Write "<Script Language=JavaScript>alert(' 您现在的位置: "&name&" 您现在的位置:字符串！\n\n 您现在的位置:出现：and update delete ; insert mid master 等非法字符！');location.href='"&Err_Web&"';</Script>"
+			Response.Write "<Script Language=JavaScript>alert(' 您现在的位置: "&name&" Error:字符串出现 : ; and update delete insert mid master 等非法字符！');location.href='"&Err_Web&"';</Script>"
 		End Select
 		Response.End
 		End If

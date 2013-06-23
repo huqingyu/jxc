@@ -8,7 +8,7 @@
 <link href="css/style.css" rel="stylesheet" />
 <title><%=webname%>-м╪ф╛пео╒</title>
 </head>
-<!--#include file="admin/system/system_code.asp" -->
+<!--#include file="common/system_code.asp" -->
 <TABLE border=0 align="center" cellPadding=0 cellSpacing=0>
 
         <tr> 

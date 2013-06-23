@@ -8,7 +8,7 @@
 </head>
 <body>
 <br><br>
-<!--#include file="connection.asp"-->
+<!--#include file="common/conn.asp"-->
 <%
 set rs=server.createobject("adodb.recordset")
 sqltext="select id,c_name from hotelb where id="&request("id")&"" 

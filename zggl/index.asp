@@ -908,6 +908,6 @@ display:inline;color:#FFF; text-align:center; cursor:pointer; font-weight: bold;
 <!--#include file="foot.asp" -->
 </div>
 
-
+<script src="/js/cdate.js"></script>
 </body>
 </html>

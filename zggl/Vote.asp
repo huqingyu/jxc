@@ -1,4 +1,4 @@
-<!--#include file="connection.asp"-->
+<!--#include file="common/conn.asp"-->
 <%dim options,total,sql,i,answer
 if request.QueryString("stype")="" then
 	if Request.ServerVariables("REMOTE_ADDR")=request.cookies("vote")("IPAddress") then

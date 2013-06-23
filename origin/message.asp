@@ -1,6 +1,6 @@
-<!--#include file="Connection.asp"-->
+<!--#include file="common/conn.asp"-->
 <!--#include file="common/webconfig.asp"-->
-<!--#include file="admin/system/Check_SI.asp"-->
+
 <!DOCTYPE HTML>
 <html>
 <head>

@@ -92,7 +92,7 @@ function mysub()
       &nbsp;</td>
     </tr>
     <tr align="center" valign="middle" bgcolor="#eeeeee">
-      <td bgcolor="#5580D5" height="24"><font color="#FFFFFF">程序制作：<a href="mailto:wwdns@163.com">只对你说</a></font></td>
+      <td bgcolor="#5580D5" height="24"></td>
     </tr>
   </table>
 <table width="300" id="t_preview" style="display:none" align="center"><tr><td align="center">

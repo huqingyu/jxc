@@ -3,9 +3,9 @@ if request.Cookies("Gemisum")("username")="" then
   response.write "<script LANGUAGE='javascript'>alert(' 您现在的位置:还没有登录,请登录！');history.go(-1);</script>"
 end if
 %>
-<!--#include file="Connection.asp"-->
+<!--#include file="common/conn.asp"-->
 <!--#include file="common/webconfig.asp"-->
-<!--#include file="admin/system/Check_SI.asp"-->
+
 <!--#include file="admin/system/md5.asp"-->
 <!DOCTYPE HTML>
 <html>

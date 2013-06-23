@@ -1,5 +1,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gbk">
-<!--#include file="connection.asp" -->
+<!--#include virtual="common/conn.asp" -->
 <%
 dim textfield,textfield1,textfield2,textfield3,textfield4,textfield5,textfield6,textfield7,textfield8,textfield9,textfield10,textfield11,textfield12,textfield13,textfield14,textfield15,textfield16,textfield17,textfield18,textfield19,textfield20,textfield21,textfield22,textfield23
 textfield=Request("textfield")
@@ -88,5 +88,5 @@ rs.update
 rs.close
 conn.close
 set conn=nothing
-response.Write "<script language='javascript'>alert(' 您现在的位置: 您现在的位置: 您现在的位置: 您现在的位置:');window.location.href='Xl.html';</script>"
+response.Write "<script language='javascript'>alert(' 您现在的位置:');window.location.href='Xl.html';</script>"
 %>

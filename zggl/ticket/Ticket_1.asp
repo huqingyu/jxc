@@ -1,4 +1,4 @@
-<!--#include file="Connection.asp"-->
+<!--#include file="common/conn.asp"-->
 <!--#include file="common/webconfig.asp"-->
 <!DOCTYPE HTML>
 <html>

@@ -1,5 +1,6 @@
 <%
 dim webname,webemail,dizhi,youbian,dianhua,copyright,webbanner,weblogo,weburl,gonggao
+
 set rs=server.CreateObject("adodb.recordset")
 rs.Open "select webname,webemail,fos,B_mid,B_Key,dizhi,youbian,dianhua,copyright,gonggao,weblogo,weburl,webbanner from config",conn,1,1
 webname=trim(rs("webname"))

@@ -6,7 +6,7 @@ session("errormsg")=" 您现在的位置:的ID 您现在的位置:找。"
 Response.Redirect "error.asp"
 end if
 %>
-<!--#include file="Connection.asp"-->
+<!--#include file="common/conn.asp"-->
 <!--#include file="common/webconfig.asp"-->
 <!DOCTYPE HTML>
 <html>

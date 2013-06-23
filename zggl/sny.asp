@@ -1,4 +1,5 @@
-<!--#include file="common/conn.asp"--> <!--#include file="common/webconfig.asp"-->
+<!--#include file="common/conn.asp"-->
+<!--#include file="common/webconfig.asp"-->
 <% tp=request("tp") %>
 <!DOCTYPE HTML>
 <html>

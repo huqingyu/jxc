@@ -83,7 +83,7 @@ else
 end if
 %>
 <a href="Xl/Xl_<%=er("id")%>.html" target="_blank"><%=er("x_name")%></a></td>
-<td align="center" bgcolor="#F7FDE8"><a href="Giveme.asp?id=<%=er("id")%>" title='预定' target="_blank">预定</a></td>
+<td align="center" bgcolor="#F7FDE8"><a href="order/giveme.asp?id=<%=er("id")%>" title='预定' target="_blank">预定</a></td>
 </tr>
 <%
 er.movenext

@@ -7,7 +7,7 @@
 <link href="css/style.css" rel="stylesheet" />
 </head>
 <body background="images/log_box.gif">
-<!--#include file="Connection.asp"--><br>
+<!--#include file="common/conn.asp"--><br>
 <table width="90%" border="0" cellspacing="0" cellpadding="2" align="center">
             <%if request.Cookies("Gemisum")("username")=""  then%>
             <form name="userlogin" method="post" action="User_Checklogin.asp">

@@ -1,4 +1,5 @@
-<HTML><HEAD><title>插入网页文件</title>
+<HTML>
+<HEAD><title>插入网页文件</title>
 <META content="text/html; charset=gb2312" http-equiv=Content-Type>
 <link rel="stylesheet" type="text/css" href="Style.css">
 <SCRIPT event=onclick for=Ok language=JavaScript>
@@ -20,4 +21,5 @@ name=a class="wenbenkuang" size="20"><BR>&nbsp;&nbsp;滚 动 条：<select id=b  cla
 边框线: <select id=c  class="wenbenkuang"><option value=0>无<option value=1>有</select><br>
   &nbsp;&nbsp;上下边距：<input id=d  class="wenbenkuang" maxlength=2 size=2 ONKEYPRESS="event.returnValue=IsDigit();" name="1" >上下边距必须填写数字,范围在1-99之间<br>
   &nbsp;&nbsp;左右边距：<input id=e  class="wenbenkuang" maxlength=2 size=2 ONKEYPRESS="event.returnValue=IsDigit();" name="2" >左右边距必须填写数字,范围在1-99之间<br>
-  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT id=Ok title=点击“插入”按钮，在编辑器中插入该图片   class="go-wenbenkuang" type=button value=插入></FORM></BODY></HTML>
+  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT id=Ok title=点击“插入”按钮，在编辑器中插入该图片   class="go-wenbenkuang" type=button value=插入></FORM></BODY>
+  </HTML>

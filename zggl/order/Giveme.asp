@@ -5,9 +5,9 @@ if request.Cookies("Gemisum")("username")="" then
   response.write "<script LANGUAGE='javascript'>alert(' 您现在的位置: 您现在的位置:录');window.location.href='Userinfo/Xl_login.asp?id="&id&"';</script>"
 end if
 %>
-<!--#include file="connection.asp" -->
-<!--#include file="common/webconfig.asp"-->
-<!--#include file="admin/system/Check_SI.asp"-->
+<!--#include virtual="common/conn.asp" -->
+<!--#include virtual="common/webconfig.asp"-->
+<!--#include virtual="common/Check_SI.asp"-->
 <!DOCTYPE HTML>
 <html>
 <head>

@@ -18,9 +18,17 @@
 <b> E-mail</b>：<a href="mailto:hicits@yahoo.com.cn">hicits@yahoo.com.cn</a><br />
 <b>工作时间</b>：周一至周五 9:00-24:00 周六 9:00-20:00 <br />
 <b>邮 编</b>：570203 <br /><br />
-<iframe width="697" height="390" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://map.sogou.com/card/index+s=500,360&p=1111&m=go2map&pl=r&i=_6D77_5357_4E2D_56FD_56FD_65C5,12284960.9375,2262195.3125,,,.html#"></iframe>
-
 <br />
+<h2>公交车(琼苑宾馆站)</h2>
+8路公交： 海南广场- - 复兴城<br />
+14路公交：新　　港- - 海南日报社<br />
+37路公交：绿色佳园- - 火车站<br />
+16路公交：秀英炮楼 - - 武警医院<br />
+39路公交：经济学院 -- 西站<br />
+43路公交：龙华总站 -- 灵山中学<br />
+<br />
+<a href="http://map.sogou.com/#uids=1_11001185593" target="_blank"><img src="/image/about/ditu.jpg" /></a>
+
 <br />
 	</div>
 <!--#include virtual="foot.asp" -->

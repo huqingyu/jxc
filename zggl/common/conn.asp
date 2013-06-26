@@ -3,7 +3,7 @@
 <%
 dim db,ConnStr,Conn
 
-db= GetBasePath() & "db\#tinct@zggl_db.mdb"
+db= GetBasePath() & "db/#tinct@zggl_db.mdb"
 'On Error Resume Next
 
 ConnStr ="driver={Microsoft Access Driver (*.mdb)};dbq=" & db

@@ -76,11 +76,11 @@ if upfileext<>"jpg" and upfileext<>"jpeg" and upfileext<>"gif" and upfileext<>"J
 	response.end
 end if
 ufp="UP_"&year(now)&month(now)&day(now)&hour(now)&minute(now)&second(now)&"."&upfilename(ubound(upfilename))
-file.saveas Server.mappath("UploadFile/"&ufp)
+file.saveas Server.mappath("/uimages/"&ufp)
 %>
-<input name="select1" type="text" value="UploadFile/<%=ufp%>" size="30" style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; COLOR: rgb(255,0,0); BORDER-BOTTOM: rgb(0,0,0) 0px solid" >
+<input name="select1" type="text" value="/uimages/<%=ufp%>" size="30" style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; COLOR: rgb(255,0,0); BORDER-BOTTOM: rgb(0,0,0) 0px solid" >
 <%
-response.write "<br />图片放入：<a href=Javascript:pic('UploadFile/"&ufp&"');>缩略图</a>&nbsp;<a href=Javascript:piclink('UploadFile/"&ufp&"');>放大图</a>"
+response.write "<br />图片放入：<a href=Javascript:pic('/uimages/"&ufp&"');>缩略图</a>&nbsp;<a href=Javascript:piclink('/uimages/"&ufp&"');>放大图</a>"
 %>
 &nbsp;<a href="javascript:HighlightAll('test.select1')">复制</a>
 <%

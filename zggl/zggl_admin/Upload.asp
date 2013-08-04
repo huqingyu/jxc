@@ -20,7 +20,7 @@ textarea {border-width: 1; border-color: #000000; font-family: 宋体; font-size: 
 #sponsorAdDiv {position:absolute; height:1; width:1; top:0; left:0;}
 -->
 </style>
-<SCRIPT LANGUAGE="JavaScript">
+<script>
 adTime=8;
 chanceAd=1;
 var ns=(document.layers);
@@ -58,7 +58,7 @@ adDiv.visibility ="hide";
 }
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=gbk"></head>
-<bodyleftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <div id="sponsorAdDiv" style="visibility:hidden; left: 22px; top: 118px; width: 197px; height: 10px"> 
   <table width="200" height="25" bgcolor="#0099cc" border=0 cellspacing=0>
     <tr> 

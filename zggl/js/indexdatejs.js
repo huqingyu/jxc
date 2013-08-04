@@ -33,11 +33,12 @@ document.writeln('        <table border=0 cellspacing=1 cellpadding=0 width=100%
 document.writeln('          <tr>');
 document.writeln('</tr></table></td></tr></table></div>');
 var outObject;
+
 function setday(tt,obj) 
 {
   if (arguments.length >  2){alert("对不起！传入参数太多！");return;}
   if (arguments.length == 0){alert("对不起！没有参数传回！");return;}
-  var dads  = document.all.yyDateLayer.style;var th = tt;
+  var dads  = document.getElementById("yyDateLayer").style;var th = tt;
   var ttop  = tt.offsetTop;     
   var thei  = tt.clientHeight;  
   var tleft = tt.offsetLeft;    
@@ -47,24 +48,33 @@ function setday(tt,obj)
   dads.left = tleft;
   outObject = (arguments.length == 1) ? th : obj;
   dads.display = '';
-  event.returnValue=false;
+  //event.returnValue=false;
 }
 var MonHead = new Array(12);         
     MonHead[0] = 31; MonHead[1] = 28; MonHead[2] = 31; MonHead[3] = 30; MonHead[4]  = 31; MonHead[5]  = 30;
     MonHead[6] = 31; MonHead[7] = 31; MonHead[8] = 30; MonHead[9] = 31; MonHead[10] = 30; MonHead[11] = 31;
 var yyTheYear=new Date().getFullYear(); 
 var yyTheMonth=new Date().getMonth()+1; 
-var yyWDay=new Array(37);               
-function document.onclick() 
-{ 
-  with(window.event.srcElement)
+var yyWDay=new Array(37);
+
+document.onclick = function (e) 
+{
+	e = e || window.event;
+  with(e.srcElement)
   { if (getAttribute("Author")==null && tagName != "INPUT")
-    document.all.yyDateLayer.style.display="none";
+    document.getElementById("yyDateLayer").style.display="none";
   }
-}
+};
+document.onkeydown = function (e)
+  {
+	e = e || window.event;
+    if (e.keyCode==27)
+		ocument.getElementById("yyDateLayer").style.display="none";
+  };
+  
 function yyWriteHead(yy,mm)  
-  { document.all.yyYearHead.innerText  = yy;
-    document.all.yyMonthHead.innerText = mm;
+  { document.getElementById("yyYearHead").innerText  = yy;
+    document.getElementById("yyMonthHead").innerText = mm;
   }
 function tmpSelectYearInnerHTML(strYear)
 {
@@ -75,8 +85,8 @@ function tmpSelectYearInnerHTML(strYear)
   if (n < 1000) n = 1000;
   if (n + 26 > 9999) n = 9974;
   var s = "<select Author=yy name=tmpSelectYear style='font-size: 12px' "
-     s += "onblur='document.all.tmpSelectYearLayer.style.display=\"none\"' "
-     s += "onchange='document.all.tmpSelectYearLayer.style.display=\"none\";"
+     s += "onblur='document.getElementById(\"tmpSelectYearLayer\").style.display=\"none\"' "
+     s += "onchange='document.getElementById(\"tmpSelectYearLayer\").style.display=\"none\";"
      s += "yyTheYear = this.value; yySetDay(yyTheYear,yyTheMonth)'>\r\n";
   var selectInnerHTML = s;
   for (var i = n; i < n + 26; i++)
@@ -86,17 +96,17 @@ function tmpSelectYearInnerHTML(strYear)
     else {selectInnerHTML += "<option value='" + i + "'>" + i + "年" + "</option>\r\n";}
   }
   selectInnerHTML += "</select>";
-  document.all.tmpSelectYearLayer.style.display="";
-  document.all.tmpSelectYearLayer.innerHTML = selectInnerHTML;
-  document.all.tmpSelectYear.focus();
+  document.getElementById("tmpSelectYearLayer").style.display="";
+  document.getElementById("tmpSelectYearLayer").innerHTML = selectInnerHTML;
+  document.getElementById("tmpSelectYear").focus();
 }
 function tmpSelectMonthInnerHTML(strMonth)
 {
   if (strMonth.match(/\D/)!=null){alert("月份输入参数不是数字！");return;}
   var m = (strMonth) ? strMonth : new Date().getMonth() + 1;
   var s = "<select Author=yy name=tmpSelectMonth style='font-size: 12px' "
-     s += "onblur='document.all.tmpSelectMonthLayer.style.display=\"none\"' "
-     s += "onchange='document.all.tmpSelectMonthLayer.style.display=\"none\";"
+     s += "onblur='document.getElementById(\"tmpSelectMonthLayer\").style.display=\"none\"' "
+     s += "onchange='document.getElementById(\"tmpSelectMonthLayer\").style.display=\"none\";"
      s += "yyTheMonth = this.value; yySetDay(yyTheYear,yyTheMonth)'>\r\n";
   var selectInnerHTML = s;
   for (var i = 1; i < 13; i++)
@@ -106,18 +116,15 @@ function tmpSelectMonthInnerHTML(strMonth)
     else {selectInnerHTML += "<option value='"+i+"'>"+i+"月"+"</option>\r\n";}
   }
   selectInnerHTML += "</select>";
-  document.all.tmpSelectMonthLayer.style.display="";
-  document.all.tmpSelectMonthLayer.innerHTML = selectInnerHTML;
-  document.all.tmpSelectMonth.focus();
+  document.getElementById("tmpSelectMonthLayer").style.display="";
+  document.getElementById("tmpSelectMonthLayer").innerHTML = selectInnerHTML;
+  document.getElementById("tmpSelectMonth").focus();
 }
 function closeLayer()           
   {
-    document.all.yyDateLayer.style.display="none";
+    document.getElementById("yyDateLayer").style.display="none";
   }
-function document.onkeydown()
-  {
-    if (window.event.keyCode==27)document.all.yyDateLayer.style.display="none";
-  }
+
 function IsPinYear(year)         
   {
     if (0==year%4&&((year%100!=0)||(year%400==0))) return true;else return false;
@@ -165,7 +172,9 @@ function yySetDay(yy,mm)
   var day1 = 1,firstday = new Date(yy,mm-1,1).getDay(); 
   for (var i = firstday; day1 < GetMonthCount(yy,mm)+1; i++){yyWDay[i]=day1;day1++;}
   for (var i = 0; i < 37; i++)
-  { var da = eval("document.all.yyDay"+i)   
+  { 
+	var da = document.getElementById("yyDay"+i);
+  
     if (yyWDay[i]!="")
       { da.innerHTML = "<b>" + yyWDay[i] + "</b>";
         da.style.backgroundColor = (yy == new Date().getFullYear() &&

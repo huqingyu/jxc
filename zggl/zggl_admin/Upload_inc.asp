@@ -1,62 +1,65 @@
 <%
+
 dim upfile_5xSoft_Stream
+
 Class upload_5xSoft
-dim Form,File,Version
+  
+dim form,file
+  
 Private Sub Class_Initialize 
-		dim iStart,iFileNameStart,iFileNameEnd,iEnd,vbEnter,iFormStart,iFormEnd,theFile
-		dim strDiv,mFormName,mFormValue,mFileName,mFileSize,mFilePath,iDivLen,mStr
-		Version=""
-		if Request.TotalBytes<1 then Exit Sub
-		set Form=CreateObject("Scripting.Dictionary")
-		set File=CreateObject("Scripting.Dictionary")
-		set upfile_5xSoft_Stream=CreateObject("Adodb.Stream")
-		upfile_5xSoft_Stream.mode=3
-		upfile_5xSoft_Stream.type=1
-		upfile_5xSoft_Stream.open
-		upfile_5xSoft_Stream.write Request.BinaryRead(Request.TotalBytes)
-		
-		vbEnter=Chr(13)&Chr(10)
-		iDivLen=inString(1,vbEnter)+1
-		strDiv=subString(1,iDivLen)
-		iFormStart=iDivLen
-		iFormEnd=inString(iformStart,strDiv)-1
-		while iFormStart < iFormEnd
-		  iStart=inString(iFormStart,"name=""")
-		  iEnd=inString(iStart+6,"""")
-		  mFormName=subString(iStart+6,iEnd-iStart-6)
-		  iFileNameStart=inString(iEnd+1,"filename=""")
-		  if iFileNameStart>0 and iFileNameStart<iFormEnd then
-		   iFileNameEnd=inString(iFileNameStart+10,"""")
-		   mFileName=subString(iFileNameStart+10,iFileNameEnd-iFileNameStart-10)
-		   iStart=inString(iFileNameEnd+1,vbEnter&vbEnter)
-		   iEnd=inString(iStart+4,vbEnter&strDiv)
-		   if iEnd>iStart then
-			mFileSize=iEnd-iStart-4
-		   else
-			mFileSize=0
-		   end if
-		   set theFile=new FileInfo
-		   theFile.FileName=getFileName(mFileName)
-		   theFile.FilePath=getFilePath(mFileName)
-		   theFile.FileSize=mFileSize
-		   theFile.FileStart=iStart+4
-		   theFile.FormName=FormName
-		   file.add mFormName,theFile
-		  else
-		   iStart=inString(iEnd+1,vbEnter&vbEnter)
-		   iEnd=inString(iStart+4,vbEnter&strDiv)
-		
-		   if iEnd>iStart then
-			mFormValue=subString(iStart+4,iEnd-iStart-4)
-		   else
-			mFormValue="" 
-		   end if
-		   form.Add mFormName,mFormValue
-		  end if
-		
-		  iFormStart=iformEnd+iDivLen
-		  iFormEnd=inString(iformStart,strDiv)-1
-		wend
+dim iStart,iFileNameStart,iFileNameEnd,iEnd,vbEnter,iFormStart,iFormEnd,theFile
+dim strDiv,mFormName,mFormValue,mFileName,mFileSize,mFilePath,iDivLen,mStr
+if Request.TotalBytes<1 then Exit Sub
+set form=CreateObject("Scripting.Dictionary")
+set file=CreateObject("Scripting.Dictionary")
+set upfile_5xSoft_Stream=CreateObject("Adodb.Stream")
+upfile_5xSoft_Stream.mode=3
+upfile_5xSoft_Stream.type=1
+upfile_5xSoft_Stream.open
+upfile_5xSoft_Stream.write Request.BinaryRead(Request.TotalBytes)
+
+vbEnter=Chr(13)&Chr(10)
+iDivLen=inString(1,vbEnter)+1
+strDiv=subString(1,iDivLen)
+iFormStart=iDivLen
+iFormEnd=inString(iformStart,strDiv)-1
+while iFormStart < iFormEnd
+  iStart=inString(iFormStart,"name=""")
+  iEnd=inString(iStart+6,"""")
+  mFormName=subString(iStart+6,iEnd-iStart-6)
+  iFileNameStart=inString(iEnd+1,"filename=""")
+  if iFileNameStart>0 and iFileNameStart<iFormEnd then
+   iFileNameEnd=inString(iFileNameStart+10,"""")
+   mFileName=subString(iFileNameStart+10,iFileNameEnd-iFileNameStart-10)
+   iStart=inString(iFileNameEnd+1,vbEnter&vbEnter)
+   iEnd=inString(iStart+4,vbEnter&strDiv)
+   if iEnd>iStart then
+    mFileSize=iEnd-iStart-4
+   else
+    mFileSize=0
+   end if
+   set theFile=new FileInfo
+   theFile.FileName=getFileName(mFileName)
+   theFile.FilePath=getFilePath(mFileName)
+   theFile.FileSize=mFileSize
+   theFile.FileStart=iStart+4
+   theFile.FormName=FormName
+   file.add mFormName,theFile
+  else
+   iStart=inString(iEnd+1,vbEnter&vbEnter)
+   iEnd=inString(iStart+4,vbEnter&strDiv)
+
+   if iEnd>iStart then
+    mFormValue=subString(iStart+4,iEnd-iStart-4)
+   else
+    mFormValue="" 
+   end if
+   form.Add mFormName,mFormValue
+  end if
+
+  iFormStart=iformEnd+iDivLen
+  iFormEnd=inString(iformStart,strDiv)-1
+wend
 End Sub
 
 Private Function subString(theStart,theLen)
@@ -110,9 +113,8 @@ Private Sub Class_Terminate
   upfile_5xSoft_Stream.close
   set upfile_5xSoft_Stream=nothing
 End Sub
-   
- 
- Private function GetFilePath(FullPath)
+
+Private function GetFilePath(FullPath)
   If FullPath <> "" Then
    GetFilePath = left(FullPath,InStrRev(FullPath, "\"))
   Else
@@ -145,7 +147,6 @@ End Sub
    Next
  End function
 End Class
-
 
 Class FileInfo
   dim FormName,FileName,FilePath,FileSize,FileStart

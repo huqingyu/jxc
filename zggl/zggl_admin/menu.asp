@@ -48,9 +48,6 @@
       <td height="22"><a href="admin_masterlook.asp?action=lookall" target="main">查看所有预订</a></td>
     </tr>
     <tr>
-      <td height="22"><a href="admin_select.asp" target="main">按条件查看预订客户</a></td>
-    </tr>
-    <tr>
       <td height="22"><a href="admin_search.asp" target="main">客户订单查询</a></td>
     </tr>
 

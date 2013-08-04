@@ -41,7 +41,7 @@ while not rs.eof
     <td><%=rs("m_yudingtime")%></td>
     <td><%=rs("m_phone")%></td>
     <td><%=rs("m_renshuo")%></td>
-    <td><a href="../Xl/Xl_<%=rs("m_id")%>.html" title="<%=rs("m_xianlu_name")%>" target=_blank>查看线路</a></td>
+    <td><a href="../xl_show.asp?id=<%=rs("m_id")%>" title="<%=rs("m_xianlu_name")%>" target=_blank>查看线路</a></td>
   </tr>
 <%
 rs.movenext
@@ -89,7 +89,7 @@ end if
     <td><%=rs("m_yudingtime")%></td>
     <td><%=rs("m_phone")%></td>
     <td><%=rs("m_renshuo")%></td>
-    <td><a href="../Xl/Xl_<%=rs("m_id")%>.html" title="<%=rs("m_xianlu_name")%>" target=_blank>查看线路</a></td>
+    <td><a href="../xl_show.asp?id=<%=rs("m_id")%>" title="<%=rs("m_xianlu_name")%>" target=_blank>查看线路</a></td>
   </tr>
 
 <%

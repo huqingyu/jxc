@@ -1,5 +1,5 @@
 <!--#include file="../common/conn.asp"-->
-<!--#include file="md5.asp"-->
+<!--#include file="../common/md5.asp"-->
 <%dim username,userpassword,comeurl,verifycode
 username=replace(trim(request("username")),"'","")
 userpassword=md5(replace(trim(request("userpassword")),"'",""))

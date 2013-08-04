@@ -9,7 +9,6 @@ end if
 end if
 %>
 <!--#include file="admin_common/conn.asp" -->
-<!--#include file="upload_inc.asp"-->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
@@ -22,8 +21,6 @@ action=trim(request("action"))
 select case action
 case "add"
 add
-case "addok"
-addok
 case "del"
 del
 case "delok"
@@ -32,8 +29,6 @@ case "edit"
 edit
 case "editok"
 editok
-case "editok1"
-editok1
 case else
 response.write("<script>alert('错误的传递参数！');history.back(1);</script>")
 end select
@@ -45,7 +40,7 @@ function check(){
 </script>
 <br /><br /><br />
 <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
-<form action="?action=addok" method="post" enctype="multipart/form-data" name="form1" onSubmit="return check();">
+<form action="Admin_xl_add.asp?action=addok" method="post" enctype="multipart/form-data" name="form1" onSubmit="return check();">
   <tr>
     <td height="30" colspan="2" align="center" background="images/admin_bg_1.gif"><b><font color="red">添加线路</font></b></td>
     </tr>
@@ -119,7 +114,7 @@ rs.close
   <tr>
     <td height="24" align="center" bgcolor="#f5f5f5">线路景点图片：</td>
     <td>　    
-	<input name="ttt" type="file" id="ttt" size="40">    </td>
+	<input name="ttt" type="file" id="ttt" size="40" />    </td>
   </tr>
   <tr>
     <td height="24" colspan="2">　　*上传文件类型为：gif,jpg,bmp，大小<2M。除图片外所有项均为必填写项。</td>
@@ -130,45 +125,6 @@ rs.close
 </form>
 </table>
 <%
-end sub
-sub addok
-set upload=new upload_5xsoft
-dim ta,tb,tc,td,te,tf,tg,tj,tk,x_top
-ta=replace(trim(upload.Form("ta")),"'","’")
-tb=replace(trim(upload.Form("tb")),"'","’")
-tc=replace(trim(upload.Form("tc")),"'","’")
-td=replace(trim(upload.Form("td")),"'","’")
-te=replace(trim(upload.Form("te")),"'","’")
-tf=replace(trim(upload.Form("tf")),"'","’")
-tg=replace(trim(upload.Form("tg")),"'","’")
-th=replace(trim(upload.Form("th")),"'","’")
-tk=replace(trim(upload.Form("tk")),"'","’")
-x_top=trim(upload.Form("x_top"))
-IDstring="Gemisum"&date & time
-IDstring=Replace(IDstring,"-","")
-IDstring=Replace(IDstring,":","")
-pthString="XlUploadImages/"
-set file=upload.file("ttt")
-if file.filesize>0 then
-if file.filesize>2097152 then
-set file=nothing
-response.write("<script>alert('上传图片的大小不能大于2M，即：2097152字节！');history.back(1);</script>")
-else
-FileTpe=Mid(file.filename,Len(file.filename)-2)
-if not (ucase(fileTpe)="JPG" or ucase(fileTpe)="BMP" or ucase(fileTpe)="GIF") then
-response.write("<script>alert('上传图片格式只能为：JPG,BMP,GIF。');history.back(1);</script>")
-else
-file.saveAs Server.mappath(pthString & IDstring & "." & FileTpe)
-filepath=pthString & IDstring & "." & FileTpe
-end if
-end if
-else
-filepath=""
-end if
-set file=nothing
-conn.execute "insert into xianlu (x_name,x_baojia,x_leixun,x_shijian,x_shuoming,x_jingdian,x_anpai,x_zhushi,x_jingdiantupian,x_leiid,x_top) values ('"&ta&"','"&tb&"','"&tc&"','"&te&"','"&th&"','"&tg&"','"&tf&"','"&tk&"','"&filepath&"','"&td&"',"&x_top&")"
-conn.close
-response.write("<script>alert('添加线路成功！');location='admin_addxl.asp?action=edit';</script>")
 end sub
 sub del
 %>
@@ -210,7 +166,7 @@ response.write ("<font color=red >荐</font>")
 else
 response.write ("<font color=red >普</font>")
 end if
-response.write(" <a href=""../xl/index.asp?Id="&rs2("id")&""" target=""_blank"">"&trim(rs2("x_name"))&"</a>")
+response.write(" <a href=""../xl_show.asp?Id="&rs2("id")&""" target=""_blank"">"&trim(rs2("x_name"))&"</a>")
 if rs2("user")<>"" then
 response.write("<font color=green>("&rs2("User")&"用户发布)</font>")
 End If
@@ -234,7 +190,7 @@ dim id,img,FileName
 id=trim(request("id"))
 img=trim(request("img"))
 img=replace(img,"XlUploadImages/","")
-FileName = "../xl/index.asp?Id="&id
+FileName = "../xl_show.asp?Id="&id
 if not isnumeric(id) then
 response.write("<script>alert('错误的传递参数！');history.back(1);</script>")
 end if
@@ -299,7 +255,7 @@ else
 response.write ("<font color=red >普</font>")
 end if
 %>
-    <a href="../xl/index.asp?Id=<%=er("id")%>" target="_blank"><%=er("x_name")%></a><%if er("user")<>"" then
+    <a href="../xl_show.asp?Id=<%=er("id")%>" target="_blank"><%=er("x_name")%></a><%if er("user")<>"" then
 response.write("<font color=green>("&er("User")&"用户发布)</font>")
 End If%></td>
     <td align="center"><%
@@ -358,7 +314,7 @@ function check(){
 </script>
 <br /><br /><br />
 <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
-<form action="?action=editok1" method="post" enctype="multipart/form-data" name="form1" onSubmit="return check();">
+<form action="Admin_xl_add.asp?action=editok1" method="post" enctype="multipart/form-data" name="form1" onSubmit="return check();">
   <tr>
     <td height="30" colspan="2" align="center" background="images/admin_bg_1.gif"><b><font color="red">编辑线路</font></b></td>
     </tr>
@@ -435,7 +391,7 @@ leirs.close
   <tr>
     <td height="24" align="center" bgcolor="#f5f5f5">线路景点图片：</td>
     <td>　    
-	<input name="ttt" type="file" id="ttt" size="40"><input name="rimg" type="hidden" value="<%=rs("x_jingdiantupian")%>">    </td>
+	<input name="ttt" type="file" id="ttt" size="40" /><input name="rimg" type="hidden" value="<%=rs("x_jingdiantupian")%>" />    </td>
   </tr>
   <tr>
     <td height="36" align="center" bgcolor="#f5f5f5">原图片情况：</td>
@@ -459,62 +415,7 @@ end if
 <%
 rs.close
 end sub
-sub editok1
 
-dim id,ta,tb,tc,td,te,tf,tg,tj,tk,x_top
-id=trim(request("xid"))
-ta=replace(trim(request("ta")),"'","’")
-tb=replace(trim(request("tb")),"'","’")
-tc=replace(trim(request("tc")),"'","’")
-td=replace(trim(request("td")),"'","’")
-te=replace(trim(request("te")),"'","’")
-tf=replace(trim(request("tf")),"'","’")
-tg=replace(trim(request("tg")),"'","’")
-th=replace(trim(request("th")),"'","’")
-tk=replace(trim(request("tk")),"'","’")
-x_top=trim(request("x_top"))
-img=trim(request("rimg"))
-IDstring="Gemisum"&date & time
-IDstring=Replace(IDstring,"-","")
-IDstring=Replace(IDstring,":","")
-pthString="XlUploadImages/"
-
-if img <> "" then
-set upload=new upload_5xSoft
-set file=upload.file("ttt")
-if file.filesize>0 then
-	if instr(img,pthstring)=0 then
-		response.write ("不是内部图，无须删除！")
-	else
-		img1=replace(img,"XlUploadImages/","")
-		Set fso = CreateObject("Scripting.FileSystemObject")
-		Set f2 = fso.getfile(server.mappath("XlUploadImages/"&img1))
-		f2.delete
-		conn.execute("update xianlu set x_jingdiantupian='' where id="&id)
-	end if
-	if file.filesize>2097152 then
-		set file=nothing
-		response.write("<script>alert('上传图片的大小不能大于2M，即：2097152字节！');history.back(1);</script>")
-	else
-		FileTpe=Mid(file.filename,Len(file.filename)-2)
-		if not (ucase(fileTpe)="JPG" or ucase(fileTpe)="BMP" or ucase(fileTpe)="GIF") then
-			response.write("<script>alert('上传图片格式只能为：JPG,BMP,GIF。');history.back(1);</script>")
-		else
-			file.saveAs Server.mappath(pthString & IDstring & "." & FileTpe)
-			filepath=pthString & IDstring & "." & FileTpe
-			conn.execute("update xianlu set x_jingdiantupian='"&filepath&"' where id="&id)
-			set f2=nothing
-			set file=nothing
-		end if
-	end if
-end if
-end if
-sss="update xianlu set x_name='"&ta&"',x_baojia='"&tb&"',x_leixun='"&tc&"',x_shijian='"&te&"',x_shuoming='"&th&"',x_jingdian='"&tg&"',x_anpai='"&tf&"',x_zhushi='"&tk&"',x_leiid='"&td&"',x_top='"&x_top&"' where id='"&id&"'"
-
-conn.execute(sss)
-conn.close
-response.write("<script>alert('此线路编辑修改完成！按确定重新载入！');location='admin_addxl.asp?action=editok&id="&id&"';</script>")
-end sub
 %>
 </body>
 </html>

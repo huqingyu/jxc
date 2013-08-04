@@ -12,7 +12,7 @@ Xl_Baojia = rs("X_Baojia")
 if trim(rs("x_jingdiantupian"))="" then
 Xl_Img = Xl_Img& "暂无图片"
 else
-Xl_Img = Xl_Img&"<a href=""admin/"&rs("x_jingdiantupian")&""" target=""_blank""><img src="" admin/"&rs("x_jingdiantupian")&" "" alt=""点击在新窗口观看"" width=""146"" height=""104"" border=""0""></a>"
+Xl_Img = Xl_Img&"<a href="""&rs("x_jingdiantupian")&""" target=""_blank""><img src="""&rs("x_jingdiantupian")&" "" alt=""点击在新窗口观看"" width=""200"" border=""0""></a>"
 end if
 Xl_ShuoMing = rs("X_ShuoMing")
 XL_AnPai = rs("X_Anpai")

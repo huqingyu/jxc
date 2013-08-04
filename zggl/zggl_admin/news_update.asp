@@ -36,6 +36,15 @@ end if
 <link href="css/news.css" rel="stylesheet" />
 </head>
 <body>
+<script>
+function openScript(url, width, height){
+	window.open(url,"openScript",'width=' + width + ',height=' + height + ',left=450,top=300,resizable=1,scrollbars=no,menubar=no,status=no' );
+}
+function openem()
+{ 
+openScript('upload.asp?UP=admin&formname=form1&amp;editname=tu&amp;uppath=bookpic&amp;filelx=jpg',300,100); 
+}
+</script>
 <form id="form1" name="form1" method="post" action="news_update.asp?wang=up">
   <table width="93%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#5580D5">
     <tr>
@@ -67,7 +76,7 @@ end if
 	  <tr>
       <td height="28" align="center">图片</td>
       <td>&nbsp;&nbsp; <input name="tu" type="text" id="tu" value="<%= rs("tu") %>" size="50" />
-      &nbsp; <input class="button" type="button" name="Submit22" value="上传图片" onclick="window.open('../Up_BookPic.asp?formname=form1&amp;editname=tu&amp;uppath=bookpic&amp;filelx=jpg','','status=no,scrollbars=no,top=20,left=110,width=420,height=165')" /></td>
+      &nbsp; <input class="button" type="button" name="Submit22" value="上传图片" onclick="openem()" /></td>
     </tr>
     <tr>
       <td height="28" align="center">文章分类</td>

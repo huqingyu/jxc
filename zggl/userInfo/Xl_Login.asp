@@ -23,8 +23,6 @@ session("roomid")=request("roomid")
                       </TBODY>
                     </TABLE>
                     <TABLE cellSpacing=0 cellPadding=0 width=572 border=0>
-        <TBODY>
-        
         <TR>
           <TD width=1 bgColor=#88b3be><IMG height=1 
             src="images/z.gif" width=1></TD>
@@ -63,7 +61,7 @@ session("roomid")=request("roomid")
 <%
 id=trim(Request("id"))
 set rs=server.createobject("adodb.recordset")
-rs.open "select jifen,yucun,reglx,vipdate from [user] where username='"&request.Cookies("Gemisum")("username")&"'",conn,1,3
+rs.open "select jifen,yucun,reglx,vipdate from userb where username='"&request.Cookies("Gemisum")("username")&"'",conn,1,3
 if rs("vipdate")<>"" then 
 '看是不是过期VIP
 if rs("vipdate")<date and rs("reglx")=2 then
@@ -81,7 +79,7 @@ response.write ""&request.Cookies("Gemisum")("username")&" 贵宾您好<br>您目前有"
 else
 response.write ""&request.Cookies("Gemisum")("username")&" 您好<br>您目前有"&request.Cookies("Gemisum")("jifen")&"积分,预存款"&request.Cookies("Gemisum")("yucun")&"元 "
 end if
-response.write "<br><a href=../Giveme.asp?id="&id&" ><img src=""images/hotel_dire_btn1.jpg"" width=""90"" height=""29"" border=0></a>"
+response.write "<br><a href=../order/Giveme.asp?id="&id&" ><img src=""images/hotel_dire_btn1.jpg"" width=""90"" height=""29"" border=0></a>"
 end if
 %>
                 </td>
@@ -91,7 +89,7 @@ end if
             <P align="center" style="MARGIN-TOP: 5px; LINE-HEIGHT: 200%"> 
               　　注册用户，并已经在网上登记资料，为本站注册用<br>
               户，您可以参加我们丰富多彩的会员积分奖励计划。<br>
-              <a href="../xl.html"><font color="#ff0000">返回度假产品首页</font></a><BR>
+              <a href="/"><font color="#ff0000">返回首页</font></a><BR>
           </P></TD>
           <TD width=1 bgColor=#88b3be><IMG height=1 
             src="images/z.gif" width=1></TD>

@@ -26,19 +26,19 @@ textfield21=Request("textfield21")
 textfield22=Request("textfield22")
 textfield23=Request("textfield23")
 if not isNumeric(textfield9) then
-errormsg="<li> 您现在的位置: 您现在的位置:必须为数字！</li><br>"
+errormsg="<li> 必须为数字！</li><br>"
 founderr=true
 end if
 if not isNumeric(textfield16) then
-errormsg=errormsg&"<li> 您现在的位置: 您现在的位置:必须为数字！</li></br>"
+errormsg=errormsg&"<li> 必须为数字！</li></br>"
 founderr=true
 end if
 if not isdate(textfield19) then
-errormsg=errormsg&"<li> 您现在的位置: 您现在的位置: 您现在的位置: 您现在的位置:！</li></br>"
+errormsg=errormsg&"<li></li></br>"
 founderr=true
 end if
 if not isdate(textfield20) then
-errormsg=errormsg&"<li> 您现在的位置: 您现在的位置: 您现在的位置: 您现在的位置:！</li></br>"
+errormsg=errormsg&"<li></li></br>"
 founderr=true
 end if
 if founderr then
@@ -88,5 +88,5 @@ rs.update
 rs.close
 conn.close
 set conn=nothing
-response.Write "<script language='javascript'>alert(' 您现在的位置:');window.location.href='Xl.html';</script>"
+response.Write "<script language='javascript'>window.location.href='/';</script>"
 %>

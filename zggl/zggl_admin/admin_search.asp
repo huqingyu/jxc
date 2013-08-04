@@ -12,11 +12,6 @@ function opennew(){
 window.open ("admin_masterlook.asp?action=listxu","查询","height=400,width=655, top=0, left=0, toolbar=no, menubar=no, scrollbars=yes,resizable=no,location=no, status=no")
 }
 function check(){
-if(form1.text1.value==''){
-alert("请填写市的显示排序！");
-form1.text1.focus();
-return false;
-}
 }
 function checka(){
 if(form2.xlid.value==''){
@@ -30,7 +25,7 @@ return false;
 <div align="center">
 <br />
 <h1>客户订单查询</h1>
-<form action="?action=kf" method="post" name="form1" onSubmit="return check();">
+<form action="?action=kf" method="post" name="form1">
 <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">    
 
       <tr>

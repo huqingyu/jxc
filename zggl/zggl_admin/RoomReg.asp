@@ -2,14 +2,15 @@
 <!--#include file="admin_check_permission.asp"-->
 <!--#include file="admin_common/conn.asp" -->
 <%
-set rst=server.createobject("adodb.recordset")
-sqltext="select * from hotelb where id="&request("id")&" order by id desc"
-rst.open sqltext,conn,1,1
-session("hotelid")=rst("id")
-session("hotelname")=rst("c_name")
-rst.close
-%>
-<%
+if request("id") <> "" then
+	set rst=server.createobject("adodb.recordset")
+	sqltext="select * from hotelb where id="&request("id")&" order by id desc"
+	rst.open sqltext,conn,1,1
+	session("hotelid")=rst("id")
+	session("hotelname")=rst("c_name")
+	rst.close
+end if
+
 set rs=server.createobject("adodb.recordset")
 sqltext="select * from hotelb "
 rs.open sqltext,conn,1,1

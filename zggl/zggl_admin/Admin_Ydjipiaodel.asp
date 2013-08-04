@@ -1,4 +1,3 @@
-<%@ LANGUAGE = VBScript.Encode %>
 <%if session("admin")="" then
 response.Write "<script language='javascript'>alert('网络超时或您还没有登陆！');window.location.href='Admin_Login.asp';</script>"
 response.End
@@ -111,7 +110,7 @@ set rs=conn.execute("select id,m_yudingtime,name,hdname,hdid,tel,piao,m_show fro
   <%
 set rs=conn.execute("select id,m_yudingtime,name,hdname,hdid,tel,piao,m_show from givemejipiao order by m_yudingtime desc")
 if rs.eof then
-response.write("<tr align=""center""><td height=""24"" colspan=""5"" bgcolor=""#FFF"">暂没有预订信息！</td></tr>")
+response.write("<tr align=""center""><td height=""24"" colspan=""5"" bgcolor=""#FFFFFF"">暂没有预订信息！</td></tr>")
 end if
 while not rs.eof
 %>

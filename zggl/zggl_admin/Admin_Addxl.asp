@@ -10,8 +10,12 @@ end if
 %>
 <!--#include file="admin_common/conn.asp" -->
 <!--#include file="upload_inc.asp"-->
-<meta http-equiv="Content-Type" content="text/html; charset=gbk">
-<link href="css/style.css" rel="stylesheet">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
 <%
 dim action
 action=trim(request("action"))
@@ -37,10 +41,6 @@ sub add
 %>
 <script>
 function check(){
-if(form1.ta.value=='' || form1.tb.value=='' || form1.tc.value=='' || form1.td.value=='' || form1.te.value=='' || form1.tf.value=='' || form1.tg.value=='' || form1.th.value==''){
-alert("请认真填写上面所有项！");
-return false;
-}
 }
 </script>
 <br /><br /><br />
@@ -172,7 +172,7 @@ response.write("<script>alert('添加线路成功！');location='admin_addxl.asp?action
 end sub
 sub del
 %>
-<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F5F5F5" style="BORDER-bottom: #999999 1px solid;BORDER-RIGHT: #999999 1px solid;BORDER-left: #999999 1px solid">
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
 <%
 set rs1=conn.execute("select id,board from board")
@@ -184,7 +184,8 @@ rs1.movenext
 wend
 rs1.close
 %>
-</tr></table>
+</tr>
+</table>
 
 <br /><br /><br />
 <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
@@ -203,13 +204,13 @@ sql="select id,x_name,x_leiid,x_jingdiantupian,x_top,user from xianlu where x_le
 end if
 set rs2=conn.execute(sql)
 while not rs2.eof
-response.write("<tr bgcolor=#FFF><td height=24>")
+response.write("<tr bgcolor=#FFFFFF><td height=24>")
 if trim(rs2("x_top"))=1 then
 response.write ("<font color=red >荐</font>")
 else
 response.write ("<font color=red >普</font>")
 end if
-response.write(" <a href=""../Xl/Xl_"&rs2("id")&".html"" target=""_blank"">"&trim(rs2("x_name"))&"</a>")
+response.write(" <a href=""../xl/index.asp?Id="&rs2("id")&""" target=""_blank"">"&trim(rs2("x_name"))&"</a>")
 if rs2("user")<>"" then
 response.write("<font color=green>("&rs2("User")&"用户发布)</font>")
 End If
@@ -233,7 +234,7 @@ dim id,img,FileName
 id=trim(request("id"))
 img=trim(request("img"))
 img=replace(img,"XlUploadImages/","")
-FileName = "../Xl/Xl_"&id&".html"
+FileName = "../xl/index.asp?Id="&id
 if not isnumeric(id) then
 response.write("<script>alert('错误的传递参数！');history.back(1);</script>")
 end if
@@ -271,12 +272,11 @@ rs.close
 %>
 </tr></table>
 <br /><br /><br />
-<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
+<table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0 bgcolor="#F9F9F9">
   <tr align="center" bgcolor="#f5f5f5">
     <td width="477" height="30" background="images/admin_bg_1.gif">前15条线路名称，更多请点击上面分类(点击查看详细信息)</td>
     <td width="196" height="30" background="images/admin_bg_1.gif">线路状态</td>
     <td width="89" background="images/admin_bg_1.gif">类别标识</td>
-    <td width="94" background="images/admin_bg_1.gif">生成html</td>
     <td width="56" background="images/admin_bg_1.gif" bgcolor="#f5f5f5">编辑</td>
   </tr>
 <%
@@ -299,7 +299,7 @@ else
 response.write ("<font color=red >普</font>")
 end if
 %>
-    <a href="../Xl/Xl_<%=er("id")%>.html" target="_blank"><%=er("x_name")%></a><%if er("user")<>"" then
+    <a href="../xl/index.asp?Id=<%=er("id")%>" target="_blank"><%=er("x_name")%></a><%if er("user")<>"" then
 response.write("<font color=green>("&er("User")&"用户发布)</font>")
 End If%></td>
     <td align="center"><%
@@ -315,7 +315,6 @@ End if
 %></td>
 
     <td align="center"><%=er("x_leiid")%></td>
-    <td align="center"><a href=make_Xllist.asp?id=<%=er("id")%>>生成</a></td>
     <td align="center"><a href="admin_addxl.asp?action=editok&id=<%=er("id")%>" title='编辑'>编辑</a></td>
   </tr>
 <%
@@ -354,10 +353,7 @@ set rs=conn.execute("select * from xianlu where id="&id)
 %>
 <script>
 function check(){
-if(form1.ta.value=='' || form1.tb.value=='' || form1.tc.value=='' || form1.td.value=='' || form1.te.value=='' || form1.tf.value=='' || form1.tg.value=='' || form1.th.value==''){
-alert("请认真填写上面所有项！");
-return false;
-}
+
 }
 </script>
 <br /><br /><br />
@@ -464,54 +460,61 @@ end if
 rs.close
 end sub
 sub editok1
-set upload=new upload_5xsoft
+
 dim id,ta,tb,tc,td,te,tf,tg,tj,tk,x_top
-id=trim(upload.form("xid"))
-ta=replace(trim(upload.Form("ta")),"'","’")
-tb=replace(trim(upload.Form("tb")),"'","’")
-tc=replace(trim(upload.Form("tc")),"'","’")
-td=replace(trim(upload.Form("td")),"'","’")
-te=replace(trim(upload.Form("te")),"'","’")
-tf=replace(trim(upload.Form("tf")),"'","’")
-tg=replace(trim(upload.Form("tg")),"'","’")
-th=replace(trim(upload.Form("th")),"'","’")
-tk=replace(trim(upload.Form("tk")),"'","’")
-x_top=trim(upload.form("x_top"))
-img=trim(upload.form("rimg"))
+id=trim(request("xid"))
+ta=replace(trim(request("ta")),"'","’")
+tb=replace(trim(request("tb")),"'","’")
+tc=replace(trim(request("tc")),"'","’")
+td=replace(trim(request("td")),"'","’")
+te=replace(trim(request("te")),"'","’")
+tf=replace(trim(request("tf")),"'","’")
+tg=replace(trim(request("tg")),"'","’")
+th=replace(trim(request("th")),"'","’")
+tk=replace(trim(request("tk")),"'","’")
+x_top=trim(request("x_top"))
+img=trim(request("rimg"))
 IDstring="Gemisum"&date & time
 IDstring=Replace(IDstring,"-","")
 IDstring=Replace(IDstring,":","")
 pthString="XlUploadImages/"
+
+if img <> "" then
+set upload=new upload_5xSoft
 set file=upload.file("ttt")
 if file.filesize>0 then
-if instr(img,pthstring)=0 then
-response.write ("不是内部图，无须删除！")
-else
-img1=replace(img,"XlUploadImages/","")
-Set fso = CreateObject("Scripting.FileSystemObject")
-Set f2 = fso.getfile(server.mappath("XlUploadImages/"&img1))
-f2.delete
-conn.execute("update xianlu set x_jingdiantupian='' where id="&id)
+	if instr(img,pthstring)=0 then
+		response.write ("不是内部图，无须删除！")
+	else
+		img1=replace(img,"XlUploadImages/","")
+		Set fso = CreateObject("Scripting.FileSystemObject")
+		Set f2 = fso.getfile(server.mappath("XlUploadImages/"&img1))
+		f2.delete
+		conn.execute("update xianlu set x_jingdiantupian='' where id="&id)
+	end if
+	if file.filesize>2097152 then
+		set file=nothing
+		response.write("<script>alert('上传图片的大小不能大于2M，即：2097152字节！');history.back(1);</script>")
+	else
+		FileTpe=Mid(file.filename,Len(file.filename)-2)
+		if not (ucase(fileTpe)="JPG" or ucase(fileTpe)="BMP" or ucase(fileTpe)="GIF") then
+			response.write("<script>alert('上传图片格式只能为：JPG,BMP,GIF。');history.back(1);</script>")
+		else
+			file.saveAs Server.mappath(pthString & IDstring & "." & FileTpe)
+			filepath=pthString & IDstring & "." & FileTpe
+			conn.execute("update xianlu set x_jingdiantupian='"&filepath&"' where id="&id)
+			set f2=nothing
+			set file=nothing
+		end if
+	end if
 end if
-if file.filesize>2097152 then
-set file=nothing
-response.write("<script>alert('上传图片的大小不能大于2M，即：2097152字节！');history.back(1);</script>")
-else
-FileTpe=Mid(file.filename,Len(file.filename)-2)
-if not (ucase(fileTpe)="JPG" or ucase(fileTpe)="BMP" or ucase(fileTpe)="GIF") then
-response.write("<script>alert('上传图片格式只能为：JPG,BMP,GIF。');history.back(1);</script>")
-else
-file.saveAs Server.mappath(pthString & IDstring & "." & FileTpe)
-filepath=pthString & IDstring & "." & FileTpe
-conn.execute("update xianlu set x_jingdiantupian='"&filepath&"' where id="&id)
-set f2=nothing
-set file=nothing
 end if
-end if
-end if
-sss="update xianlu set x_name='"&ta&"',x_baojia='"&tb&"',x_leixun='"&tc&"',x_shijian='"&te&"',x_shuoming='"&th&"',x_jingdian='"&tg&"',x_anpai='"&tf&"',x_zhushi='"&tk&"',x_leiid='"&td&"',x_top="&x_top&" where id="&id
+sss="update xianlu set x_name='"&ta&"',x_baojia='"&tb&"',x_leixun='"&tc&"',x_shijian='"&te&"',x_shuoming='"&th&"',x_jingdian='"&tg&"',x_anpai='"&tf&"',x_zhushi='"&tk&"',x_leiid='"&td&"',x_top='"&x_top&"' where id='"&id&"'"
+
 conn.execute(sss)
 conn.close
 response.write("<script>alert('此线路编辑修改完成！按确定重新载入！');location='admin_addxl.asp?action=editok&id="&id&"';</script>")
 end sub
 %>
+</body>
+</html>

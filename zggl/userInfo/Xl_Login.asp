@@ -47,7 +47,7 @@ session("roomid")=request("roomid")
               <tr>
                 <td align="center">ÑéÖ¤Âë£º
                     <input  name=verifycode type=text value="<%If GetCode=9999 Then Response.Write "9999"%>" maxLength=4 size=6>
-                    <img src=../GetCode.asp> </td>
+                    <img src="../common/GetCode.asp"> </td>
               </tr>
               <tr>
                 <td align="center" height="38">

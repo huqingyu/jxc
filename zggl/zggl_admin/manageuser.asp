@@ -143,6 +143,7 @@ end if
               <div align="center"><%=rs("logins")%>´Î</div>
             </td>
             <td><div align="center"> 
+				<a href=listuser.asp?id=<%=rs("id")%>>ÐÞ¸Ä</a>
                 <input type="submit" name="username" value="É¾³ý" onclick=" window.location='saveuser.asp?action=del&username=<%=trim(rs("username"))%>'">
               </div>
             </td>

@@ -1,5 +1,9 @@
 <!--#include file="admin_common/conn.asp"-->
-<% if request("wang")="add" then 
+<% 
+dim nlei
+nlei = request("lei")
+
+if request("wang")="add" then 
 	bt=request("bt")
 	nr=request("nr")
 	lei=request("lei")
@@ -21,7 +25,7 @@
 
 	rs("color")=color
 	rs.update
-	response.Redirect("news_list.asp")
+	response.Redirect("news_list.asp?lei="+lei)
 end if 
 if request("del")<>"" then 
 	id=request("del")
@@ -40,10 +44,29 @@ end if
 <form id="form1" name="form1" method="post" action="news.asp?wang=add">
   <table border="0" align="center" cellpadding="1" cellspacing="1" bgColor="#aaccff">
     <tr>
-      <td height="28" colspan="2" align="center" background="images/admin_bg_1.gif"><b><font class="STYLE1">文章添加</font></b></td>
+      <td height="28" colspan="2" align="center" background="images/admin_bg_1.gif"><b><font class="STYLE1">添加</font>
+	  <%
+	  if nlei = 63 then			
+	  Response.Write("公告")
+	  elseif nlei = 64 then    
+	  Response.Write("新闻")
+	  elseif nlei = 73 then    
+	  Response.Write("高尔夫")
+	  elseif nlei = 82 then    
+	  Response.Write("租车")
+	  elseif nlei = 75 then    
+	  Response.Write("会议")
+	  elseif nlei = 66 then    
+	  Response.Write("签证")
+	  elseif nlei = 76 then    
+	  Response.Write("常识")
+	  end if
+	  %>
+	  
+	  </b></td>
     </tr>
     <tr>
-      <td width="12%" height="28" align="center">文章标题</td>
+      <td width="12%" height="28" align="center">标题</td>
       <td width="88%">&nbsp;&nbsp;
         <input name="bt" type="text" id="bt" size="50" />
         &nbsp; <select name='Color' id='Color'>
@@ -71,32 +94,42 @@ end if
       <td>&nbsp;&nbsp; <input name="tu" type="text" id="tu" size="50" />
         &nbsp; <input class="button" type="button" name="Submit22" value="上传图片" onclick="window.open('../Up_BookPic.asp?formname=form1&amp;editname=tu&amp;uppath=bookpic&amp;filelx=jpg','','status=no,scrollbars=no,top=20,left=110,width=420,height=165')" /></td>
     </tr>
+<%
+if nlei <> "" then
+	Response.Write("<tr><td></td><td><input name='lei' type='hidden' value='" +nlei+ "' /></td></tr>")
+else
+%>
     <tr>
-      <td height="28" align="center">文章分类</td>
+      <td height="28" align="center">分类</td>
       <td>&nbsp;&nbsp;
         <select name="lei" id="lei">
-          <% set rs= Server.CreateObject("adodb.recordset") 
-sql="select * from nlei "
-rs.open sql,conn,1,3
-while not rs.eof 
- %>
+          <% 
+	set rs= Server.CreateObject("adodb.recordset") 
+	sql="select * from nlei "
+	rs.open sql,conn,1,3
+	while not rs.eof 
+%>
           <option value="<%= rs("id") %>"><%= rs("nlei") %></option>
           <% rs.movenext 
-  wend  %>
+  wend  
+%>
         </select></td>
     </tr>
+<%
+end if
+%>
     <tr>
-      <td height="25" align="center">文章内容</td>
+      <td height="25" align="center">内容</td>
       <td>&nbsp;
       <input name="nr" type="hidden" id="nr" />
       <iframe id="xWebEditor1" src="ubb/xwebeditor.asp?id=nr&amp;style=standard_coolblue1" frameborder="0" scrolling="No" width="600" height="400"></iframe></td>
     </tr>
     <tr>
-      <td height="25" align="center">文章来源</td>
+      <td height="25" align="center">来源</td>
       <td>&nbsp; <input name="ly" type="text" id="ly" /></td>
     </tr>
     <tr>
-      <td height="25" align="center">文章作者</td>
+      <td height="25" align="center">作者</td>
       <td>&nbsp; <input name="zz" type="text" id="zz" /></td>
     </tr>
     <tr>

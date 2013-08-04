@@ -13,5 +13,6 @@ end if
    sqltext="delete * from orderb where id="& contentID
    rs.open sqltext,conn,3,3
    set rs=nothing
+   conn.close
    response.redirect "OverorderInfo.asp"
 %>

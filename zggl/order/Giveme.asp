@@ -1,13 +1,14 @@
 <%
+if request.Cookies("Gemisum")("username")="" then
+  response.write "<script LANGUAGE='javascript'>window.location.href='../userInfo/Xl_login.asp?id="&id&"';</script>"
+  Response.End
+end if
+
 dim id
 id=trim(Request("id"))
-if request.Cookies("Gemisum")("username")="" then
-  response.write "<script LANGUAGE='javascript'>alert(' 您现在的位置: 您现在的位置:录');window.location.href='Userinfo/Xl_login.asp?id="&id&"';</script>"
-end if
 %>
 <!--#include virtual="common/conn.asp" -->
 <!--#include virtual="common/webconfig.asp"-->
-<!--#include virtual="common/Check_SI.asp"-->
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -16,6 +17,7 @@ end if
 <link href="css/style.css" rel="stylesheet" />
 <title><%=webname%>--添写预定信息</title>
 </head>
+<body>
 <script language="JavaScript" src="admin/system/indexdatejs.js"></script>
 <script languages="javascript">
 function ff(tt){
@@ -61,7 +63,7 @@ return false;
 }
 }
 </script>
-<br><br><br>
+<br /><br /><br />
 <table border=0 align="center" cellPadding=0 >
 <%
 if id="" or not IsNumeric(id) then
@@ -191,3 +193,4 @@ rst.open "select * from [userb] where username='"&request.cookies("Gemisum")("us
  </form>
                 <% rs.close %>
 </table>
+</body>

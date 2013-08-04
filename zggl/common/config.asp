@@ -9,15 +9,17 @@ function GetNewsTitle(tp)
 		case "66"
 		title="签证"
 		case "67"
-		title="旅游景点"
+		title="景区"
 		case "70"
 		title="旅游指南"
 		case "73"
-		title="海南特产"
+		title="高尔夫"
 		case "75"
-		title="会议考察"
+		title="会议"
 		case "76"
 		title="旅游常识"
+		case "82"
+		title="租车"
 	End Select
 
 	GetNewsTitle = title

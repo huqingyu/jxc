@@ -193,7 +193,7 @@ rs.open sql,conn
     </tr>
     <tr align="center">
       <td height="31" colspan="4">
-        <input type="submit" name="Submit3" value="确定添加" class="button" onClick="return CheckForm()">
+        <input type="submit" name="Submit3" value="确定修改" class="button" onClick="return CheckForm()">
         <input type="reset" name="Submit22" value="清除所有" class="button">
       </td>
     </tr>

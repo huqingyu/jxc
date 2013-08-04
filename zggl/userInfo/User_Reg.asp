@@ -98,41 +98,12 @@ function checkspace(checkstr) {
 </script>
 
 </head>
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onMouseOver="window.status='【<%=webname%>】<%=weburl%> 如果您喜欢本站,别忘了把本站介绍给您的好友哦！：）';return true">
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <TABLE width="770" border=0 align="center" cellPadding=0 cellSpacing=0>
       <TBODY>
-        <TR>
-          <TD width="35%" height="81" align=left 
-                  bgColor=#ffffff class=b><div align="center"><img src="../<%=weblogo%>"></div></TD>
-          <TD width="65%" align=middle vAlign=center  
-                bgColor=#ffffff class=b><div align="center"><img src="../<%=webbanner%>"></div></TD>
-        </TR>
         <TR vAlign=middle bgcolor="#0F77B1">
           <TD height=27 
-                colSpan=2 align=left class=b><TABLE width="100%" height="100%" border=0 
-                  align=center cellPadding=0 cellSpacing=0 class=9>
-              <TBODY>
-                <TR>
-                  <TD align=left vAlign=middle background="../images/top_bar.gif" class=b>
-                  <div align="center"><FONT color=#ffffff><a href="/"><FONT color=#ffffff>首页</Font></a> | <a href="../News.asp"><FONT color=#ffffff>新闻动态</Font></a> | <a href="../xl.html"><FONT color=#ffffff>度假产品</FONT></a> | <a href="../hotel.html"><FONT color=#ffffff>酒店预定</FONT></a> |<a href="../ticket.asp"><font color="#FFFFFF"> 机票预定</font></a> | <a href="../guide.asp"><font color="#FFFFFF">导游推荐</font></a> | <a href="../pic.asp"><font color="#FFFFFF">美图欣赏</font></a> | <a href="../Gbook.asp"><font color="#FFFFFF">留下意见</font></a> | <a href="userInfo.asp"><font color="#FFFFFF">会员中心</font></a> | <a href="../Help.asp"><font color="#FFFFFF">在线帮助</font></a></FONT> <img src="../images/b_start.gif" width=122 height=16 border=0 align="absmiddle"></div></TD>
-                </TR>
-              </TBODY>
-          </TABLE></TD>
-        </TR>
-      </TBODY>
-</TABLE>
-    <TABLE width="770" border=0  align=center cellPadding=0 cellSpacing=0 background="../images/top_nav_menu.gif">
-      <TBODY>
-        <TR bgColor=#ffffff>
-          <TD colSpan=3 height=2></TD>
-        </TR>
-        <TR>
-          <TD width="44" height=25 align=right><img src="../images/arrow3.gif" width="29" height="11"></TD>
-          <TD width="715"><FONT color=#333333>&nbsp;您的位置：&nbsp;</FONT><a href="/">网站的首页</a> &gt;&gt; 会员注册</TD>
-          <TD width="11">&nbsp;</TD>
-        </TR>
-      </TBODY>
-    </TABLE>
+                colSpan=2 align=left class=b>
 <TABLE cellSpacing=0 cellPadding=0 width=770 align=center border=0 style="BORDER-LEFT: #d8d8d8 1px solid;BORDER-RIGHT: #d8d8d8 1px solid;">
   <TBODY>
     <TR>
@@ -153,7 +124,15 @@ case ""%>
                       <tr>
                         <td><table width="80%" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#CCCCCC">
                             <tr bgcolor="#ffffff">
-                              <td><%call tiaoyue()%>
+                              <td>
+<P>《中国国旅网服务条款》</P>
+<P>1．中国国旅网服务条款的确认</P>
+<P>　　中国国旅网各项服务的所有权与运作权归中国国旅信息技术有限公司（以下简称"中国国旅"）所有。本服务条款具有法律约束力。一旦您点选"注册"并通过注册程序，即表示您自愿接受本协议之所有条款，并已成为中国国旅网的注册会员。<br />2．服务内容</P>
+<P>　　2.1　中国国旅网服务的具体内容由中国国旅根据实际情况提供，中国国旅对其所提供之服务拥有最终解释权。<br />　　2.2　中国国旅在中国国旅网上向其会员提供相关网络服务，与相关网络服务有关的设备（如个人电脑、手机、及其他与接入互联网或移动网有关的装置）及所需的费用（如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费）均由会员自行负担。</P>
+<P><br />3．会员帐号及密码</P>
+<P>　　您注册会员成功后，将得到一个帐号和密码。您应妥善保管该帐号及密码，并对以该帐号进行的所有活动及事件负法律责任。因黑客行为或会员保管疏忽致使帐号、密码被他人非法使用的，中国国旅不承担任何责任。如您发现任何非法使用会员帐号或安全漏洞的情况，请立即与中国国旅联系。</P>
+<P><br />4．会员权责 </P>
+<P>　　4.1　会员有权按照中国国旅规定的程序和要求使用中国国旅向会员提供的各项网络服务，如果会员对该服务有异议，可以与中国国旅联系以便得到及时解决。<br />　　4.2　用户在申请使用中国国旅网网络服务时，必须向中国国旅网提供准确的个人资料，如 个人资料有任何变动，必须及时更新。<br />　　4.3　会员须同意接受中国国旅网通过电子邮件或其他方式向会员发送促销或其他相关商业信息。<br />　　4.4　会员在中国国旅网的网页上发布信息或者利用中国国旅网的服务时必须符合国家的法律法规以及国际法的有关规定。<br />　　4.5　对于会员通过中国国旅网网上消息平台（包括但不限于论坛、BBS、评论）上传到中国国旅网网站上可公开获取区域的任何内容，会员同意授予中国国旅在全世界范围内享有完全的、免费的、永久性的、不可撤销的、非独家的权利，以及再许可第三方的权利，以使用、复制、修改、改编、出版、翻译、据以创作衍生作品、传播、表演和展示此等内容（整体或部分），和/或将此等内容编入当前已知的或以后开发的其他任何形式的作品、媒体或技术中。<br />　　4.6　会员承诺不会在中国国旅网的消息平台（包括但不限于论坛、BBS、评论）发布如下信 息：<br />　　　(1) 反对宪法所确定的基本原则的；<br />　　　(2) 危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；<br />　　　(3) 损害国家荣誉和利益的；<br />　　　(4) 煽动民族仇恨、民族歧视，破坏民族团结的；<br />　　　(5) 破坏国家宗教政策，宣扬邪教和封建迷信的；<br />　　　(6) 散布谣言，扰乱社会秩序，破坏社会稳定的；<br />　　　(7) 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；<br />　　　(8) 侮辱或者诽谤他人，侵害他人合法权益的；<br />　　　(9) 含有法律、行政法规禁止的其他内容的。<br />　　4.7　会员单独为其发布在中国国旅网上信息承担责任。会员若在中国国旅网散布和传播违法信息，网络会员服务的系统记录有可能作为会员违法之证据。<br />　　4.8　会员不得利用本站的服务从事以下活动：<br />　　　(1) 未经允许，进入计算机信息网络或者使用计算机信息网络资源；<br />　　　(2) 未经允许，对计算机信息网络功能进行删除、修改或者增加；<br />　　　(3) 未经允许，对进入计算机信息网络中存储、处理或者传输的数据和应用程序进行删除、修改或者增加；<br />　　　(4) 故意制作、传播计算机病毒等破坏性程序；<br />　　　(5) 其他危害计算机信息网络安全的行为。<br />　　4.9　会员不得以任何方式干扰本站的服务。<br />　　4.10　会员承诺遵守本站的所有其他规定和程序。<br />　　4.11　如果会员违反上述规定，中国国旅有权要求其改正或直接采取一切必要措施（包括但不限于更改或删除会员发布的信息、中断或终止会员使用网络的权利等），以减轻会员不当行为所造成的影响。</P>							  
                               </td>
                             </tr>
                         </table></td>
@@ -164,7 +143,7 @@ case ""%>
                           <td width="50%" align="right">
 						  <FORM name=register method=post action=User_reg.asp?action=yes>
                               <input type="hidden" name="action" value="agree">
-                              <INPUT class="go-wenbenkuang" type=submit value=" 同意注册 " name=Submit>
+                              <input class="go-wenbenkuang" type=submit value=" 同意注册 " name=Submit>
                           </FORM></td>
                           <td width="50%" align="left"><FORM action="/index.asp" method=post>
                               <INPUT class=go-wenbenkuang type=submit value=" 我不同意 ">
@@ -176,19 +155,19 @@ case ""%>
           </tr>
         </table>
         <SCRIPT>
-	secs = 60; // Number of secs to delay -CHINA-studio
-	wait = secs * 100;
+	secs = 6; // Number of secs to delay -CHINA-studio
+	wait = secs * 1000;
 	document.forms.register.Submit.disabled =true;
-	for(i=1;i<=(wait/100);i++) {
-		window.setTimeout("doUpdate(" + i + ")", i * 100);
+	for(i=1;i<=(wait/1000);i++) {
+		window.setTimeout("doUpdate(" + i + ")", i * 1000);
 	}
 	window.setTimeout("Timer()", wait);
 
 	function doUpdate(num) {
-		if(num == (wait/100)) {
+		if(num == (wait/1000)) {
 			document.forms.register.Submit.value = " 同意注册 ";
 		} else {
-			wut = (wait/100)-num;
+			wut = (wait/1000)-num;
 			document.forms.register.Submit.value = " 同意前请先阅读 (" + wut + ")";
 		}
 	}
@@ -285,7 +264,7 @@ case ""%>
         <table width="760" align="center" border="0" cellspacing="0" cellpadding="0" class="table-zuoyou" bordercolor="#CCCCCC">
           <tr>
             <td bordercolor="#FFFFFF" bgcolor="#FFFFFF"><%case "save"%>
-                <!--#include file="md5.asp"-->
+                <!--#include file="../common/md5.asp"-->
                 <%call saveuser()%>
                 <%end select%>
 <%sub tiaoyue()
@@ -405,26 +384,6 @@ end sub
     </TR>
   </TBODY>
 </TABLE>
-<TABLE width="770" border=0 align="center" cellPadding=0 cellSpacing=0>
-  <TBODY>
-    <TR>
-      <TD width="1" rowspan="2" align=middle vAlign=bottom bgcolor="#CCCCCC"></TD>
-      <TD 
-height=25 align=middle background=../images/foot_patt01.gif><a href="/">网站首页</a> | <a href=../about.asp?action=about >关于我们</a> | <a href=../about.asp?action=lxwm >业务联系</a> | <a href=../help.asp?action=shiyongfalv >版权声明</a> | <a href=../help.asp?action=fukuan >付款方式</a> | <a href=../gbook.asp >留言/建议/投诉</a></TD>
-      <TD width="1" rowspan="2" align=middle vAlign=bottom bgcolor="#CCCCCC"></TD>
-    </TR>
-    <TR>
-      <TD height=60><div align="center">
-          <%dim endtime
-endtime=timer()
-response.Write "　公司地址："&dizhi&"　邮政编码："&youbian&"<br>"
-response.Write "　客服邮箱：<a href=mailto:"&webemail&">"&webemail&"</a>　客服电话："&dianhua&"<br>　"
-response.Write "  <font color=#000000><b>"&weburl&"</b></font> &copy; <font color=red> "&copyright&" </font>"
-response.Write "　页面执行时间："&FormatNumber((endtime-startime)*1000,3)&" 毫秒"
-%>
-      </div></TD>
-    </TR>
-  </TBODY>
-</TABLE>
+
 </body>
 </html>

@@ -22,12 +22,9 @@ function IsDigit()
 <center><br />
 <table width="95%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
     <form method="post" action="shiset.asp?action=update">
-      <tr height=25> 
-        <td height="30" colspan="8" align="center" background="images/admin_bg_1.gif"><font color=red>市设置</font></td>
-      </tr>
-      <tr height=25> 
-        <td colspan="8" align="center">
-          <%
+	
+请选择以下省份进行处理:<br />
+<%
 Set rs_s = Server.CreateObject("ADODB.Recordset")
 rs_s.open "SELECT * From szsheng order by shengorder",conn,1,1
 while not rs_s.eof
@@ -37,6 +34,12 @@ wend
 rs_s.close
 set rs_s=nothing
 %>
+      <tr height=25> 
+        <td height="30" colspan="8" align="center" background="images/admin_bg_1.gif"><font color=red>市设置</font></td>
+      </tr>
+      <tr height=25> 
+        <td colspan="8" align="center">
+          
         </td>
       </tr>
       <tr align=center height=25> 
@@ -53,10 +56,8 @@ dim shengid
 shengid=request("shengid")
 Set rs = Server.CreateObject("ADODB.Recordset")
 if shengid<>"" then
-  rs.open "SELECT  * From szshi  where shengid="&shengid&" order by shengid,shiorder",conn,1,1
-else
-response.Write "请选择以下省份进行处理"
-end if
+  rs.open "SELECT * From szshi where shengid="&shengid&" order by shengid,shiorder",conn,1,1
+
 if rs.recordcount=0 then 
 %>
       <tr> 
@@ -72,7 +73,7 @@ else
           <select name="shengid" size="1" class="wenbenkuang">
 <%
 Set rs_s = Server.CreateObject("ADODB.Recordset")
-rs_s.open "SELECT  * From szsheng  order by shengorder",conn,1,1
+rs_s.open "SELECT  * From szsheng order by shengorder",conn,1,1
 while not rs_s.eof
 %>
 <option value="<%=rs_s("id")%>" <%if rs_s("id")=rs("shengid") then%>selected<%end if%>><%=rs_s("shengname")%></option>
@@ -113,6 +114,7 @@ set rs_s=nothing
 end if
 rs.close
 set rs=nothing
+end if
 %>
     </form>
     <form method="post" action="shiset.asp?action=add">

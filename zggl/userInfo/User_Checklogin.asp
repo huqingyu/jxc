@@ -8,7 +8,7 @@ if username="" or userpassword="" then
 response.write "<script LANGUAGE='javascript'>alert('您的用户名或密码有误！');history.go(-1);</script>"
 response.end
 end if
-if UCase(session("getcode"))<>UCase(trim(request("verifycode"))) then
+if UCase(session("GetCode"))<>UCase(trim(request("verifycode"))) then
 response.Write "<script LANGUAGE='javascript'>alert('请输入正确的验证码！');history.go(-1);</script>"
 response.end
 end if

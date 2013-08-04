@@ -143,7 +143,7 @@ set rs=conn.execute(sql)
     </tr>
   <%
 if rs.eof then
-response.write("<tr align=""center""><td height=""24"" colspan=""5"" bgcolor=""#FFF"">没找到相关记录！</td></tr>")
+response.write("<tr align=""center""><td height=""24"" colspan=""5"" bgcolor=""#FFFFFF"">没找到相关记录！</td></tr>")
 end if
 while not rs.eof
 %>

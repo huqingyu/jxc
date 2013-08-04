@@ -182,7 +182,7 @@ set rs=conn.execute("select id,m_show,m_id,m_name,m_phone,m_yudingtime from give
   </tr>
 <%
 if rs.eof then
-response.write("<tr align=""center""><td height=""24"" colspan=""6"" bgcolor=""#FFF"">暂时没有预订信息！</td></tr>")
+response.write("<tr align=""center""><td height=""24"" colspan=""6"" bgcolor=""#FFFFFF"">暂时没有预订信息！</td></tr>")
 end if
 while not rs.eof
 %>

@@ -2,4 +2,4 @@
 tp=75
 menu_index="hy"
 %>
-<!--#include file="__list.asp"-->
+<!--#include file="__pic_list.asp"-->

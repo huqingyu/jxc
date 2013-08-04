@@ -74,101 +74,6 @@ var sHSpace = "";
 
 var sCheckFlag = "file";
 
-oSelection = dialogArguments.Editor.document.selection.createRange();
-sRangeType = dialogArguments.Editor.document.selection.type;
-
-if (sRangeType == "Control") {
-	if (oSelection.item(0).tagName == "IMG"){
-		sAction = "MODI";
-		sTitle = "修改";
-		sCheckFlag = "url";
-		oControl = oSelection.item(0);
-		sFromUrl = oControl.src;
-		sAlt = oControl.alt;
-		sBorder = oControl.border;
-		sBorderColor = oControl.style.borderColor;
-		sFilter = oControl.style.filter;
-		sAlign = oControl.align;
-		sWidth = oControl.width;
-		sHeight = oControl.height;
-		sVSpace = oControl.vspace;
-		sHSpace = oControl.hspace;
-	}
-}
-
-document.write("<title>图片属性（" + sTitle + "）</title>");
-
-// 初始值
-function InitDocument(){
-	SearchSelectValue(d_filter, sFilter);
-	SearchSelectValue(d_align, sAlign.toLowerCase());
-
-	d_fromurl.value = sFromUrl;
-	d_alt.value = sAlt;
-	d_border.value = sBorder;
-	d_bordercolor.value = sBorderColor;
-	s_bordercolor.style.backgroundColor = sBorderColor;
-	d_width.value = sWidth;
-	d_height.value = sHeight;
-	d_vspace.value = sVSpace;
-	d_hspace.value = sHSpace;
-}
-
-// 本窗口返回值
-function ReturnValue(){
-	sFromUrl = d_fromurl.value;
-	sAlt = d_alt.value;
-	sBorder = d_border.value;
-	sBorderColor = d_bordercolor.value;
-	sFilter = d_filter.value;
-	sAlign = d_align.value;
-	sWidth = d_width.value;
-	sHeight = d_height.value;
-	sVSpace = d_vspace.value;
-	sHSpace = d_hspace.value;
-
-	if (sAction == "MODI") {
-		oControl.src = sFromUrl;
-		oControl.alt = sAlt;
-		oControl.border = sBorder;
-		oControl.style.borderColor = sBorderColor;
-		oControl.style.filter = sFilter;
-		oControl.align = sAlign;
-		oControl.width = sWidth;
-		oControl.height = sHeight;
-		oControl.vspace = sVSpace;
-		oControl.hspace = sHSpace;
-	}else{
-		var sHTML = '<img src="'+sFromUrl+'" alt="'+sAlt+'" border="'+sBorder+'" style="filter:'+sFilter+';border-color:'+sBorderColor+'" align="'+sAlign+'"';
-		if (sWidth!=""){
-			sHTML=sHTML+' width="'+sWidth+'"';
-		}
-		if (sHeight!=""){
-			sHTML=sHTML+' height="'+sHeight+'"';
-		}
-		sHTML = sHTML+' vspace="'+sVSpace+'" hspace="'+sHSpace+'">';
-		dialogArguments.insertHTML(sHTML);
-	}
-
-	window.returnValue = null;
-	window.close();
-}
-
-// 点确定时执行
-function ok(){
-	// 数字型输入的有效性
-	d_border.value = ToInt(d_border.value);
-	d_width.value = ToInt(d_width.value);
-	d_height.value = ToInt(d_height.value);
-	d_vspace.value = ToInt(d_vspace.value);
-	d_hspace.value = ToInt(d_hspace.value);
-	// 边框颜色的有效性
-	if (!IsColor(d_bordercolor.value)){
-		BaseAlert(d_bordercolor,'提示：\n\n无效的边框颜色值！');
-		return false;
-	}
-	ReturnValue();
-}
 function openScript(url, width, height){
 	var Win = window.open(url,"openScript",'width=' + width + ',height=' + height + ',left=450,top=300,resizable=1,scrollbars=no,menubar=no,status=no' );
 }
@@ -177,7 +82,7 @@ function openem()
 openScript('upload.asp?UP=admin',300,100); 
 }
 </script>
-<body onload="InitDocument()">
+<body>
 <form action="add_daoyou_ok.asp" method="post" name="myform">
 <br /><br /><br />
   <table width="65%" border=1 align="center" cellPadding=0 cellSpacing=0  bgcolor="#F9F9F9">
@@ -288,8 +193,8 @@ openScript('upload.asp?UP=admin',300,100);
     </tr>
     <tr align="center"> 
       <td height="31" colspan="4">
-        <input type="submit" name="Submit" value="确定添加" onClick="return CheckForm()">
-        <input type="reset" name="Submit2" value="清除所有" >
+        <input type="submit" name="Submit" value="确定" onClick="return CheckForm()">
+        <input type="reset" name="Submit2" value="重置" >
       </td>
     </tr>
   </table>

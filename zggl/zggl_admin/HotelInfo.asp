@@ -88,9 +88,8 @@ response.write ("<font color=orange>管理员发布</font>")
 End if
 %></td>
 <td width="10%" align="center" height="23">
-<p align="center"><%=strs("city")%></td>
+<p align="center"><%=strs("city")%>&nbsp;</td>
 <td width="37%" align="center" height="23">
-<input name="button" type="button" onclick=" window.location='make_Hotel.asp?id=<%=strs("id")%>'" value="生成Html">
 <input type="button" value="详情" onclick=" window.location='hoteldetail.asp?id=<%=strs("id")%>'"><input type="button" value="编辑" onclick=" window.location='edithoteldetail.asp?id=<%=strs("id")%>'"><input type="button" value="删除" onclick="if (confirm('确实要此条记录吗？')) window.location='hotelinfodel.asp?id=<%=strs("id")%>'">
 <input type="button" value="添加房型" onclick=" window.location='roomreg.asp?id=<%=strs("id")%>&action=hotel_room'"></td>
 </tr>

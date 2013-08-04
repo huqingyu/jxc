@@ -4,9 +4,8 @@ if request.Cookies("Gemisum")("username")="" then
 end if
 %>
 <!--#include file="../common/conn.asp"-->
-<!--#include file="admin/system/WebConfig.asp"-->
-<!--#include file="admin/system/Check_SI.asp"-->
-<!--#include file="admin/system/md5.asp"-->
+<!--#include file="../common/WebConfig.asp"-->
+<!--#include file="../common//md5.asp"-->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
@@ -363,6 +362,5 @@ end sub%>
 </body>
 </html>
 <%
-rs.close
 conn.close
 %>

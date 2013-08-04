@@ -198,7 +198,7 @@ openScript('upload.asp?UP=admin',300,100);
 
 <script>
 
-<%dim sql,i,j
+<%
 	set rs_s=server.createobject("adodb.recordset")
 	sql="select * from szSheng order by shengorder"
 	rs_s.open sql,conn,1,1

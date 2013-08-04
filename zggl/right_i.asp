@@ -59,7 +59,7 @@ function checkform(){
               <tr>
                 <td height="30" align="center">验证码：
                     <input  name=verifycode type=text value="<%If GetCode=9999 Then Response.Write "9999"%>" maxLength=4 size=6 class="an6">
-                    <img src=GetCode.asp>&nbsp;</td>
+                    <img src="common/GetCode.asp">&nbsp;</td>
               </tr>
               <tr>
                 <td align="center" valign="middle"><span style="padding-top:3px;">
@@ -84,16 +84,16 @@ response.Cookies("Gemisum")("reglx")=rs("reglx")
 rs.close
 set rs=nothing
 if request.Cookies("Gemisum")("reglx")=3 then
-response.write "<br><br>"&request.Cookies("Gemisum")("username")&" 企业用户您好<br>您目前有"&request.Cookies("Gemisum")("jifen")&"积分,预存款"&request.Cookies("Gemisum")("yucun")&"元 "
+response.write "<br><br>"&request.Cookies("Gemisum")("username")&" 企业用户您好<br />您目前有"&request.Cookies("Gemisum")("jifen")&"积分,预存款"&request.Cookies("Gemisum")("yucun")&"元 "
 Else
 if request.Cookies("Gemisum")("reglx")=2 then
-response.write "<br><br>"&request.Cookies("Gemisum")("username")&" 贵宾您好<br>您目前有"&request.Cookies("Gemisum")("jifen")&"积分,预存款"&request.Cookies("Gemisum")("yucun")&"元 "
+response.write "<br /><br />"&request.Cookies("Gemisum")("username")&" 贵宾您好<br />您目前有"&request.Cookies("Gemisum")("jifen")&"积分,预存款"&request.Cookies("Gemisum")("yucun")&"元 "
 else
-response.write "<br><br>"&request.Cookies("Gemisum")("username")&" 您好<br>您目前有"&request.Cookies("Gemisum")("jifen")&"积分,预存款"&request.Cookies("Gemisum")("yucun")&"元 "
+response.write "<br /><br />"&request.Cookies("Gemisum")("username")&" 您好<br />您目前有"&request.Cookies("Gemisum")("jifen")&"积分,预存款"&request.Cookies("Gemisum")("yucun")&"元 "
 end if
 end if
-response.write "<br><a href=userinfo.asp target=_blank><font color=red>进入会员中心</font></a>"
-response.write "<br><a href=logout.asp>注销退出</a>"
+response.write "<br><a href=userInfo/userinfo.asp target=_blank><font color=red>进入会员中心</font></a>"
+response.write "<br><a href=userInfo/logout.asp>注销退出</a>"
 end if
 %></td>
             </tr>

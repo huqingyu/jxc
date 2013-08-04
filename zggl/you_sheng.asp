@@ -48,7 +48,7 @@ while not rs.eof
 %>
                 <tr align="center" bgcolor="#f5f5f5"> </tr>
                   <tr bgcolor="#FFFFFF">
-                    <td height="24" bgcolor="#F4FAFE">&nbsp;<img src="images/ping.gif"><a href="Xl/Xl_<%=rs("id")%>.html" target="_blank"><%=rs("x_name")%></a></td>
+                    <td height="24" bgcolor="#F4FAFE">&nbsp;<img src="images/ping.gif"><a href="xl_show.asp?Id=<%=rs("id")%>" target="_blank"><%=rs("x_name")%></a></td>
                     <td align="center" bgcolor="#F4FAFE"><a href="Giveme.asp?id=<%=rs("id")%>" title='Ô¤¶¨' target="_blank" class="STYLE1"><%=rs("x_Baojia")%></a></td>
                   </tr>
                   <% rs.movenext 

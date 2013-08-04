@@ -1,4 +1,4 @@
-<SCRIPT RUNAT=SERVER LANGUAGE=VBSCRIPT>
+<%
 dim upfile_5xSoft_Stream
 Class upload_5xSoft
 dim Form,File,Version
@@ -174,4 +174,4 @@ Class FileInfo
     SaveAs=0
   end function
 End Class
-</SCRIPT>
+%>

@@ -32,7 +32,7 @@ sub looknew
 <%
 set rs=conn.execute("select id,m_id,m_name,m_xianlu_name,m_phone,m_yudingtime,m_renshuo,m_show from giveme where m_show=false order by m_yudingtime desc")
 if rs.eof then
-response.write("<tr align=""center""><td height=""24"" colspan=""5"" bgcolor=""#FFF"">暂无新的预订！</td></tr>")
+response.write("<tr align=""center""><td height=""24"" colspan=""5"" bgcolor=""#FFFFFF"">暂无新的预订！</td></tr>")
 end if
 while not rs.eof
 %>
@@ -75,7 +75,7 @@ sub lookall
 <%
 set rs=conn.execute("select id,m_id,m_name,m_xianlu_name,m_phone,m_yudingtime,m_renshuo,m_show from giveme order by m_yudingtime desc")
 if rs.eof then
-response.write("<tr align=""center""><td height=""24"" colspan=""5"" bgcolor=""#FFF"">暂没有预订信息！</td></tr>")
+response.write("<tr align=""center""><td height=""24"" colspan=""5"" bgcolor=""#FFFFFF"">暂没有预订信息！</td></tr>")
 end if
 while not rs.eof
 %>

@@ -1,0 +1,15 @@
+.pic_goods_ul
+{
+list-style:none;
+text-align:center;
+}
+
+.pic_goods_ul li
+{
+
+margin-right:3px;
+float:left;
+width:180px;
+border: 1px solid #CCC;
+min-height:180px;
+}

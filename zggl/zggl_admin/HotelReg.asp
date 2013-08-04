@@ -18,7 +18,7 @@ end if
 <link href="css/style.css" rel="stylesheet">
 </head>
 <script>
-<%dim sql,i,j
+<%
 	set rs_s=server.createobject("adodb.recordset")
 	sql="select * from szSheng order by shengorder"
 	rs_s.open sql,conn,1,1
@@ -111,34 +111,8 @@ var sHSpace = "";
 
 var sCheckFlag = "file";
 
-oSelection = dialogArguments.Editor.document.selection.createRange();
-sRangeType = dialogArguments.Editor.document.selection.type;
-
-if (sRangeType == "Control") {
-	if (oSelection.item(0).tagName == "IMG"){
-		sAction = "MODI";
-		sTitle = "修改";
-		sCheckFlag = "url";
-		oControl = oSelection.item(0);
-		sFromUrl = oControl.src;
-		sAlt = oControl.alt;
-		sBorder = oControl.border;
-		sBorderColor = oControl.style.borderColor;
-		sFilter = oControl.style.filter;
-		sAlign = oControl.align;
-		sWidth = oControl.width;
-		sHeight = oControl.height;
-		sVSpace = oControl.vspace;
-		sHSpace = oControl.hspace;
-	}
-}
-
-document.write("<title>图片属性（" + sTitle + "）</title>");
-
 // 初始值
 function InitDocument(){
-	SearchSelectValue(d_filter, sFilter);
-	SearchSelectValue(d_align, sAlign.toLowerCase());
 
 	hotellogurl.value = sFromUrl;
 	d_alt.value = sAlt;
@@ -163,29 +137,6 @@ function ReturnValue(){
 	sHeight = d_height.value;
 	sVSpace = d_vspace.value;
 	sHSpace = d_hspace.value;
-
-	if (sAction == "MODI") {
-		oControl.src = sFromUrl;
-		oControl.alt = sAlt;
-		oControl.border = sBorder;
-		oControl.style.borderColor = sBorderColor;
-		oControl.style.filter = sFilter;
-		oControl.align = sAlign;
-		oControl.width = sWidth;
-		oControl.height = sHeight;
-		oControl.vspace = sVSpace;
-		oControl.hspace = sHSpace;
-	}else{
-		var sHTML = '<img src="'+sFromUrl+'" alt="'+sAlt+'" border="'+sBorder+'" style="filter:'+sFilter+';border-color:'+sBorderColor+'" align="'+sAlign+'"';
-		if (sWidth!=""){
-			sHTML=sHTML+' width="'+sWidth+'"';
-		}
-		if (sHeight!=""){
-			sHTML=sHTML+' height="'+sHeight+'"';
-		}
-		sHTML = sHTML+' vspace="'+sVSpace+'" hspace="'+sHSpace+'">';
-		dialogArguments.insertHTML(sHTML);
-	}
 
 	window.returnValue = null;
 	window.close();

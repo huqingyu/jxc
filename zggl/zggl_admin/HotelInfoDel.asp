@@ -11,20 +11,11 @@ If not rsroom.eof Then
    Set Rsroom=Nothing
    Response.Redirect "Messagebox.Asp?Msg=请先删除此酒店相应的房间类型,再执行该删除操作!"
 Else
-   dim FileName
-   FileName = "../Hotel/Hotel_"&ContentId&".html"
-   if instr(FileName)>0 then
-   Set fso = CreateObject("Scripting.FileSystemObject")
-   Set f2 = fso.getfile(server.mappath(FileName))
-   f2.delete
-   set fso=nothing
-   set f2=nothing
-end if
    Set Rs=Server.Createobject("Adodb.Recordset")
    Sqltext="Delete * From Hotelb Where Id="& ContentId
    Rs.Open Sqltext,Conn,3,3
    Set Rs=Nothing
-   Rs.close
-Response.Redirect "HotelInfo.asp"
+   Conn.close
+	Response.Redirect "HotelInfo.asp"
 End If
 %>

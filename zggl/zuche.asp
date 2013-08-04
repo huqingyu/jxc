@@ -1,5 +1,5 @@
 <%
-tp=76
+tp=82
 menu_index="zc"
 %>
-<!--#include file="__list.asp"-->
+<!--#include file="__pic_list.asp"-->

@@ -62,7 +62,6 @@ rs("logurl9")=request.form("hotellogurl9")
 rs("logurl10")=request.form("hotellogurl10")
 rs("tuijian_id")=request.form("tuijian1")
 rs.update
-rs("id")=tid
 rs.close
 end if
 %>

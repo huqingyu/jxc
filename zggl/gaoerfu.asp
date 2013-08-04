@@ -1,5 +1,5 @@
 <%
-tp=66
+tp=73
 menu_index="gef"
 %>
-<!--#include file="__list.asp"-->
+<!--#include file="__pic_list.asp"-->

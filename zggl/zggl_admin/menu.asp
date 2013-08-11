@@ -64,24 +64,25 @@
     <div id='submenu92' class=sec_menu>
         <table width="130"  border="0" align="center" cellpadding="0" cellspacing="0">
           <tr>
-            <td width="88%" height="22"><a href="admin_addxl.asp?action=edit" target="main">旅游线路管理</a></td>
+            <td height="22"><a href="admin_addxl.asp?action=add" target="main">旅游线路添加</a></td>
           </tr>
           <tr>
-            <td height="22"><a href="admin_addxl.asp?action=add" target="main">添加旅游线路</a></td>
+            <td width="88%" height="22"><a href="admin_addxl.asp?action=edit" target="main">旅游线路编辑</a></td>
+          </tr>
+
+          <tr>
+            <td height="22"><a href="admin_addxl.asp?action=del" target="main">旅游线路删除</a></td>
           </tr>
           <tr>
-            <td height="22"><a href="admin_addxl.asp?action=del" target="main">删除旅游线路</a></td>
+            <td height="22"><a href="admin_board.asp?action=add" target="main">线路分类添加</a></td>
           </tr>
           <tr>
-            <td height="22"><a href="admin_board.asp?action=add" target="main">添加线路分类</a></td>
+            <td height="22"><a href="admin_board.asp?action=edit" target="main">线路分类编辑</a></td>
           </tr>
           <tr>
-            <td height="22"><a href="admin_board.asp?action=del" target="main">删除线路分类</a></td>
+            <td height="22"><a href="admin_board.asp?action=del" target="main">线路分类删除</a></td>
           </tr>
-          <tr>
-            <td height="22"><a href="admin_board.asp?action=edit" target="main">编辑线路分类</a></td>
-          </tr>
-        </table>
+		  </table>
       </div>
 
 	<div class="menu_title" onclick="showsubmenu(93)">
@@ -104,10 +105,13 @@
 	<div id='submenu94' class=sec_menu>
 	  <table width="130"  border="0" align="center" cellpadding="0" cellspacing="0">
 		<tr>
-		  <td width="88%" height="22"><a href="HotelReg.asp" target="main">酒店信息添加</a></td>
+		  <td width="88%" height="22"><a href="admin_hotel_add.asp" target="main">酒店信息添加</a></td>
 		</tr>
 		<tr>
-		  <td height="22"><a href="HotelInfo.asp" target="main">酒店信息审查</a></td>
+		  <td height="22"><a href="admin_hotel.asp" target="main">酒店信息编辑</a></td>
+		</tr>
+		<tr>
+		  <td height="22"><a href="admin_hotel_del.asp" target="main">酒店信息删除</a></td>
 		</tr>
 		<tr>
 		  <td height="22"><a href="RoomReg.asp" target="main">房型信息添加</a></td>

@@ -73,7 +73,7 @@ for i=1 to strs.PageSize
 %>                   
 <tr>
 <td width="9%" align="center" height="23"><%=strs("id")%></td>
-<td width="19%" align="center" height="23"><p align="left"><a href="#" title="<%=strs("User")%>" onclick="Javascript:OpenSmallWindows('HotelRoomAll.asp?id=<%=strs("Id")%>')" >
+<td width="19%" align="center" height="23"><p align="left"><a href="/hotel_show.asp?id=<%=strs("id")%>" title="<%=strs("User")%>" >
 <%=strs("c_name")%></a></td>
 <td width="9%" align="center" height="23"><%=strs("level")%></td>
 <td width="16%" align="center" height="23"><%
@@ -90,8 +90,10 @@ End if
 <td width="10%" align="center" height="23">
 <p align="center"><%=strs("city")%>&nbsp;</td>
 <td width="37%" align="center" height="23">
-<input type="button" value="详情" onclick=" window.location='hoteldetail.asp?id=<%=strs("id")%>'"><input type="button" value="编辑" onclick=" window.location='edithoteldetail.asp?id=<%=strs("id")%>'"><input type="button" value="删除" onclick="if (confirm('确实要此条记录吗？')) window.location='hotelinfodel.asp?id=<%=strs("id")%>'">
-<input type="button" value="添加房型" onclick=" window.location='roomreg.asp?id=<%=strs("id")%>&action=hotel_room'"></td>
+<input type="button" value="详情" onclick=" window.location='hoteldetail.asp?id=<%=strs("id")%>'" />
+<input type="button" value="编辑" onclick=" window.location='edithoteldetail.asp?id=<%=strs("id")%>'" />
+<input type="button" value="添加房型" onclick=" window.location='roomreg.asp?id=<%=strs("id")%>&action=hotel_room'" />
+</td>
 </tr>
 <%
 strs.movenext      
